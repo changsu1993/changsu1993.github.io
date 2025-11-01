@@ -47,7 +47,8 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # 사이드바의 아바타, 로컬 또는 CORS 리소스 지원
-avatar: /assets/img/avatar.jpg
+# 아바타 이미지를 사용하려면 /assets/img/avatar.jpg 파일을 추가하고 아래 주석을 해제하세요
+# avatar: /assets/img/avatar.jpg
 
 # boolean 타입, 포스트의 TOC 전역 스위치
 toc: true
