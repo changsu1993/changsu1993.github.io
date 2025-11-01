@@ -1,0 +1,70 @@
+# 한국어 로케일 파일
+
+# 레이아웃
+layout:
+  post: 포스트
+  category: 카테고리
+  tag: 태그
+
+# 레이블
+label:
+  links: 링크
+  recently_updated: 최근 업데이트
+  trending_tags: 인기 태그
+
+# 포스트
+post:
+  written_by: 작성자
+  posted: 게시일
+  updated: 업데이트
+  timeago:
+    day: 일 전
+    hour: 시간 전
+    minute: 분 전
+    just_now: 방금 전
+  relate_posts: 관련 포스트
+  share: 공유하기
+  button:
+    next: 다음 글
+    previous: 이전 글
+    copy_code:
+      succeed: 복사됨!
+    share_link:
+      title: 링크 복사
+      succeed: 링크가 복사되었습니다!
+
+# 카테고리 페이지
+categories:
+  category_empty: 이 카테고리에는 포스트가 없습니다
+  all: 전체
+
+# 태그 페이지
+tags:
+  tag_empty: 이 태그에는 포스트가 없습니다
+
+# 검색
+search:
+  hint: 검색
+  cancel: 취소
+  no_results: 검색 결과가 없습니다
+
+# 사이드바
+panel:
+  lastmod: 최근 업데이트
+  trending_tags: 인기 태그
+  toc: 목차
+
+# 페이지네이션
+pagination:
+  newer: 최신
+  older: 이전
+
+# 에러 페이지
+not_found:
+  statement: 죄송합니다. 해당 URL을 찾을 수 없습니다
+
+# 기타
+meta: 메타 정보
+read_time:
+  unit: 분
+  prompt: 읽는 시간

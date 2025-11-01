@@ -1,0 +1,17 @@
+# 공유 옵션
+# 아이콘은 <https://fontawesome.com/icons> 참조
+
+platforms:
+  - type: Twitter
+    icon: "fa-brands fa-square-x-twitter"
+    link: "https://twitter.com/intent/tweet?text=TITLE&url=URL"
+
+  - type: Facebook
+    icon: "fab fa-facebook-square"
+    link: "https://www.facebook.com/sharer/sharer.php?title=TITLE&u=URL"
+
+  - type: Telegram
+    icon: "fab fa-telegram"
+    link: "https://t.me/share/url?url=URL&text=TITLE"
+
+  # 사용하지 않는 플랫폼은 주석 처리하거나 삭제하세요

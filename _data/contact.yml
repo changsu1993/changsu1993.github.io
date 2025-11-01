@@ -1,0 +1,17 @@
+# 연락처 옵션
+
+- type: github
+  icon: "fab fa-github"
+
+- type: twitter
+  icon: "fa-brands fa-x-twitter"
+
+- type: email
+  icon: "fas fa-envelope"
+  noblank: true            # 새 탭에서 열지 않음
+
+- type: rss
+  icon: "fas fa-rss"
+  noblank: true
+
+# 사용하지 않는 항목은 주석 처리하거나 삭제하세요

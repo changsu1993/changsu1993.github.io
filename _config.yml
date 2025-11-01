@@ -1,0 +1,168 @@
+# 사이트 설정
+
+# 테마 가져오기
+theme: jekyll-theme-chirpy
+
+# 웹페이지 언어
+lang: ko-KR
+
+# 타임존 설정
+timezone: Asia/Seoul
+
+# jekyll-seo-tag 설정
+title: 개발 블로그                          # 메인 타이틀
+
+tagline: 기술과 개발 이야기를 공유합니다   # 서브 타이틀
+
+description: >-                        # SEO 메타 태그 및 atom feed에 사용됨
+  Jekyll 기반의 개발 블로그입니다.
+  다양한 기술 스택과 개발 경험을 공유합니다.
+
+# 사이트의 프로토콜과 호스트명을 입력하세요
+url: "https://changsu1993.github.io"
+
+github:
+  username: changsu1993             # 본인의 GitHub 사용자명으로 변경
+
+social:
+  # 본인의 이름으로 변경
+  name: ChangSu Park
+  email: your-email@example.com             # 본인의 이메일 주소로 변경
+  links:
+    # 첫 번째 요소는 저작권 소유자의 링크로 사용됨
+    - https://github.com/changsu1993       # 본인의 GitHub 홈페이지로 변경
+
+google_site_verification:               # Google Search Console 인증 문자열 입력
+
+# ↑ --------------------------
+# 위 옵션들은 SEO에 사용됩니다
+
+google_analytics:
+  id: ''                 # Google Analytics ID 입력
+
+# 선호하는 색상 테마 설정
+theme_mode: # [light|dark]
+
+# 이미지용 CDN 엔드포인트
+img_cdn:
+
+# 사이드바의 아바타, 로컬 또는 CORS 리소스 지원
+avatar: /assets/img/avatar.jpg
+
+# boolean 타입, 포스트의 TOC 전역 스위치
+toc: true
+
+comments:
+  active:         # 포스트 댓글 전역 스위치, 예: 'disqus'. 비워두면 비활성화
+  # 활성화 옵션은 다음과 같습니다:
+  disqus:
+    shortname:    # Disqus shortname 입력
+  # utterances 설정
+  utterances:
+    repo:         # <gh-username>/<repo>
+    issue_term:   # < url | pathname | title | ...>
+  # Giscus 옵션
+  giscus:
+    repo:              # <gh-username>/<repo>
+    repo_id:
+    category:
+    category_id:
+    mapping:           # 선택사항, 기본값 'pathname'
+    input_position:    # 선택사항, 기본값 'bottom'
+    lang:              # 선택사항, 기본값은 site.lang 값
+    reactions_enabled: # 선택사항, 기본값 '1'
+
+# 자체 호스팅 정적 자산, 선택사항
+assets:
+  self_host:
+    enabled:      # boolean, 비워두면 false
+    # Jekyll 환경 지정, 비워두면 둘 다
+    env:          # [development|production]
+
+pwa:
+  enabled: true   # PWA 기능 옵션
+
+paginate: 10
+
+# 사이트의 기본 URL
+baseurl: ""
+
+# ------------ 아래 옵션들은 수정하지 않는 것을 권장합니다 ------------------
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:   # Rouge 옵션
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ''          # 빈 문자열은 프로젝트의 모든 파일을 의미
+      type: posts
+    values:
+      layout: post
+      comments: true    # 포스트에서 댓글 활성화
+      toc: true         # 포스트에서 TOC 컬럼 표시
+      # 프로젝트의 다른 모든 포스트 링크 코드를 업데이트할 자신이 없다면
+      # 다음 매개변수를 수정하지 마세요
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ''
+      type: tabs             # site.collections 참조
+    values:
+      layout: page
+      permalink: /:title/
+  - scope:
+      path: assets/img/favicons
+    values:
+      swcache: true
+  - scope:
+      path: assets/js/dist
+    values:
+      swcache: true
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - '*.gem'
+  - '*.gemspec'
+  - tools
+  - README.md
+  - CHANGELOG.md
+  - LICENSE
+  - rollup.config.js
+  - node_modules
+  - package*.json
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

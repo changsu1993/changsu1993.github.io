@@ -1,0 +1,33 @@
+# 숨김 파일
+.*
+!.git*
+!.editorconfig
+!.nojekyll
+!.travis.yml
+!.husky
+
+# Bundler 캐시
+.bundle
+vendor
+Gemfile.lock
+
+# Jekyll 캐시
+.jekyll-cache
+_site
+
+# RubyGems
+*.gem
+
+# npm 의존성
+node_modules
+package-lock.json
+
+# IDE 설정
+.idea
+.vscode
+
+# 기타
+*.swp
+*.bak
+*.tmp
+*~
