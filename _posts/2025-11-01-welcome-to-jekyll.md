@@ -1,6 +1,6 @@
 ---
 title: Jekyll 블로그에 오신 것을 환영합니다
-date: 2024-01-01 12:00:00 +0900
+date: 2025-11-01 12:00:00 +0900
 categories: [블로그, 튜토리얼]
 tags: [jekyll, github-pages, 블로그]
 author: changsu
