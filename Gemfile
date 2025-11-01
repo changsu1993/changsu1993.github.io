@@ -4,7 +4,8 @@ gem "jekyll", "~> 4.3"
 gem "jekyll-theme-chirpy", "~> 7.0", ">= 7.0.1"
 
 group :test do
-  gem "html-proofer", "~> 5.0"
+  # html-proofer는 Ruby 3.1 이상 필요 (로컬 개발시에는 불필요)
+  gem "html-proofer", "~> 5.0" if RUBY_VERSION >= "3.1"
 end
 
 # Windows와 JRuby는 zoneinfo 파일을 포함하지 않으므로

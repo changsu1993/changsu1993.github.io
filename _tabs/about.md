@@ -3,13 +3,14 @@
 icon: fas fa-info-circle
 # 탭 메뉴의 순서 (낮을수록 왼쪽에 위치)
 order: 4
+title: ''
 ---
 
 # 안녕하세요, 박창수입니다 👋
 
 프론트엔드 개발자로서 사용자 경험을 최우선으로 생각하며 개발합니다.
 
-> "어려움은 있어도 안 되는 건 없다고 생각하며 개발"
+> 어려움은 있어도 안 되는 건 없다.
 {: .prompt-info }
 
 ## 🚀 About Me
@@ -31,13 +32,13 @@ order: 4
 
 ## 💼 Tech Stack
 
-| 분야 | 기술 스택 |
-|------|----------|
-| **언어** | JavaScript, TypeScript |
-| **프론트엔드** | React, Next.js, React Native, Expo |
-| **스타일링** | CSS3, Sass, Styled-components, Tailwind CSS |
-| **상태 관리** | Redux, Recoil, Jotai, TanStack Query |
-| **인프라 & 도구** | AWS, Jenkins, Git |
+| 분야              | 기술 스택                                   |
+| ----------------- | ------------------------------------------- |
+| **언어**          | JavaScript, TypeScript                      |
+| **프론트엔드**    | React, Next.js, React Native, Expo          |
+| **스타일링**      | CSS3, Sass, Styled-components, Tailwind CSS |
+| **상태 관리**     | Redux, Recoil, Jotai, TanStack Query        |
+| **인프라 & 도구** | AWS, Jenkins, Git                           |
 
 ## 🎯 Focus Areas
 
@@ -54,9 +55,9 @@ order: 4
 
 - **GitHub**: [@changsu1993](https://github.com/changsu1993)
 - **Blog**: [changsu1993.github.io](https://changsu1993.github.io)
-- **Email**: csdp0106@gmail.com
+- **Email**: [csdp0106@gmail.com](mailto:csdp0106@gmail.com)
 
----
+<br>
 
 > 함께 성장하고 배우는 개발 문화를 만들어가고 싶습니다.
 > 이 블로그가 누군가에게 도움이 되었으면 좋겠습니다.
