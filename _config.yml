@@ -38,7 +38,7 @@ google_site_verification:               # Google Search Console 인증 문자열
 # 위 옵션들은 SEO에 사용됩니다
 
 google_analytics:
-  id: ''                 # Google Analytics ID 입력
+  id: 'G-QEV4H647QF'                 # Google Analytics ID 입력
 
 # 선호하는 색상 테마 설정
 theme_mode: # [light|dark]
