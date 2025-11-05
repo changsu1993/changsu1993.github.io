@@ -118,9 +118,6 @@ HTML에서 모든 콘텐츠는 **태그(Tag)**로 감싸져 표현됩니다.
 - **내용(Content)**: `이것은 단락(paragraph)입니다.`
 - **닫는 태그(Closing Tag)**: `</p>`
 
-![태그 구조](/assets/img/posts/html-tag-structure.png)
-_태그의 기본 구조_
-
 ### 3.2 자체 닫힘 태그 (Self-Closing Tags)
 
 일부 태그는 내용이 없어서 닫는 태그가 필요 없습니다.
