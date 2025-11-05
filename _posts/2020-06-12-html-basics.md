@@ -59,14 +59,9 @@ tags: [html, browser, tag, element, attribute, web-basics]
 
 ### 2.2 브라우저의 동작 과정
 
-```mermaid
-graph LR
-    A[HTML 파일] --> B[브라우저]
-    B --> C[파싱Parsing]
-    C --> D[DOM 트리 생성]
-    D --> E[렌더링]
-    E --> F[화면에 표시]
-```
+브라우저가 HTML을 화면에 표시하는 과정:
+
+**HTML 파일 → 브라우저 → 파싱 → DOM 트리 생성 → 렌더링 → 화면에 표시**
 
 1. **HTML 파일 요청**: 사용자가 URL 입력
 2. **파싱(Parsing)**: HTML 코드를 분석
