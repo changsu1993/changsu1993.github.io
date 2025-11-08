@@ -1128,12 +1128,12 @@ position: sticky;
 
 ```css
 /* 양수: 해당 방향에서 멀어짐 */
-top: 20px;     /* 위에서 20px 떨어짐 */
-left: 30px;    /* 왼쪽에서 30px 떨어짐 */
+top: 20px;
+left: 30px;
 
 /* 음수: 해당 방향으로 이동 */
-top: -20px;    /* 위로 20px 이동 */
-left: -30px;   /* 왼쪽으로 30px 이동 */
+top: -20px;
+left: -30px;
 ```
 
 ### Z-index 규칙
