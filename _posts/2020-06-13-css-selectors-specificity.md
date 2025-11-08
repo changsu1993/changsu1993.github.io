@@ -328,12 +328,14 @@ p::first-line {
 
 ```css
 /* 예제 1: 태그 vs 클래스 */
+/* 1점 */
 p {
-  font-size: 30px;  /* 1점 */
+  font-size: 30px;
 }
 
+/* 10점 - 적용됨 */
 .p-tag {
-  font-size: 15px;  /* 10점 ✅ 적용됨 */
+  font-size: 15px;
 }
 ```
 
@@ -347,12 +349,14 @@ p {
 
 ```css
 /* 예제 2: 결합 선택자 */
+/* 1 + 10 = 11점 - 적용됨 */
 p.p-tag {
-  font-size: 100px;  /* 1 + 10 = 11점 ✅ 적용됨 */
+  font-size: 100px;
 }
 
+/* 10점 */
 .p-tag {
-  font-size: 15px;  /* 10점 */
+  font-size: 15px;
 }
 ```
 
@@ -362,16 +366,19 @@ p.p-tag {
 
 ```css
 /* 예제 3: 복잡한 선택자 */
+/* 100 + 10 + 1 + 1 = 112점 */
 #header .nav ul li {
-  color: blue;  /* 100 + 10 + 1 + 1 = 112점 */
+  color: blue;
 }
 
+/* 10 + 1 = 11점 */
 .nav li {
-  color: red;   /* 10 + 1 = 11점 */
+  color: red;
 }
 
+/* 1점 */
 li {
-  color: green; /* 1점 */
+  color: green;
 }
 ```
 
@@ -402,20 +409,24 @@ li {
 ```css
 /* 문제: 다음 중 어떤 스타일이 적용될까? */
 
+/* 1 + 1 = 2점 */
 div p {
-  color: red;        /* 1 + 1 = 2점 */
+  color: red;
 }
 
+/* 10점 */
 .text {
-  color: blue;       /* 10점 ✅ */
+  color: blue;
 }
 
+/* 100 + 10 = 110점 */
 #main .text {
-  color: green;      /* 100 + 10 = 110점 ✅✅ */
+  color: green;
 }
 
+/* 1 + 100 + 10 = 111점 - 최종 적용 */
 div#main .text {
-  color: purple;     /* 1 + 100 + 10 = 111점 ✅✅✅ 최종 적용 */
+  color: purple;
 }
 ```
 
@@ -430,12 +441,14 @@ div#main .text {
 ### 5.1 !important
 
 ```css
+/* 모든 명시도를 무시하고 최우선 적용 */
 p {
-  color: red !important;  /* 모든 명시도를 무시하고 최우선 적용 */
+  color: red !important;
 }
 
+/* 100점이지만 !important보다 낮음 */
 #unique {
-  color: blue;  /* 100점이지만 !important보다 낮음 */
+  color: blue;
 }
 ```
 
@@ -473,8 +486,9 @@ p {
 
 ```css
 /* 인라인 스타일을 덮어쓰려면 !important 필요 */
+/* 이제 빨간색으로 표시됨 */
 p {
-  color: red !important;  /* 이제 빨간색으로 표시됨 */
+  color: red !important;
 }
 ```
 
@@ -484,13 +498,15 @@ p {
 
 ```css
 /* ❌ 나쁜 예: 과도하게 구체적 */
+/* 5점 - 유지보수 어려움 */
 body div.container div.content div.article p.text {
-  color: red;  /* 5점 - 유지보수 어려움 */
+  color: red;
 }
 
 /* ✅ 좋은 예: 간결하고 명확 */
+/* 10점 - 간단하고 재사용 가능 */
 .article-text {
-  color: red;  /* 10점 - 간단하고 재사용 가능 */
+  color: red;
 }
 ```
 
@@ -549,8 +565,9 @@ body div.container div.content div.article p.text {
 }
 
 /* ✅ 좋은 예 */
+/* 명시도: 20점 */
 .button.button-override {
-  color: blue;  /* 명시도: 20점 */
+  color: blue;
 }
 ```
 
