@@ -146,7 +146,7 @@ const MyComponent = () => {
 
 #### 2. Styled-Components 도입
 
-```javascript
+```jsx
 // 1차: 별도 SASS 파일
 import './Footer.scss';
 
@@ -447,7 +447,7 @@ Back-End가 제공하지 못한 데이터를 Mock Data로 대체하여 독립적
 - 컨벤션을 정했지만 **네스팅을 고려하지 않아** 코드 통합 시 어려움
 - 전체적으로 코드가 깔끔하지 못했음
 
-```javascript
+```jsx
 // 문제가 있었던 구조
 <div className="container">
   <div className="wrapper">
