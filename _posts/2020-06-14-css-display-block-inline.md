@@ -12,8 +12,9 @@ tags: [css, display, block, inline, inline-block, layout, float]
 **display**는 요소가 화면에 어떻게 표시될지 결정하는 CSS 속성입니다.
 
 ```css
-선택자 {
-  display: block | inline | inline-block | none;
+.element {
+  /* 가능한 값: block, inline, inline-block, none */
+  display: block;
 }
 ```
 
@@ -66,17 +67,22 @@ tags: [css, display, block, inline, inline-block, layout, float]
 ```
 
 **결과:**
-```
-┌─────────────────────────────────┐
-│ DIV 블록 요소                    │  ← 전체 너비 차지
-└─────────────────────────────────┘
-┌─────────────────────────────────┐
-│ P 블록 요소                      │  ← 새로운 줄에서 시작
-└─────────────────────────────────┘
-┌─────────────────────────────────┐
-│ H1 블록 요소                     │  ← 역시 새로운 줄
-└─────────────────────────────────┘
-```
+
+<div style="max-width: 600px; margin: 20px auto;">
+  <div style="background: #fff3cd; border: 2px solid #f39c12; padding: 15px; margin-bottom: 10px; position: relative;">
+    <span style="font-weight: bold; color: #f39c12;">DIV 블록 요소</span>
+    <span style="position: absolute; right: -100px; top: 50%; transform: translateY(-50%); color: #f39c12; font-size: 13px; white-space: nowrap;">← 전체 너비 차지</span>
+  </div>
+  <div style="background: #e3f2fd; border: 2px solid #3498db; padding: 15px; margin-bottom: 10px; position: relative;">
+    <span style="font-weight: bold; color: #3498db;">P 블록 요소</span>
+    <span style="position: absolute; right: -121px; top: 50%; transform: translateY(-50%); color: #3498db; font-size: 13px; white-space: nowrap;">← 새로운 줄에서 시작</span>
+  </div>
+  <div style="background: #e8f5e9; border: 2px solid #2ecc71; padding: 15px; position: relative;">
+    <span style="font-weight: bold; color: #2ecc71;">H1 블록 요소</span>
+    <span style="position: absolute; right: -99px; top: 50%; transform: translateY(-50%); color: #2ecc71; font-size: 13px; white-space: nowrap;">← 역시 새로운 줄</span>
+  </div>
+  <div style="text-align: center; margin-top: 15px; font-size: 13px; color: #666;">각 블록 요소는 새로운 줄에서 시작하며 전체 너비를 차지합니다</div>
+</div>
 
 ### 2.4 Block 요소 CSS 제어
 
