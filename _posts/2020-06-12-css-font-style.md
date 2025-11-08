@@ -351,20 +351,22 @@ p {
 ### 주요 속성
 
 ```css
-/* 폰트 패밀리 */
-font-family: 'Noto Sans KR', sans-serif;
+.text-style {
+  /* 폰트 패밀리 */
+  font-family: 'Noto Sans KR', sans-serif;
 
-/* 크기 */
-font-size: 16px;
+  /* 크기 */
+  font-size: 16px;
 
-/* 두께 */
-font-weight: 700;
+  /* 두께 */
+  font-weight: 700;
 
-/* 스타일 */
-font-style: italic;
+  /* 스타일 */
+  font-style: italic;
 
-/* 색상 */
-color: #333;
+  /* 색상 */
+  color: #333;
+}
 ```
 
 ### 권장 단위
