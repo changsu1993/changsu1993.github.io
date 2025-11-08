@@ -82,31 +82,39 @@ Width를 지정하면 요소가 지정한 너비만 차지합니다.
 ### 3.1 4가지 값 패턴
 
 ```css
-/* 1개 값: 모든 방향 */
-margin: 20px;  /* 상하좌우 모두 20px */
+.element {
+  /* 1개 값: 모든 방향 */
+  margin: 20px;
 
-/* 2개 값: 상하 / 좌우 */
-margin: 20px 30px;  /* 상하 20px, 좌우 30px */
+  /* 2개 값: 상하 / 좌우 */
+  margin: 20px 30px;
 
-/* 3개 값: 상 / 좌우 / 하 */
-margin: 10px 20px 30px;  /* 상 10px, 좌우 20px, 하 30px */
+  /* 3개 값: 상 / 좌우 / 하 */
+  margin: 10px 20px 30px;
 
-/* 4개 값: 상 / 우 / 하 / 좌 (시계방향) */
-margin: 10px 20px 30px 40px;
+  /* 4개 값: 상 / 우 / 하 / 좌 (시계방향) */
+  margin: 10px 20px 30px 40px;
+}
 ```
 
 ### 3.2 margin: auto 패턴
 
 ```css
-/* 가로 중앙 정렬 (많이 사용) */
-margin: 0 auto;  /* 상하 0, 좌우 auto */
+.centered {
+  /* 가로 중앙 정렬 (많이 사용) */
+  margin: 0 auto;
+}
 
-/* 또는 */
-margin-left: auto;
-margin-right: auto;
+.centered-alt {
+  /* 또는 개별 속성 사용 */
+  margin-left: auto;
+  margin-right: auto;
+}
 
-/* 세로 중앙은 작동 안 함 */
-margin: auto 0;  /* ❌ 세로 중앙 안 됨 */
+.not-work {
+  /* ❌ 세로 중앙은 작동 안 함 */
+  margin: auto 0;
+}
 ```
 
 > **중요**: margin: auto는 **가로 방향**에만 작동합니다. 세로 방향 중앙 정렬은 다른 방법을 사용해야 합니다.
@@ -637,15 +645,30 @@ footer {
 ### margin 값 패턴
 
 ```css
-margin: 20px;           /* 모든 방향 */
-margin: 20px 30px;      /* 상하 / 좌우 */
-margin: 10px 20px 30px; /* 상 / 좌우 / 하 */
-margin: 10px 20px 30px 40px; /* 상우하좌 (시계방향) */
+.patterns {
+  /* 모든 방향 */
+  margin: 20px;
 
-/* auto는 좌우에만 */
-margin: 0 auto;         /* 가로 중앙 */
-margin-left: auto;      /* 오른쪽 정렬 */
-margin-right: auto;     /* 왼쪽 정렬 */
+  /* 상하 / 좌우 */
+  margin: 20px 30px;
+
+  /* 상 / 좌우 / 하 */
+  margin: 10px 20px 30px;
+
+  /* 상우하좌 (시계방향) */
+  margin: 10px 20px 30px 40px;
+}
+
+.auto-patterns {
+  /* 가로 중앙 */
+  margin: 0 auto;
+
+  /* 오른쪽 정렬 */
+  margin-left: auto;
+
+  /* 왼쪽 정렬 */
+  margin-right: auto;
+}
 ```
 
 ### 대안 기법

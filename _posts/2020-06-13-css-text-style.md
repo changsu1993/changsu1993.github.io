@@ -338,17 +338,25 @@ blockquote {
 ### 주요 속성
 
 ```css
-/* 정렬 */
-text-align: left | center | right | justify;
+.text-style {
+  /* 정렬 */
+  text-align: center;
 
-/* 들여쓰기 */
-text-indent: 2em;  /* 양수: 들여쓰기, 음수: 내어쓰기 */
+  /* 들여쓰기 (양수: 들여쓰기, 음수: 내어쓰기) */
+  text-indent: 2em;
 
-/* 추가 속성 */
-line-height: 1.6;         /* 줄 간격 */
-letter-spacing: 1px;      /* 글자 간격 */
-text-decoration: none;    /* 텍스트 꾸미기 */
-text-transform: uppercase; /* 대소문자 변환 */
+  /* 줄 간격 */
+  line-height: 1.6;
+
+  /* 글자 간격 */
+  letter-spacing: 1px;
+
+  /* 텍스트 꾸미기 */
+  text-decoration: none;
+
+  /* 대소문자 변환 */
+  text-transform: uppercase;
+}
 ```
 
 ### Best Practices

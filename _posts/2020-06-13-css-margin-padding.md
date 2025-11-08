@@ -74,24 +74,19 @@ tags: [css, margin, padding, box-model, spacing, layout]
 ### Margin 단축 표기법
 
 ```css
-/* 한 값 */
-margin: 20px;
-/* top=20px, right=20px, bottom=20px, left=20px */
+.element {
+  /* 한 값: 모든 방향 동일 */
+  margin: 20px;
 
-/* 두 값 */
-margin: 20px 40px;
-/* top=20px, right=40px, bottom=20px, left=40px */
-/* (상하) (좌우) */
+  /* 두 값: (상하) (좌우) */
+  margin: 20px 40px;
 
-/* 세 값 */
-margin: 20px 40px 30px;
-/* top=20px, right=40px, bottom=30px, left=40px */
-/* (상) (좌우) (하) */
+  /* 세 값: (상) (좌우) (하) */
+  margin: 20px 40px 30px;
 
-/* 네 값 */
-margin: 20px 40px 30px 10px;
-/* top=20px, right=40px, bottom=30px, left=10px */
-/* (상) (우) (하) (좌) - 시계방향 */
+  /* 네 값: (상) (우) (하) (좌) - 시계방향 */
+  margin: 20px 40px 30px 10px;
+}
 ```
 
 > **Tip**: 시계방향(12시부터)으로 위(top) → 오른쪽(right) → 아래(bottom) → 왼쪽(left)
@@ -158,19 +153,21 @@ margin: 20px 40px 30px 10px;
 ### Padding 단축 표기법
 
 ```css
-/* Margin과 동일한 규칙 */
+.element {
+  /* Margin과 동일한 규칙 */
 
-/* 한 값 */
-padding: 20px;
+  /* 한 값 */
+  padding: 20px;
 
-/* 두 값 */
-padding: 20px 40px;  /* (상하) (좌우) */
+  /* 두 값: (상하) (좌우) */
+  padding: 20px 40px;
 
-/* 세 값 */
-padding: 20px 40px 30px;  /* (상) (좌우) (하) */
+  /* 세 값: (상) (좌우) (하) */
+  padding: 20px 40px 30px;
 
-/* 네 값 */
-padding: 20px 40px 30px 10px;  /* (상) (우) (하) (좌) */
+  /* 네 값: (상) (우) (하) (좌) */
+  padding: 20px 40px 30px 10px;
+}
 ```
 
 ### 실전 예제
