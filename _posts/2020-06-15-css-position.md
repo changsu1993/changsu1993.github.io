@@ -17,11 +17,16 @@ CSS `position` 속성은 요소를 원하는 위치에 배치할 수 있게 해�
 
 ```css
 .element {
-  position: static;    /* 기본값 */
-  position: relative;  /* 상대 위치 */
-  position: absolute;  /* 절대 위치 */
-  position: fixed;     /* 고정 위치 */
-  position: sticky;    /* 스티키 위치 */
+  /* 기본값 */
+  position: static;
+  /* 상대 위치 */
+  position: relative;
+  /* 절대 위치 */
+  position: absolute;
+  /* 고정 위치 */
+  position: fixed;
+  /* 스티키 위치 */
+  position: sticky;
 }
 ```
 
@@ -40,8 +45,9 @@ CSS `position` 속성은 요소를 원하는 위치에 배치할 수 있게 해�
 모든 요소의 기본 position 값입니다.
 
 ```css
+/* 기본값, 명시할 필요 없음 */
 .static {
-  position: static;  /* 기본값, 명시할 필요 없음 */
+  position: static;
 }
 ```
 
@@ -74,8 +80,10 @@ CSS `position` 속성은 요소를 원하는 위치에 배치할 수 있게 해�
 ```css
 .relative {
   position: relative;
-  top: 20px;    /* 위에서 20px 아래로 */
-  left: 30px;   /* 왼쪽에서 30px 오른쪽으로 */
+  /* 위에서 20px 아래로 */
+  top: 20px;
+  /* 왼쪽에서 30px 오른쪽으로 */
+  left: 30px;
 }
 ```
 
@@ -106,8 +114,10 @@ CSS `position` 속성은 요소를 원하는 위치에 배치할 수 있게 해�
 
 .relative {
   position: relative;
-  top: -20px;    /* 음수: 위로 이동 */
-  left: 30px;    /* 양수: 오른쪽으로 이동 */
+  /* 음수: 위로 이동 */
+  top: -20px;
+  /* 양수: 오른쪽으로 이동 */
+  left: 30px;
   background-color: lightcoral;
 }
 ```
@@ -123,18 +133,26 @@ CSS `position` 속성은 요소를 원하는 위치에 배치할 수 있게 해�
 /* 음수와 양수의 방향 */
 .element {
   position: relative;
+}
 
-  top: 10px;     /* 아래로 이동 */
-  top: -10px;    /* 위로 이동 */
+/* 아래로 이동 */
+.down {
+  top: 10px;
+}
 
-  left: 10px;    /* 오른쪽으로 이동 */
-  left: -10px;   /* 왼쪽으로 이동 */
+/* 위로 이동 */
+.up {
+  top: -10px;
+}
 
-  right: 10px;   /* 왼쪽으로 이동 */
-  right: -10px;  /* 오른쪽으로 이동 */
+/* 오른쪽으로 이동 */
+.right {
+  left: 10px;
+}
 
-  bottom: 10px;  /* 위로 이동 */
-  bottom: -10px; /* 아래로 이동 */
+/* 왼쪽으로 이동 */
+.left {
+  left: -10px;
 }
 ```
 
@@ -148,8 +166,9 @@ CSS `position` 속성은 요소를 원하는 위치에 배치할 수 있게 해�
 가장 가까운 **positioned 부모**(position이 static이 아닌 부모)를 기준으로 절대 위치에 배치됩니다.
 
 ```css
+/* 자식의 기준점 */
 .parent {
-  position: relative;  /* 자식의 기준점 */
+  position: relative;
 }
 
 .child {
@@ -1128,12 +1147,16 @@ position: sticky;
 
 ```css
 /* 양수: 해당 방향에서 멀어짐 */
-top: 20px;
-left: 30px;
+.positive {
+  top: 20px;
+  left: 30px;
+}
 
 /* 음수: 해당 방향으로 이동 */
-top: -20px;
-left: -30px;
+.negative {
+  top: -20px;
+  left: -30px;
+}
 ```
 
 ### Z-index 규칙
