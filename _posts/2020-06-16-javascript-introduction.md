@@ -15,22 +15,46 @@ JavaScript는 웹 페이지를 동적이고 상호작용 가능하게 만드는 
 
 ### 웹의 3요소
 
-```
-┌──────────────────────────────┐
-│         HTML                 │  구조 (Structure)
-│  웹 페이지의 뼈대             │
-└──────────────────────────────┘
+<div style="max-width: 600px; margin: 30px auto; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+  <!-- HTML -->
+  <div style="margin-bottom: 20px; padding: 20px; background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); border-radius: 8px; box-shadow: 0 4px 6px rgba(231, 76, 60, 0.3);">
+    <div style="color: white; font-size: 22px; font-weight: bold; margin-bottom: 8px; text-align: center;">
+      HTML
+    </div>
+    <div style="color: rgba(255, 255, 255, 0.9); font-size: 14px; text-align: center; margin-bottom: 5px;">
+      구조 (Structure)
+    </div>
+    <div style="color: rgba(255, 255, 255, 0.85); font-size: 13px; text-align: center;">
+      웹 페이지의 뼈대
+    </div>
+  </div>
 
-┌──────────────────────────────┐
-│         CSS                  │  스타일 (Presentation)
-│  웹 페이지의 디자인           │
-└──────────────────────────────┘
+  <!-- CSS -->
+  <div style="margin-bottom: 20px; padding: 20px; background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); border-radius: 8px; box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);">
+    <div style="color: white; font-size: 22px; font-weight: bold; margin-bottom: 8px; text-align: center;">
+      CSS
+    </div>
+    <div style="color: rgba(255, 255, 255, 0.9); font-size: 14px; text-align: center; margin-bottom: 5px;">
+      스타일 (Presentation)
+    </div>
+    <div style="color: rgba(255, 255, 255, 0.85); font-size: 13px; text-align: center;">
+      웹 페이지의 디자인
+    </div>
+  </div>
 
-┌──────────────────────────────┐
-│      JavaScript              │  동작 (Behavior)
-│  웹 페이지의 상호작용         │
-└──────────────────────────────┘
-```
+  <!-- JavaScript -->
+  <div style="padding: 20px; background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); border-radius: 8px; box-shadow: 0 4px 6px rgba(243, 156, 18, 0.3);">
+    <div style="color: white; font-size: 22px; font-weight: bold; margin-bottom: 8px; text-align: center;">
+      JavaScript
+    </div>
+    <div style="color: rgba(255, 255, 255, 0.9); font-size: 14px; text-align: center; margin-bottom: 5px;">
+      동작 (Behavior)
+    </div>
+    <div style="color: rgba(255, 255, 255, 0.85); font-size: 13px; text-align: center;">
+      웹 페이지의 상호작용
+    </div>
+  </div>
+</div>
 
 ### JavaScript의 역할
 
@@ -158,27 +182,53 @@ console.log('외부 파일에서 실행됩니다!');
 
 **비교:**
 
-```
-┌─────────────────────────────────────┐
-│  <script src="...">                 │
-│  ────────[다운로드]────[실행]──────  │
-│  HTML 파싱 중단                      │
-└─────────────────────────────────────┘
+<div style="max-width: 700px; margin: 30px auto; padding: 25px; background: #f8f9fa; border-radius: 10px;">
+  <!-- 일반 script -->
+  <div style="margin-bottom: 30px;">
+    <div style="font-weight: bold; margin-bottom: 10px; color: #333; font-size: 16px;">
+      &lt;script src="..."&gt;
+    </div>
+    <div style="position: relative; height: 60px; background: white; border-radius: 6px; padding: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+      <div style="position: absolute; top: 8px; left: 5px; width: 35%; height: 20px; background: #3498db; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px; font-weight: bold;">HTML 파싱</div>
+      <div style="position: absolute; top: 8px; left: 36%; width: 25%; height: 20px; background: #e74c3c; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px; font-weight: bold;">⏸ 중단</div>
+      <div style="position: absolute; top: 8px; left: 62%; width: 18%; height: 20px; background: #f39c12; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 11px; font-weight: bold;">다운로드</div>
+      <div style="position: absolute; top: 8px; left: 81%; width: 18%; height: 20px; background: #9b59b6; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px; font-weight: bold;">실행</div>
+      <div style="position: absolute; top: 33px; left: 5px; right: 5px; font-size: 13px; color: #666; text-align: center;">
+        HTML 파싱이 중단되고 스크립트 다운로드 및 실행
+      </div>
+    </div>
+  </div>
 
-┌─────────────────────────────────────┐
-│  <script src="..." defer>           │
-│  [다운로드]                          │
-│  ────────HTML 파싱─────[실행]──────  │
-│  파싱 완료 후 실행                   │
-└─────────────────────────────────────┘
+  <!-- defer -->
+  <div style="margin-bottom: 30px;">
+    <div style="font-weight: bold; margin-bottom: 10px; color: #333; font-size: 16px;">
+      &lt;script src="..." defer&gt;
+    </div>
+    <div style="position: relative; height: 60px; background: white; border-radius: 6px; padding: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+      <div style="position: absolute; top: 8px; left: 5px; width: 75%; height: 20px; background: #3498db; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px; font-weight: bold;">HTML 파싱 계속</div>
+      <div style="position: absolute; top: 8px; left: 5px; width: 25%; height: 20px; background: #f39c12; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 11px; font-weight: bold; opacity: 0.9;">다운로드</div>
+      <div style="position: absolute; top: 8px; left: 76%; width: 23%; height: 20px; background: #2ecc71; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px; font-weight: bold;">✓ 실행</div>
+      <div style="position: absolute; top: 33px; left: 5px; right: 5px; font-size: 13px; color: #666; text-align: center;">
+        백그라운드 다운로드, HTML 파싱 완료 후 실행
+      </div>
+    </div>
+  </div>
 
-┌─────────────────────────────────────┐
-│  <script src="..." async>           │
-│  [다운로드][실행]                    │
-│  ─────HTML 파싱──────────────────   │
-│  다운로드 완료 즉시 실행             │
-└─────────────────────────────────────┘
-```
+  <!-- async -->
+  <div>
+    <div style="font-weight: bold; margin-bottom: 10px; color: #333; font-size: 16px;">
+      &lt;script src="..." async&gt;
+    </div>
+    <div style="position: relative; height: 60px; background: white; border-radius: 6px; padding: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+      <div style="position: absolute; top: 8px; left: 5px; width: 98%; height: 20px; background: #3498db; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px; font-weight: bold;">HTML 파싱 계속</div>
+      <div style="position: absolute; top: 8px; left: 5px; width: 20%; height: 20px; background: #f39c12; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 11px; font-weight: bold; opacity: 0.9;">다운로드</div>
+      <div style="position: absolute; top: 8px; left: 20.5%; width: 15%; height: 20px; background: #9b59b6; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px; font-weight: bold;">⚡실행</div>
+      <div style="position: absolute; top: 33px; left: 5px; right: 5px; font-size: 13px; color: #666; text-align: center;">
+        다운로드 완료 즉시 실행 (순서 보장 안 됨)
+      </div>
+    </div>
+  </div>
+</div>
 
 ## 3. 첫 번째 JavaScript 코드
 
@@ -463,10 +513,16 @@ var, void, while, with, yield
 **사용 불가:**
 
 ```javascript
-// ❌ 예약어를 변수명으로 사용 불가
-let if = 5;
-let class = "JavaScript";
-let return = true;
+// ❌ 예약어를 변수명으로 사용할 수 없습니다
+
+// let if = 5;           (예약어 사용 불가)
+// let class = "...";    (예약어 사용 불가)
+// let return = true;    (예약어 사용 불가)
+
+// ✅ 대신 이렇게 사용하세요
+let condition = 5;
+let className = "JavaScript";
+let returnValue = true;
 ```
 
 ## 8. 실전 예제
