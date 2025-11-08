@@ -90,7 +90,7 @@ SPA:
 
 **정의**: 특정 기능을 수행하는 도구나 함수들의 집합
 
-```javascript
+```jsx
 // 라이브러리 예시: 개발자가 제어
 import React from 'react';
 import axios from 'axios';
@@ -118,7 +118,7 @@ const sorted = lodash.sortBy(data);
 
 **정의**: 애플리케이션의 구조(뼈대)를 제공하는 완성된 틀
 
-```javascript
+```jsx
 // 프레임워크 예시: 프레임워크가 제어
 // Angular 라우팅
 @Component({
@@ -493,7 +493,7 @@ const element = (
 
 **DOM 조작의 문제:**
 
-```javascript
+```jsx
 // DOM 직접 조작 (느림)
 document.getElementById('counter').textContent = count;
 document.getElementById('list').innerHTML = '<li>Item</li>';
@@ -694,7 +694,7 @@ UI 라이브러리:
 
 ### jQuery → React
 
-```javascript
+```jsx
 // jQuery (명령형)
 $('#button').click(function() {
   const count = parseInt($('#counter').text()) + 1;
@@ -715,7 +715,7 @@ function Counter() {
 
 ### Vanilla JS → React
 
-```javascript
+```jsx
 // Vanilla JS
 const button = document.createElement('button');
 button.textContent = 'Click me';

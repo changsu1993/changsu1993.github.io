@@ -197,7 +197,7 @@ WeCode 부트캠프에서 진행한 첫 팀 프로젝트의 경험과 배운 점
 
 조건문이 복잡해지는 것을 방지하기 위해 정규식 검증 로직을 별도 함수로 분리했습니다.
 
-```javascript
+```jsx
 // 정규식 함수 정의
 const validateEmail = (email) => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -228,7 +228,7 @@ if (!validatePassword(password)) {
 
 Newsletter와 Search 페이지에서 동일한 Modal을 재사용할 수 있도록 설계했습니다.
 
-```javascript
+```jsx
 // Nav.js (팀원이 구현한 Navigation Bar)
 import Newsletter from './Newsletter';
 import Search from './Search';

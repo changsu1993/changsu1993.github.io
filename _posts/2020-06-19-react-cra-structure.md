@@ -259,7 +259,7 @@ HTML 템플릿 파일로, React 앱이 마운트될 진입점을 제공합니다
 
 **React 애플리케이션의 진입점(Entry Point)**입니다.
 
-```javascript
+```jsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -281,7 +281,7 @@ reportWebVitals();
 **주요 구성 요소**:
 
 1. **ReactDOM.createRoot()**
-   ```javascript
+   ```jsx
    // React 18+
    const root = ReactDOM.createRoot(document.getElementById('root'));
    root.render(<App />);
@@ -291,7 +291,7 @@ reportWebVitals();
    ```
 
 2. **render() 메서드의 두 매개변수**
-   ```javascript
+   ```jsx
    root.render(
      <App />,                          // (A) 무엇을 렌더링할지
      // document.getElementById('root') // (B) 어디에 렌더링할지 (createRoot에서 지정)
@@ -299,7 +299,7 @@ reportWebVitals();
    ```
 
 3. **StrictMode**
-   ```javascript
+   ```jsx
    <React.StrictMode>
      <App />
    </React.StrictMode>
@@ -309,7 +309,7 @@ reportWebVitals();
    - 프로덕션 빌드에서는 영향 없음
 
 **실제 사용 예시**:
-```javascript
+```jsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -328,7 +328,7 @@ root.render(<Login />);  // Login 컴포넌트를 렌더링
 **실제 화면에 표시될 UI 코드를 작성하는 메인 컴포넌트**입니다.
 
 **함수형 컴포넌트 (권장)**:
-```javascript
+```jsx
 import React from 'react';
 import './App.css';
 
@@ -345,7 +345,7 @@ export default App;
 ```
 
 **클래스형 컴포넌트**:
-```javascript
+```jsx
 import React, { Component } from 'react';
 import './App.css';
 
@@ -444,7 +444,7 @@ src/
 
 ### 파일 명명 규칙
 
-```javascript
+```jsx
 // 컴포넌트: PascalCase
 Button.js
 UserProfile.js
@@ -520,7 +520,7 @@ REACT_APP_ENVIRONMENT=development
 
 ### 코드에서 사용
 
-```javascript
+```jsx
 const apiUrl = process.env.REACT_APP_API_URL;
 const apiKey = process.env.REACT_APP_API_KEY;
 
@@ -551,7 +551,7 @@ console.log(`API URL: ${apiUrl}`);
 
 ### 1. 절대 경로 import
 
-```javascript
+```jsx
 // jsconfig.json 또는 tsconfig.json 설정
 {
   "compilerOptions": {
@@ -560,7 +560,7 @@ console.log(`API URL: ${apiUrl}`);
 }
 ```
 
-```javascript
+```jsx
 // Before: 상대 경로
 import Button from '../../../components/Button/Button';
 

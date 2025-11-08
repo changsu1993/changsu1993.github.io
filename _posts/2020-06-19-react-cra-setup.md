@@ -321,7 +321,7 @@ REACT_APP_API_URL=https://api.example.com
 REACT_APP_API_KEY=your-api-key
 ```
 
-```javascript
+```jsx
 // 코드에서 사용
 const apiUrl = process.env.REACT_APP_API_URL;
 ```
@@ -345,7 +345,7 @@ npx source-map-explorer 'build/static/js/*.js'
 
 ### Code Splitting
 
-```javascript
+```jsx
 // 동적 import를 사용한 코드 분할
 import React, { lazy, Suspense } from 'react';
 
