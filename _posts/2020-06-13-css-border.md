@@ -590,17 +590,23 @@ button {
 ### 기본 문법
 
 ```css
-/* 단축 속성 */
-border: 2px solid #333;
+.box {
+  /* 단축 속성 */
+  border: 2px solid #333;
+}
 
-/* 개별 속성 */
-border-width: 2px;
-border-style: solid;
-border-color: #333;
+.box {
+  /* 개별 속성 */
+  border-width: 2px;
+  border-style: solid;
+  border-color: #333;
+}
 
-/* 방향별 */
-border-top: 1px solid #ddd;
-border-bottom: 1px solid #ddd;
+.section {
+  /* 방향별 */
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
 ```
 
 ### 주요 스타일
@@ -615,32 +621,47 @@ border-bottom: 1px solid #ddd;
 ### border-radius
 
 ```css
-/* 둥근 모서리 */
-border-radius: 8px;
+.rounded {
+  /* 둥근 모서리 */
+  border-radius: 8px;
+}
 
-/* 원 */
-border-radius: 50%;
+.circle {
+  /* 원 */
+  border-radius: 50%;
+}
 
-/* 캡슐 */
-border-radius: 25px;
+.pill {
+  /* 캡슐 */
+  border-radius: 25px;
+}
 ```
 
 ### 방향 순서
 
-```
-┌──────────────┐
-│  top         │
-├──────────────┤
-│l           r │
-│e           i │
-│f           g │
-│t           h │
-│             t│
-├──────────────┤
-│  bottom      │
-└──────────────┘
+<div style="max-width: 300px; margin: 20px auto; position: relative; border: 4px solid #333; padding: 60px 80px; background: #f8f9fa;">
+  <div style="position: absolute; top: 10px; left: 50%; transform: translateX(-50%); font-weight: bold; color: #e74c3c; font-size: 18px;">
+    ① top
+  </div>
+  <div style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-weight: bold; color: #3498db; font-size: 18px;">
+    ② right
+  </div>
+  <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); font-weight: bold; color: #2ecc71; font-size: 18px;">
+    ③ bottom
+  </div>
+  <div style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-weight: bold; color: #f39c12; font-size: 18px;">
+    ④ left
+  </div>
+  <div style="text-align: center; color: #666; font-size: 14px;">
+    시계방향 ↻
+  </div>
+</div>
 
-border: top right bottom left; (시계방향)
+```css
+.box {
+  /* border: top right bottom left; (시계방향) */
+  border: 1px solid red;
+}
 ```
 
 ## 참고 자료
