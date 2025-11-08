@@ -11,20 +11,18 @@ tags: [css, margin, padding, box-model, spacing, layout]
 
 모든 HTML 요소는 박스 모델(Box Model)을 따릅니다.
 
-```
-┌─────────────────────────────────────┐
-│           Margin (외부 여백)          │
-│  ┌─────────────────────────────────┐ │
-│  │         Border (테두리)          │ │
-│  │  ┌─────────────────────────────┐│ │
-│  │  │     Padding (내부 여백)      ││ │
-│  │  │  ┌─────────────────────────┐││ │
-│  │  │  │    Content (내용)       │││ │
-│  │  │  └─────────────────────────┘││ │
-│  │  └─────────────────────────────┘│ │
-│  └─────────────────────────────────┘ │
-└─────────────────────────────────────┘
-```
+<div style="border: 4px solid #e74c3c; padding: 20px; margin: 20px auto; max-width: 500px; background: #ffe5e5;">
+  <div style="text-align: center; margin-bottom: 15px; color: #e74c3c; font-weight: bold; font-size: 14px;">Margin (외부 여백)</div>
+  <div style="border: 4px solid #3498db; padding: 20px; background: #e3f2fd;">
+    <div style="text-align: center; margin-bottom: 15px; color: #3498db; font-weight: bold; font-size: 14px;">Border (테두리)</div>
+    <div style="border: 4px solid #2ecc71; padding: 20px; background: #e8f5e9;">
+      <div style="text-align: center; margin-bottom: 15px; color: #2ecc71; font-weight: bold; font-size: 14px;">Padding (내부 여백)</div>
+      <div style="border: 4px solid #f39c12; padding: 30px; text-align: center; background: #fff3cd; font-weight: bold; color: #f39c12; font-size: 16px;">
+        Content (내용)
+      </div>
+    </div>
+  </div>
+</div>
 
 ### Box Model 구성 요소
 
