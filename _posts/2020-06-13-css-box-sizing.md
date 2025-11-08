@@ -97,7 +97,7 @@ CSS로 요소의 너비를 지정할 때, **눈으로 보이는 실제 너비**�
 
 <div style="margin: 30px auto; max-width: 500px;">
   <div style="border: 5px solid #2ecc71; padding: 0; background: #e8f5e9; position: relative;">
-    <div style="position: absolute; right: -180px; top: 50%; transform: translateY(-50%); color: #2ecc71; font-size: 13px; font-weight: bold; white-space: nowrap;">← width: 200px이 전체 너비</div>
+    <div style="position: absolute; right: -160px; top: 50%; transform: translateY(-50%); color: #2ecc71; font-size: 13px; font-weight: bold; white-space: nowrap;">← width: 200px이 전체 너비</div>
     <div style="padding: 5px; text-align: center; font-size: 12px; color: #2ecc71; font-weight: bold; background: rgba(46, 204, 113, 0.1);">border (5px)</div>
     <div style="padding: 20px; background: #e3f2fd;">
       <div style="padding: 5px; text-align: center; font-size: 12px; color: #3498db; font-weight: bold; background: rgba(52, 152, 219, 0.1); margin-bottom: 10px;">padding (20px)</div>
@@ -107,7 +107,7 @@ CSS로 요소의 너비를 지정할 때, **눈으로 보이는 실제 너비**�
       </div>
     </div>
   </div>
-  <div style="text-align: center; margin-top: 15px; font-weight: bold; color: #2ecc71; font-size: 16px;">총 너비: 200px ✓</div>
+  <div style="text-align: center; margin-top: 15px; font-weight: bold; color: #2ecc71; font-size: 16px;">총 너비: 200px</div>
 </div>
 
 콘텐츠 영역은 자동으로 조정:
