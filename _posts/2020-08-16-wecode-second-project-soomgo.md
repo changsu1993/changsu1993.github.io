@@ -259,7 +259,7 @@ export const REVIEW_MOCK_DATA = [
 
 서버에서 받은 데이터를 Map 함수로 효율적으로 렌더링했습니다.
 
-```javascript
+```jsx
 // ProList.js (고수 찾기 페이지)
 class ProList extends Component {
   state = {
@@ -321,7 +321,7 @@ class ProList extends Component {
 
 ### 3. Styled-Components로 Footer 구현
 
-```javascript
+```jsx
 // Footer.js
 import React from 'react';
 import styled from 'styled-components';
