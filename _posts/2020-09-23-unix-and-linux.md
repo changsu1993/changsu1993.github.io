@@ -833,8 +833,8 @@ Unix/Linux를 배우는 것은 단순히 운영체제를 사용하는 것이 아
 
 ### 역사 및 철학
 - [The Unix Programming Environment](https://en.wikipedia.org/wiki/The_Unix_Programming_Environment) - Kernighan & Pike
-- [The Art of Unix Programming](http://www.catb.org/~esr/writings/taoup/) - Eric S. Raymond
-- [The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/) - Eric S. Raymond
+- [The Art of Unix Programming](https://www.catb.org/~esr/writings/taoup/) - Eric S. Raymond
+- [The Cathedral and the Bazaar](https://www.catb.org/~esr/writings/cathedral-bazaar/) - Eric S. Raymond
 
 ### 학습 자료
 - [Linux Command Line Basics](https://ubuntu.com/tutorials/command-line-for-beginners)
