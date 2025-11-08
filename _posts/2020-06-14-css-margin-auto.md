@@ -31,11 +31,12 @@ div {
 ```
 
 **결과:**
-```
-┌─────────────────────────────────┐
-│ DIV 요소 (전체 너비 차지)        │
-└─────────────────────────────────┘
-```
+
+<div style="max-width: 600px; margin: 20px auto; padding: 10px; border: 2px dashed #ccc;">
+  <div style="background: #fff3cd; border: 2px solid #f39c12; padding: 15px; text-align: center; font-weight: bold; color: #f39c12;">
+    DIV 요소 (전체 너비 차지)
+  </div>
+</div>
 
 ### 2.2 width 지정 시
 
@@ -49,11 +50,13 @@ Width를 지정하면 요소가 지정한 너비만 차지합니다.
 ```
 
 **결과:**
-```
-┌──────────┐
-│ DIV 요소  │ ← 150px만 차지
-└──────────┘
-```
+
+<div style="max-width: 600px; margin: 20px auto; padding: 10px; border: 2px dashed #ccc;">
+  <div style="background: #fff3cd; border: 2px solid #f39c12; padding: 15px; width: 150px; text-align: center; font-weight: bold; color: #f39c12; position: relative;">
+    DIV 요소
+    <span style="position: absolute; right: -125px; top: 50%; transform: translateY(-50%); color: #f39c12; font-size: 13px; white-space: nowrap;">← 150px만 차지</span>
+  </div>
+</div>
 
 ### 2.3 margin: auto 적용
 
@@ -66,11 +69,16 @@ Width를 지정하면 요소가 지정한 너비만 차지합니다.
 ```
 
 **결과:**
-```
-          ┌──────────┐
-          │ DIV 요소  │ ← 중앙 정렬
-          └──────────┘
-```
+
+<div style="max-width: 600px; margin: 20px auto; padding: 10px; border: 2px dashed #ccc;">
+  <div style="background: #e3f2fd; border: 2px solid #3498db; padding: 15px; width: 150px; margin: 0 auto; text-align: center; font-weight: bold; color: #3498db; position: relative;">
+    DIV 요소
+    <span style="position: absolute; right: -105px; top: 50%; transform: translateY(-50%); color: #3498db; font-size: 13px; white-space: nowrap;">← 중앙 정렬</span>
+  </div>
+  <div style="text-align: center; margin-top: 10px; font-size: 12px; color: #666;">
+    좌우 여백이 균등하게 배분되어 중앙에 위치
+  </div>
+</div>
 
 **작동 원리:**
 - 좌우 남은 공간을 **균등하게 배분**
