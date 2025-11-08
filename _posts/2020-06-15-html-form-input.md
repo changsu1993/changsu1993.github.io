@@ -1057,19 +1057,29 @@ input:focus:not(:focus-visible) {
 
 ### 주요 속성
 
+**속성 설명:**
+
+| 속성 | 설명 | 예시 |
+|------|------|------|
+| `type` | 입력 타입 | `type="text"` |
+| `name` | 서버 전송 시 키 | `name="username"` |
+| `id` | label 연결용 | `id="username"` |
+| `placeholder` | 도움말 | `placeholder="이름 입력"` |
+| `value` | 초기값 | `value="기본값"` |
+| `required` | 필수 입력 | `required` |
+| `disabled` | 비활성화 | `disabled` |
+| `readonly` | 읽기 전용 | `readonly` |
+| `minlength` | 최소 길이 | `minlength="5"` |
+| `maxlength` | 최대 길이 | `maxlength="20"` |
+| `pattern` | 정규식 검증 | `pattern="[A-Za-z]+"` |
+
 ```html
 <input
-  type="text"           <!-- 입력 타입 -->
-  name="username"       <!-- 서버 전송 시 키 -->
-  id="username"         <!-- label 연결용 -->
-  placeholder="힌트"    <!-- 도움말 -->
-  value="기본값"        <!-- 초기값 -->
-  required              <!-- 필수 입력 -->
-  disabled              <!-- 비활성화 -->
-  readonly              <!-- 읽기 전용 -->
-  minlength="5"         <!-- 최소 길이 -->
-  maxlength="20"        <!-- 최대 길이 -->
-  pattern="[A-Za-z]+"   <!-- 정규식 검증 -->
+  type="text"
+  name="username"
+  id="username"
+  placeholder="사용자 이름을 입력하세요"
+  required
 >
 ```
 
