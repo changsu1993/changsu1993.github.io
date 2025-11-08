@@ -50,21 +50,38 @@ Git은 파일의 변경사항을 추적하고 여러 명이 협업할 수 있게
 
 **종류:**
 
-```
-┌─────────────────────────────────────┐
-│   Remote Repository (원격 저장소)    │
-│   - GitHub, GitLab, Bitbucket      │
-│   - 여러 사람이 공유               │
-│   - 클라우드에 호스팅              │
-└─────────────────────────────────────┘
-              ↕ (push/pull)
-┌─────────────────────────────────────┐
-│   Local Repository (로컬 저장소)    │
-│   - 내 컴퓨터에 저장               │
-│   - .git 폴더에 이력 저장          │
-│   - 오프라인 작업 가능             │
-└─────────────────────────────────────┘
-```
+<div style="max-width: 500px; margin: 30px auto; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+  <!-- Remote Repository -->
+  <div style="padding: 25px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3); margin-bottom: 20px;">
+    <div style="color: white; font-size: 18px; font-weight: bold; margin-bottom: 12px; text-align: center;">
+      Remote Repository (원격 저장소)
+    </div>
+    <div style="color: rgba(255, 255, 255, 0.9); font-size: 13px; line-height: 1.8;">
+      • GitHub, GitLab, Bitbucket<br>
+      • 여러 사람이 공유<br>
+      • 클라우드에 호스팅
+    </div>
+  </div>
+
+  <!-- 양방향 화살표 -->
+  <div style="text-align: center; margin: 15px 0; position: relative;">
+    <div style="display: inline-block; padding: 8px 20px; background: #3498db; color: white; border-radius: 20px; font-weight: bold; font-size: 14px; box-shadow: 0 2px 4px rgba(52, 152, 219, 0.3);">
+      ⇅ push / pull
+    </div>
+  </div>
+
+  <!-- Local Repository -->
+  <div style="padding: 25px; background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); border-radius: 8px; box-shadow: 0 4px 8px rgba(46, 204, 113, 0.3); margin-top: 20px;">
+    <div style="color: white; font-size: 18px; font-weight: bold; margin-bottom: 12px; text-align: center;">
+      Local Repository (로컬 저장소)
+    </div>
+    <div style="color: rgba(255, 255, 255, 0.9); font-size: 13px; line-height: 1.8;">
+      • 내 컴퓨터에 저장<br>
+      • .git 폴더에 이력 저장<br>
+      • 오프라인 작업 가능
+    </div>
+  </div>
+</div>
 
 ### 2) Commit (커밋)
 
@@ -93,25 +110,54 @@ Date:   Mon Jun 19 10:30:00 2023 +0900
 
 커밋에 포함할 변경사항을 선택하는 영역입니다.
 
-```
-┌──────────────────────────────────────┐
-│  Working Directory (작업 디렉토리)    │
-│  - 실제 파일들이 있는 공간           │
-│  - 파일 수정, 추가, 삭제             │
-└──────────────────────────────────────┘
-         ↓ (git add)
-┌──────────────────────────────────────┐
-│  Staging Area (스테이징 영역/Index)  │
-│  - 커밋 준비 영역                    │
-│  - 선택적으로 파일 추가              │
-└──────────────────────────────────────┘
-         ↓ (git commit)
-┌──────────────────────────────────────┐
-│  Repository (.git directory)         │
-│  - 확정된 변경사항 저장              │
-│  - 영구적으로 이력 보관              │
-└──────────────────────────────────────┘
-```
+<div style="max-width: 550px; margin: 30px auto; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+  <!-- Working Directory -->
+  <div style="padding: 25px; background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); border-radius: 8px; box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3); margin-bottom: 15px;">
+    <div style="color: white; font-size: 18px; font-weight: bold; margin-bottom: 12px; text-align: center;">
+      Working Directory (작업 디렉토리)
+    </div>
+    <div style="color: rgba(255, 255, 255, 0.9); font-size: 13px; line-height: 1.8;">
+      • 실제 파일들이 있는 공간<br>
+      • 파일 수정, 추가, 삭제
+    </div>
+  </div>
+
+  <!-- git add 화살표 -->
+  <div style="text-align: center; margin: 10px 0;">
+    <div style="display: inline-block; padding: 6px 18px; background: #f39c12; color: white; border-radius: 20px; font-weight: bold; font-size: 13px; box-shadow: 0 2px 4px rgba(243, 156, 18, 0.3);">
+      ↓ git add
+    </div>
+  </div>
+
+  <!-- Staging Area -->
+  <div style="padding: 25px; background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); border-radius: 8px; box-shadow: 0 4px 8px rgba(243, 156, 18, 0.3); margin-bottom: 15px;">
+    <div style="color: white; font-size: 18px; font-weight: bold; margin-bottom: 12px; text-align: center;">
+      Staging Area (스테이징 영역/Index)
+    </div>
+    <div style="color: rgba(255, 255, 255, 0.9); font-size: 13px; line-height: 1.8;">
+      • 커밋 준비 영역<br>
+      • 선택적으로 파일 추가
+    </div>
+  </div>
+
+  <!-- git commit 화살표 -->
+  <div style="text-align: center; margin: 10px 0;">
+    <div style="display: inline-block; padding: 6px 18px; background: #2ecc71; color: white; border-radius: 20px; font-weight: bold; font-size: 13px; box-shadow: 0 2px 4px rgba(46, 204, 113, 0.3);">
+      ↓ git commit
+    </div>
+  </div>
+
+  <!-- Repository -->
+  <div style="padding: 25px; background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); border-radius: 8px; box-shadow: 0 4px 8px rgba(46, 204, 113, 0.3);">
+    <div style="color: white; font-size: 18px; font-weight: bold; margin-bottom: 12px; text-align: center;">
+      Repository (.git directory)
+    </div>
+    <div style="color: rgba(255, 255, 255, 0.9); font-size: 13px; line-height: 1.8;">
+      • 확정된 변경사항 저장<br>
+      • 영구적으로 이력 보관
+    </div>
+  </div>
+</div>
 
 **예시:**
 
