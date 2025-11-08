@@ -242,8 +242,8 @@ a[href^="https"] {
 }
 
 /* 속성 값으로 끝남 */
-img[src$=".png"] {
-  border: 2px solid;
+a[href$='.pdf'] {
+  color: red;
 }
 ```
 
@@ -277,8 +277,9 @@ li:last-child {
   border-bottom: none;
 }
 
+/* 짝수 번째 */
 li:nth-child(2n) {
-  background-color: #f9f9f9;  /* 짝수 번째 */
+  background-color: #f9f9f9;
 }
 ```
 
