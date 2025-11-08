@@ -394,15 +394,23 @@ li {
 
 ### 4.4 명시도 우선순위 요약
 
-```
-인라인 스타일(1000점)
-     >>>
-아이디(100점)
-     >>>
-클래스/속성/가상클래스(10점)
-     >>>
-태그/가상요소(1점)
-```
+<div style="max-width: 400px; margin: 30px auto; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+  <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; border-radius: 6px; margin-bottom: 12px; text-align: center; font-weight: bold; box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);">
+    인라인 스타일 (1000점)
+  </div>
+  <div style="text-align: center; color: #667eea; font-size: 20px; margin: 8px 0;">↓</div>
+  <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 15px; border-radius: 6px; margin-bottom: 12px; text-align: center; font-weight: bold; box-shadow: 0 2px 8px rgba(245, 87, 108, 0.3);">
+    아이디 (100점)
+  </div>
+  <div style="text-align: center; color: #f5576c; font-size: 20px; margin: 8px 0;">↓</div>
+  <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 15px; border-radius: 6px; margin-bottom: 12px; text-align: center; font-weight: bold; box-shadow: 0 2px 8px rgba(79, 172, 254, 0.3);">
+    클래스/속성/가상클래스 (10점)
+  </div>
+  <div style="text-align: center; color: #4facfe; font-size: 20px; margin: 8px 0;">↓</div>
+  <div style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: white; padding: 15px; border-radius: 6px; text-align: center; font-weight: bold; box-shadow: 0 2px 8px rgba(67, 233, 123, 0.3);">
+    태그/가상요소 (1점)
+  </div>
+</div>
 
 ### 4.5 명시도 계산 연습
 
@@ -704,19 +712,31 @@ Chrome DevTools에서:
 
 ### 명시도 우선순위
 
-```
-!important (절대 우선)
-  ↓
-인라인 스타일 (1000점)
-  ↓
-아이디 (100점)
-  ↓
-클래스/속성/가상클래스 (10점)
-  ↓
-태그/가상요소 (1점)
-  ↓
-전체 선택자 (0점)
-```
+<div style="max-width: 400px; margin: 30px auto; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+  <div style="background: linear-gradient(135deg, #ff0844 0%, #ff4b2b 100%); color: white; padding: 15px; border-radius: 6px; margin-bottom: 12px; text-align: center; font-weight: bold; box-shadow: 0 2px 8px rgba(255, 8, 68, 0.3); border: 2px solid #ff0844;">
+    !important (절대 우선)
+  </div>
+  <div style="text-align: center; color: #ff0844; font-size: 20px; margin: 8px 0;">↓</div>
+  <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; border-radius: 6px; margin-bottom: 12px; text-align: center; font-weight: bold; box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);">
+    인라인 스타일 (1000점)
+  </div>
+  <div style="text-align: center; color: #667eea; font-size: 20px; margin: 8px 0;">↓</div>
+  <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 15px; border-radius: 6px; margin-bottom: 12px; text-align: center; font-weight: bold; box-shadow: 0 2px 8px rgba(245, 87, 108, 0.3);">
+    아이디 (100점)
+  </div>
+  <div style="text-align: center; color: #f5576c; font-size: 20px; margin: 8px 0;">↓</div>
+  <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 15px; border-radius: 6px; margin-bottom: 12px; text-align: center; font-weight: bold; box-shadow: 0 2px 8px rgba(79, 172, 254, 0.3);">
+    클래스/속성/가상클래스 (10점)
+  </div>
+  <div style="text-align: center; color: #4facfe; font-size: 20px; margin: 8px 0;">↓</div>
+  <div style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: white; padding: 15px; border-radius: 6px; margin-bottom: 12px; text-align: center; font-weight: bold; box-shadow: 0 2px 8px rgba(67, 233, 123, 0.3);">
+    태그/가상요소 (1점)
+  </div>
+  <div style="text-align: center; color: #43e97b; font-size: 20px; margin: 8px 0;">↓</div>
+  <div style="background: linear-gradient(135deg, #a8a8a8 0%, #757575 100%); color: white; padding: 15px; border-radius: 6px; text-align: center; font-weight: bold; box-shadow: 0 2px 8px rgba(168, 168, 168, 0.3);">
+    전체 선택자 (0점)
+  </div>
+</div>
 
 ### 실무 권장사항
 
