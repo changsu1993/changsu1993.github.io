@@ -379,11 +379,6 @@ li:first-child {
 li:last-child {
   border-bottom: none;
 }
-
-/* 특정 순서 */
-li:nth-child(2) {
-  background-color: #f0f0f0;
-}
 ```
 
 ### 6.2 홀수/짝수 선택
@@ -402,39 +397,37 @@ li:nth-child(even) {
 
 ### 6.3 n번째마다 선택
 
+**nth-child() 패턴 예제:**
+
+| 패턴 | 선택되는 요소 | 설명 |
+|------|-------------|------|
+| `nth-child(odd)` | 1, 3, 5, 7... | 홀수 번째 |
+| `nth-child(even)` | 2, 4, 6, 8... | 짝수 번째 |
+| `nth-child(3n)` | 3, 6, 9, 12... | 3의 배수 |
+| `nth-child(3n+1)` | 1, 4, 7, 10... | 3으로 나눈 나머지가 1 |
+| `nth-child(3n+2)` | 2, 5, 8, 11... | 3으로 나눈 나머지가 2 |
+
 ```css
-/* 3의 배수 (3, 6, 9...) */
-li:nth-child(3n) {
-  font-weight: bold;
-}
-
-/* 3n + 1 (1, 4, 7...) */
-li:nth-child(3n+1) {
-  color: red;
-}
-
-/* 3n + 2 (2, 5, 8...) */
-li:nth-child(3n+2) {
-  color: blue;
+/* 3줄마다 구분선 추가 */
+li:nth-child(odd) {
+  background-color: #f9f9f9;
 }
 ```
 
 ### 6.4 범위 선택
 
+**범위 선택 패턴:**
+
+| 패턴 | 선택되는 요소 | 설명 |
+|------|-------------|------|
+| `nth-child(-n+3)` | 1, 2, 3 | 처음 3개 |
+| `nth-child(n+4)` | 4, 5, 6, 7... | 4번째부터 끝까지 |
+| `nth-child(n+3):nth-child(-n+7)` | 3, 4, 5, 6, 7 | 3번째부터 7번째까지 |
+
 ```css
-/* 처음 3개 */
-li:nth-child(-n+3) {
+/* 처음 몇 개 항목 강조 */
+li:first-child {
   font-weight: bold;
-}
-
-/* 4번째부터 */
-li:nth-child(n+4) {
-  opacity: 0.7;
-}
-
-/* 3번째부터 7번째까지 */
-li:nth-child(n+3):nth-child(-n+7) {
-  background-color: yellow;
 }
 ```
 
@@ -449,11 +442,6 @@ li:first-of-type {
 /* li 중에서 마지막 */
 li:last-of-type {
   border-bottom: 2px solid #333;
-}
-
-/* li 중에서 n번째 */
-li:nth-of-type(2) {
-  background-color: #f0f0f0;
 }
 ```
 
@@ -907,7 +895,7 @@ ul {
 /* 가상 클래스 활용 */
 li:first-child { }
 li:last-child { }
-li:nth-child(2n) { }
+li:nth-child(even) { }
 ```
 
 ### 실무 팁
