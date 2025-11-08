@@ -241,8 +241,8 @@ a[href^="https"] {
   color: green;
 }
 
-/* 속성 값으로 끝남 */
-a[href$='.pdf'] {
+/* 속성 값이 포함 */
+a[href*="pdf"] {
   color: red;
 }
 ```
@@ -278,7 +278,7 @@ li:last-child {
 }
 
 /* 짝수 번째 */
-li:nth-child(2n) {
+li:nth-child(even) {
   background-color: #f9f9f9;
 }
 ```
