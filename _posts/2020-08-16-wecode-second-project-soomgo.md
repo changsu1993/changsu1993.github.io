@@ -150,7 +150,7 @@ const MyComponent = () => {
 // 1차: 별도 SASS 파일
 import './Footer.scss';
 
-const Footer = () => <footer className="footer">...</footer>;
+const Footer = () => <footer className="footer">{/* 내용 */}</footer>;
 
 // 2차: CSS-in-JS 패턴
 import styled from 'styled-components';
@@ -164,7 +164,7 @@ const FooterContainer = styled.footer`
   }
 `;
 
-const Footer = () => <FooterContainer>...</FooterContainer>;
+const Footer = () => <FooterContainer>{/* 내용 */}</FooterContainer>;
 ```
 
 **장점**:
@@ -452,13 +452,13 @@ Back-End가 제공하지 못한 데이터를 Mock Data로 대체하여 독립적
 <div className="container">
   <div className="wrapper">
     <div className="content">
-      <div className="item">...</div>
+      <div className="item">{/* 내용 */}</div>
     </div>
   </div>
 </div>
 
 // 개선 필요: 과도한 네스팅으로 CSS 선택자 복잡도 증가
-.container .wrapper .content .item { ... }
+// .container .wrapper .content .item { 스타일 }
 ```
 
 #### 3. 기술 이해 부족
