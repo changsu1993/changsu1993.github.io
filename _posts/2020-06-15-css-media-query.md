@@ -984,7 +984,7 @@ $desktop: "screen and (min-width: 1024px)";
 
 ```css
 /* 현재 Breakpoint 표시 */
-body::before {
+.breakpoint-indicator {
   content: 'Mobile';
   position: fixed;
   top: 0;
@@ -996,14 +996,14 @@ body::before {
 }
 
 @media (min-width: 768px) {
-  body::before {
+  .breakpoint-indicator {
     content: 'Tablet';
     background-color: orange;
   }
 }
 
 @media (min-width: 1024px) {
-  body::before {
+  .breakpoint-indicator {
     content: 'Desktop';
     background-color: green;
   }
