@@ -169,7 +169,7 @@ p {
 */
 
 p {
-  color: red;  /* 빨간색 */
+  color: red;
 }
 ```
 

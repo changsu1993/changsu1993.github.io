@@ -55,16 +55,19 @@ code {
 ### 단위
 
 ```css
+/* 픽셀 (권장) */
 .big-size-font {
-  font-size: 50px;    /* 픽셀 (권장) */
+  font-size: 50px;
 }
 
+/* 상대 크기 */
 .em-size {
-  font-size: 2em;     /* 상대 크기 */
+  font-size: 2em;
 }
 
+/* 루트 기준 상대 크기 */
 .rem-size {
-  font-size: 1.5rem;  /* 루트 기준 상대 크기 */
+  font-size: 1.5rem;
 }
 ```
 
@@ -107,20 +110,24 @@ h4 {
 ### 숫자 값
 
 ```css
+/* 가장 얇음 */
 .thin {
-  font-weight: 100;    /* 가장 얇음 */
+  font-weight: 100;
 }
 
+/* normal과 동일 */
 .normal {
-  font-weight: 400;    /* normal과 동일 */
+  font-weight: 400;
 }
 
+/* bold와 동일 */
 .bold {
-  font-weight: 700;    /* bold와 동일 */
+  font-weight: 700;
 }
 
+/* 가장 두꺼움 */
 .heavy {
-  font-weight: 900;    /* 가장 두꺼움 */
+  font-weight: 900;
 }
 ```
 
