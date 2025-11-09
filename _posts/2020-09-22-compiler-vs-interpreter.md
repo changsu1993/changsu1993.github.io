@@ -15,57 +15,75 @@ tags: [compiler, interpreter, programming-languages, jit, bytecode, compilation,
 
 ### 컴파일 과정의 단계
 
-```text
-Source Code → Compiler → Executable File
+<div style="text-align: center; margin: 25px 0; font-size: 16px; color: #555; font-weight: bold;">
+  Source Code → Compiler → Executable File
+</div>
 
-상세 과정:
-┌─────────────────┐
-│  Source Code    │
-│  (예: main.c)   │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────────┐
-│ 1. Lexical Analysis │  문자열을 토큰으로 분해
-│    (어휘 분석)       │
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│ 2. Syntax Analysis  │  토큰을 구문 트리로 변환
-│    (구문 분석)       │
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│ 3. Semantic         │  의미 검사 및 타입 체크
-│    Analysis         │
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│ 4. Optimization     │  코드 최적화
-│    (최적화)          │
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│ 5. Code Generation  │  기계어 코드 생성
-│    (코드 생성)       │
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│ 6. Linking          │  라이브러리 연결
-│    (링킹)            │
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────┐
-│ Executable File │
-│ (예: main.exe)  │
-└─────────────────┘
-```
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; margin: 20px 0; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+  <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+    <!-- Source Code -->
+    <div style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; padding: 15px 30px; border-radius: 10px; text-align: center; font-weight: bold; min-width: 250px; box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);">
+      Source Code<br>
+      <span style="font-size: 14px; opacity: 0.9;">(예: main.c)</span>
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- 1. Lexical Analysis -->
+    <div style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; min-width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <div style="color: #e74c3c; font-weight: bold; margin-bottom: 5px;">1. Lexical Analysis (어휘 분석)</div>
+      <div style="color: #555; font-size: 14px;">문자열을 토큰으로 분해</div>
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- 2. Syntax Analysis -->
+    <div style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; min-width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <div style="color: #e67e22; font-weight: bold; margin-bottom: 5px;">2. Syntax Analysis (구문 분석)</div>
+      <div style="color: #555; font-size: 14px;">토큰을 구문 트리로 변환</div>
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- 3. Semantic Analysis -->
+    <div style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; min-width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <div style="color: #f39c12; font-weight: bold; margin-bottom: 5px;">3. Semantic Analysis (의미 분석)</div>
+      <div style="color: #555; font-size: 14px;">의미 검사 및 타입 체크</div>
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- 4. Optimization -->
+    <div style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; min-width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <div style="color: #27ae60; font-weight: bold; margin-bottom: 5px;">4. Optimization (최적화)</div>
+      <div style="color: #555; font-size: 14px;">코드 최적화</div>
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- 5. Code Generation -->
+    <div style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; min-width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <div style="color: #8e44ad; font-weight: bold; margin-bottom: 5px;">5. Code Generation (코드 생성)</div>
+      <div style="color: #555; font-size: 14px;">기계어 코드 생성</div>
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- 6. Linking -->
+    <div style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; min-width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <div style="color: #16a085; font-weight: bold; margin-bottom: 5px;">6. Linking (링킹)</div>
+      <div style="color: #555; font-size: 14px;">라이브러리 연결</div>
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- Executable File -->
+    <div style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; padding: 15px 30px; border-radius: 10px; text-align: center; font-weight: bold; min-width: 250px; box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);">
+      Executable File<br>
+      <span style="font-size: 14px; opacity: 0.9;">(예: main.exe)</span>
+    </div>
+  </div>
+</div>
 
 ### 컴파일러의 특징
 
@@ -108,30 +126,39 @@ int main() {
 
 ### 인터프리터 실행 과정
 
-```text
-Source Code → Interpreter → Direct Execution
+<div style="text-align: center; margin: 25px 0; font-size: 16px; color: #555; font-weight: bold;">
+  Source Code → Interpreter → Direct Execution
+</div>
 
-실행 과정:
-┌─────────────────┐
-│  Source Code    │
-│  (예: script.py)│
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────────┐
-│   Interpreter       │
-│                     │
-│  Line 1 → Execute  │
-│  Line 2 → Execute  │
-│  Line 3 → Execute  │
-│     ...            │
-└────────┬────────────┘
-         │
-         ▼
-┌─────────────────┐
-│     Output      │
-└─────────────────┘
-```
+<div style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); padding: 25px; border-radius: 15px; margin: 20px 0; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+  <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+    <!-- Source Code -->
+    <div style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; padding: 15px 30px; border-radius: 10px; text-align: center; font-weight: bold; min-width: 250px; box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);">
+      Source Code<br>
+      <span style="font-size: 14px; opacity: 0.9;">(예: script.py)</span>
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- Interpreter -->
+    <div style="background: rgba(255,255,255,0.95); padding: 20px; border-radius: 10px; min-width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <div style="color: #e67e22; font-weight: bold; text-align: center; margin-bottom: 15px; font-size: 16px;">Interpreter</div>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="background: #ecf0f1; padding: 8px 15px; border-radius: 5px; color: #2c3e50; font-size: 14px;">Line 1 → Execute</div>
+        <div style="background: #ecf0f1; padding: 8px 15px; border-radius: 5px; color: #2c3e50; font-size: 14px;">Line 2 → Execute</div>
+        <div style="background: #ecf0f1; padding: 8px 15px; border-radius: 5px; color: #2c3e50; font-size: 14px;">Line 3 → Execute</div>
+        <div style="text-align: center; color: #7f8c8d; font-size: 14px;">...</div>
+      </div>
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- Output -->
+    <div style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; padding: 15px 30px; border-radius: 10px; text-align: center; font-weight: bold; min-width: 250px; box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);">
+      Output
+    </div>
+  </div>
+</div>
 
 ### 인터프리터의 특징
 
@@ -187,41 +214,57 @@ greet("World")
 
 ### 바이트코드 + JIT (Just-In-Time) 컴파일
 
-```text
-Source Code → Bytecode → JIT Compiler → Machine Code
+<div style="text-align: center; margin: 25px 0; font-size: 16px; color: #555; font-weight: bold;">
+  Source Code → Bytecode → JIT Compiler → Machine Code
+</div>
 
-과정:
-┌─────────────────┐
-│  Source Code    │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────────┐
-│   AOT Compiler      │  Ahead-Of-Time Compilation
-│  (사전 컴파일)       │
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│   Bytecode          │  중간 표현 (플랫폼 독립적)
-│  (중간 코드)         │
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│  Interpreter +      │  초기 실행은 인터프리터
-│  JIT Compiler       │
-│                     │
-│  Hot Code 발견      │  자주 실행되는 코드 식별
-│      ↓             │
-│  기계어로 컴파일    │  해당 부분만 최적화 컴파일
-└─────────┬───────────┘
-          │
-          ▼
-┌─────────────────────┐
-│  Fast Execution     │
-└─────────────────────┘
-```
+<div style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); padding: 25px; border-radius: 15px; margin: 20px 0; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+  <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+    <!-- Source Code -->
+    <div style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; padding: 15px 30px; border-radius: 10px; text-align: center; font-weight: bold; min-width: 250px; box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);">
+      Source Code
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- AOT Compiler -->
+    <div style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; min-width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <div style="color: #e74c3c; font-weight: bold; margin-bottom: 5px;">AOT Compiler (사전 컴파일)</div>
+      <div style="color: #555; font-size: 14px;">Ahead-Of-Time Compilation</div>
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- Bytecode -->
+    <div style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; min-width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <div style="color: #f39c12; font-weight: bold; margin-bottom: 5px;">Bytecode (중간 코드)</div>
+      <div style="color: #555; font-size: 14px;">중간 표현 (플랫폼 독립적)</div>
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- Interpreter + JIT Compiler -->
+    <div style="background: rgba(255,255,255,0.95); padding: 20px; border-radius: 10px; min-width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <div style="color: #8e44ad; font-weight: bold; text-align: center; margin-bottom: 15px; font-size: 16px;">Interpreter + JIT Compiler</div>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="background: #ecf0f1; padding: 8px 15px; border-radius: 5px; color: #2c3e50; font-size: 14px;">초기 실행: 인터프리터 모드</div>
+        <div style="text-align: center; color: #7f8c8d; font-size: 20px;">↓</div>
+        <div style="background: #fff3cd; padding: 8px 15px; border-radius: 5px; color: #856404; font-size: 14px; font-weight: bold;">Hot Code 발견 🔥</div>
+        <div style="color: #7f8c8d; font-size: 13px; text-align: center;">자주 실행되는 코드 식별</div>
+        <div style="text-align: center; color: #7f8c8d; font-size: 20px;">↓</div>
+        <div style="background: #d4edda; padding: 8px 15px; border-radius: 5px; color: #155724; font-size: 14px; font-weight: bold;">기계어로 컴파일 ⚡</div>
+        <div style="color: #7f8c8d; font-size: 13px; text-align: center;">해당 부분만 최적화 컴파일</div>
+      </div>
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- Fast Execution -->
+    <div style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; padding: 15px 30px; border-radius: 10px; text-align: center; font-weight: bold; min-width: 250px; box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);">
+      Fast Execution
+    </div>
+  </div>
+</div>
 
 ### Java의 JVM (Java Virtual Machine)
 
@@ -263,36 +306,53 @@ function fibonacci(n) {
 
 **V8의 최적화 파이프라인:**
 
-```text
-Source Code
-    │
-    ▼
-┌──────────┐
-│  Parser  │
-└────┬─────┘
-     │
-     ▼
-┌──────────────┐
-│     AST      │
-└────┬─────────┘
-     │
-     ▼
-┌──────────────┐
-│  Ignition    │  Interpreter
-│ (바이트코드)  │
-└────┬─────────┘
-     │
-     │  (Hot Code 감지)
-     │
-     ▼
-┌──────────────┐
-│  TurboFan    │  Optimizing Compiler
-│ (최적화)      │
-└────┬─────────┘
-     │
-     ▼
-Machine Code
-```
+<div style="background: linear-gradient(135deg, #16a085 0%, #138d75 100%); padding: 25px; border-radius: 15px; margin: 20px 0; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+  <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+    <!-- Source Code -->
+    <div style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; padding: 15px 30px; border-radius: 10px; text-align: center; font-weight: bold; min-width: 220px; box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);">
+      Source Code
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- Parser -->
+    <div style="background: rgba(255,255,255,0.95); padding: 15px 30px; border-radius: 10px; text-align: center; font-weight: bold; min-width: 220px; color: #e74c3c; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      Parser
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- AST -->
+    <div style="background: rgba(255,255,255,0.95); padding: 15px 30px; border-radius: 10px; text-align: center; font-weight: bold; min-width: 220px; color: #e67e22; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      AST
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- Ignition -->
+    <div style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; min-width: 280px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <div style="color: #f39c12; font-weight: bold; text-align: center; margin-bottom: 5px; font-size: 16px;">Ignition (바이트코드)</div>
+      <div style="color: #555; font-size: 14px; text-align: center;">Interpreter</div>
+    </div>
+
+    <div style="color: white; font-size: 14px; font-style: italic;">(Hot Code 감지 🔥)</div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- TurboFan -->
+    <div style="background: rgba(255,255,255,0.95); padding: 15px; border-radius: 10px; min-width: 280px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <div style="color: #9b59b6; font-weight: bold; text-align: center; margin-bottom: 5px; font-size: 16px;">TurboFan (최적화)</div>
+      <div style="color: #555; font-size: 14px; text-align: center;">Optimizing Compiler</div>
+    </div>
+
+    <div style="color: white; font-size: 24px;">↓</div>
+
+    <!-- Machine Code -->
+    <div style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; padding: 15px 30px; border-radius: 10px; text-align: center; font-weight: bold; min-width: 220px; box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);">
+      Machine Code
+    </div>
+  </div>
+</div>
 
 ### Python의 실행 방식
 
