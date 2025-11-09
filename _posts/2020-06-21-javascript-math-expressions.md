@@ -517,14 +517,6 @@ console.log(roundMoney(12.345));  // 12.35
 console.log(roundMoney(12.344));  // 12.34
 ```
 
-## 참고 자료
-
-- [MDN - Arithmetic operators](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators#%EC%82%B0%EC%88%A0_%EC%97%B0%EC%82%B0%EC%9E%90)
-- [MDN - Increment (++)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Increment)
-- [MDN - Assignment operators](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators#%ED%95%A0%EB%8B%B9_%EC%97%B0%EC%82%B0%EC%9E%90)
-- [MDN - Math](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math)
-- [MDN - Operator precedence](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Operator_precedence)
-
 ## 마치며
 
 JavaScript의 수학 표현식과 연산자를 이해하면 다양한 계산 로직을 구현할 수 있습니다:
@@ -536,3 +528,12 @@ JavaScript의 수학 표현식과 연산자를 이해하면 다양한 계산 로
 5. **Math 객체**: 복잡한 계산을 위한 다양한 메서드 활용
 
 부동 소수점 정밀도 문제를 인식하고, 적절한 반올림과 안전한 연산을 통해 정확한 계산 로직을 구현하세요.
+
+## 참고 자료
+
+- [MDN - Arithmetic operators](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators#%EC%82%B0%EC%88%A0_%EC%97%B0%EC%82%B0%EC%9E%90)
+- [MDN - Increment (++)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Increment)
+- [MDN - Assignment operators](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators#%ED%95%A0%EB%8B%B9_%EC%97%B0%EC%82%B0%EC%9E%90)
+- [MDN - Math](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math)
+- [MDN - Operator precedence](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Operator_precedence)
+

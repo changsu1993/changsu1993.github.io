@@ -555,14 +555,6 @@ console.log(1 + "2" + 3);    // "123"
 console.log(String(1 + 2) + "3");  // "33"
 ```
 
-## 참고 자료
-
-- [MDN - String](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String)
-- [MDN - Template literals](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals)
-- [MDN - Type coercion](https://developer.mozilla.org/ko/docs/Glossary/Type_coercion)
-- [MDN - String methods](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String#%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4_%EB%A9%94%EC%84%9C%EB%93%9C)
-- [JavaScript.info - Strings](https://javascript.info/string)
-
 ## 마치며
 
 JavaScript에서 문자열을 다루는 방법을 이해하면 다양한 텍스트 처리 작업을 수행할 수 있습니다:
@@ -574,3 +566,11 @@ JavaScript에서 문자열을 다루는 방법을 이해하면 다양한 텍스�
 5. **모범 사례**: 타입 안정성, 성능, 가독성
 
 현대 JavaScript에서는 템플릿 리터럴 사용을 권장하며, 타입 변환 시 명시적 방법을 사용하여 예상치 못한 버그를 방지하세요.
+
+## 참고 자료
+
+- [MDN - String](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String)
+- [MDN - Template literals](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals)
+- [MDN - Type coercion](https://developer.mozilla.org/ko/docs/Glossary/Type_coercion)
+- [MDN - String methods](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String#%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4_%EB%A9%94%EC%84%9C%EB%93%9C)
+- [JavaScript.info - Strings](https://javascript.info/string)

@@ -769,15 +769,6 @@ if (isAdult && canDrive) {
 }
 ```
 
-## 참고 자료
-
-- [MDN - if...else](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/if...else)
-- [MDN - Conditional (ternary) operator](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Conditional_operator)
-- [MDN - switch](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/switch)
-- [MDN - Logical operators](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Logical_OR)
-- [MDN - Comparison operators](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators)
-- [JavaScript.info - Conditional branching](https://javascript.info/ifelse)
-
 ## 마치며
 
 JavaScript 조건문은 프로그램의 흐름을 제어하는 핵심 기능입니다:
@@ -790,3 +781,13 @@ JavaScript 조건문은 프로그램의 흐름을 제어하는 핵심 기능입�
 6. **switch**: 여러 값 중 하나와 일치 확인
 
 조건문 순서, `===` 사용, 조기 반환 등의 모범 사례를 따라 깔끔하고 읽기 쉬운 코드를 작성하세요.
+
+## 참고 자료
+
+- [MDN - if...else](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/if...else)
+- [MDN - Conditional (ternary) operator](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Conditional_operator)
+- [MDN - switch](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/switch)
+- [MDN - Logical operators](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Logical_OR)
+- [MDN - Comparison operators](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators)
+- [JavaScript.info - Conditional branching](https://javascript.info/ifelse)
+

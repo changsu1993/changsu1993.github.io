@@ -731,19 +731,9 @@ let evens = filterObject(numbers, value => value % 2 === 0);
 console.log(evens);  // { b: 2, d: 4 }
 ```
 
-## 참고 자료
-
-- [MDN - Object](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object)
-- [MDN - Working with objects](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Working_with_Objects)
-- [MDN - Object initializer](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Object_initializer)
-- [MDN - Destructuring assignment](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
-- [JavaScript.info - Objects](https://javascript.info/object)
-- [JavaScript.info - Object references and copying](https://javascript.info/object-copy)
-
 ## 마치며
 
 JavaScript 객체는 데이터를 구조화하는 핵심 도구입니다:
-
 1. **객체 생성**: 리터럴 `{}` 사용 (권장)
 2. **프로퍼티 접근**: 점 표기법, 대괄호 표기법
 3. **메서드**: 객체에 저장된 함수
@@ -752,3 +742,12 @@ JavaScript 객체는 데이터를 구조화하는 핵심 도구입니다:
 6. **구조 분해 할당**: 편리한 프로퍼티 추출
 
 const로 선언한 객체도 내부는 변경 가능하다는 점, 객체는 참조로 저장된다는 점을 항상 기억하세요.
+
+## 참고 자료
+
+- [MDN - Object](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object)
+- [MDN - Working with objects](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Working_with_Objects)
+- [MDN - Object initializer](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Object_initializer)
+- [MDN - Destructuring assignment](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+- [JavaScript.info - Objects](https://javascript.info/object)
+- [JavaScript.info - Object references and copying](https://javascript.info/object-copy)

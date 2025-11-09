@@ -575,15 +575,6 @@ let nyTime = now.setZone('America/New_York');
 console.log(nyTime.toFormat('HH:mm'));
 ```
 
-## 참고 자료
-
-- [MDN - Date](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date)
-- [MDN - Intl.DateTimeFormat](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat)
-- [date-fns](https://date-fns.org/)
-- [Day.js](https://day.js.org/)
-- [Luxon](https://moment.github.io/luxon/)
-- [JavaScript.info - Date and time](https://javascript.info/date)
-
 ## 마치며
 
 JavaScript의 Date 객체는 날짜와 시간을 다루는 기본 도구입니다:
@@ -596,3 +587,12 @@ JavaScript의 Date 객체는 날짜와 시간을 다루는 기본 도구입니�
 6. **라이브러리**: date-fns, Day.js, Luxon 활용
 
 복잡한 날짜 처리가 필요한 경우 date-fns나 Day.js 같은 라이브러리 사용을 권장합니다.
+
+## 참고 자료
+
+- [MDN - Date](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date)
+- [MDN - Intl.DateTimeFormat](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat)
+- [date-fns](https://date-fns.org/)
+- [Day.js](https://day.js.org/)
+- [Luxon](https://moment.github.io/luxon/)
+- [JavaScript.info - Date and time](https://javascript.info/date)

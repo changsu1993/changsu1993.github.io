@@ -576,16 +576,6 @@ let flat2 = flatten(nested);
 console.log(flat2);  // [1, 2, 3, 4, 5, 6, 7]
 ```
 
-## 참고 자료
-
-- [MDN - Array](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array)
-- [MDN - Array methods](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array#%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4_%EB%A9%94%EC%84%9C%EB%93%9C)
-- [MDN - map()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-- [MDN - filter()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-- [MDN - reduce()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
-- [JavaScript.info - Arrays](https://javascript.info/array)
-- [JavaScript.info - Array methods](https://javascript.info/array-methods)
-
 ## 마치며
 
 JavaScript 배열은 데이터를 효율적으로 관리하는 핵심 자료구조입니다:
@@ -597,3 +587,13 @@ JavaScript 배열은 데이터를 효율적으로 관리하는 핵심 자료구�
 5. **배열 순회**: for, forEach, for...of
 
 배열 메서드를 능숙하게 사용하고, map/filter/reduce 같은 고차 함수를 활용하여 선언적이고 읽기 쉬운 코드를 작성하세요.
+
+## 참고 자료
+
+- [MDN - Array](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [MDN - Array methods](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array#%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4_%EB%A9%94%EC%84%9C%EB%93%9C)
+- [MDN - map()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- [MDN - filter()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- [MDN - reduce()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+- [JavaScript.info - Arrays](https://javascript.info/array)
+- [JavaScript.info - Array methods](https://javascript.info/array-methods)

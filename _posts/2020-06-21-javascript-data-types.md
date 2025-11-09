@@ -647,16 +647,6 @@ console.log(toString(null));      // ""
 console.log(toString(undefined)); // ""
 ```
 
-## 참고 자료
-
-- [MDN - JavaScript data types](https://developer.mozilla.org/ko/docs/Web/JavaScript/Data_structures)
-- [MDN - typeof](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/typeof)
-- [MDN - Type coercion](https://developer.mozilla.org/ko/docs/Glossary/Type_coercion)
-- [MDN - Primitive](https://developer.mozilla.org/ko/docs/Glossary/Primitive)
-- [MDN - Symbol](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
-- [MDN - BigInt](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/BigInt)
-- [JavaScript.info - Data types](https://javascript.info/types)
-
 ## 마치며
 
 JavaScript의 데이터 타입을 정확히 이해하는 것은 버그 없는 코드 작성의 기초입니다:
@@ -669,3 +659,14 @@ JavaScript의 데이터 타입을 정확히 이해하는 것은 버그 없는 �
 6. **값 복사 vs 참조 복사**: 원시 타입과 참조 타입의 차이
 
 엄격한 비교(`===`)를 사용하고, 명시적 타입 변환을 통해 예상치 못한 버그를 방지하세요.
+
+## 참고 자료
+
+- [MDN - JavaScript data types](https://developer.mozilla.org/ko/docs/Web/JavaScript/Data_structures)
+- [MDN - typeof](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/typeof)
+- [MDN - Type coercion](https://developer.mozilla.org/ko/docs/Glossary/Type_coercion)
+- [MDN - Primitive](https://developer.mozilla.org/ko/docs/Glossary/Primitive)
+- [MDN - Symbol](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
+- [MDN - BigInt](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/BigInt)
+- [JavaScript.info - Data types](https://javascript.info/types)
+

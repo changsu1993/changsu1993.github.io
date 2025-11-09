@@ -665,16 +665,6 @@ function Button() {
 }
 ```
 
-## 참고 자료
-
-- [React 공식 문서 - JSX 소개](https://react.dev/learn/writing-markup-with-jsx)
-- [React 공식 문서 - Fragment](https://react.dev/reference/react/Fragment)
-- [Babel - Try it out](https://babeljs.io/repl) - JSX 변환 결과 확인
-- [classnames - npm](https://www.npmjs.com/package/classnames)
-- [CSS Modules 공식 문서](https://github.com/css-modules/css-modules)
-- [Styled Components 공식 문서](https://styled-components.com/)
-- [Tailwind CSS 공식 문서](https://tailwindcss.com/)
-
 ## 마치며
 
 JSX는 React의 핵심 문법으로, HTML과 JavaScript를 자연스럽게 결합하여 직관적인 UI 개발을 가능하게 합니다:
@@ -685,3 +675,13 @@ JSX는 React의 핵심 문법으로, HTML과 JavaScript를 자연스럽게 결�
 4. **CSS Modules**: 스코프 격리와 재사용성
 
 프로젝트 규모와 팀 선호도에 따라 적절한 스타일링 방식을 선택하고, 일관성 있게 적용하는 것이 중요합니다. 초기에는 간단한 방식으로 시작하여, 필요에 따라 더 강력한 도구로 전환하는 것을 권장합니다.
+
+## 참고 자료
+
+- [React 공식 문서 - JSX 소개](https://react.dev/learn/writing-markup-with-jsx)
+- [React 공식 문서 - Fragment](https://react.dev/reference/react/Fragment)
+- [Babel - Try it out](https://babeljs.io/repl) - JSX 변환 결과 확인
+- [classnames - npm](https://www.npmjs.com/package/classnames)
+- [CSS Modules 공식 문서](https://github.com/css-modules/css-modules)
+- [Styled Components 공식 문서](https://styled-components.com/)
+- [Tailwind CSS 공식 문서](https://tailwindcss.com/)

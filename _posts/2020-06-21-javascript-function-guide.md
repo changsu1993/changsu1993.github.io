@@ -620,15 +620,6 @@ function processOrder(order) {
 }
 ```
 
-## 참고 자료
-
-- [MDN - Functions](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Functions)
-- [MDN - Arrow Functions](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-- [MDN - Default Parameters](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/Default_parameters)
-- [MDN - Rest Parameters](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/rest_parameters)
-- [JavaScript.info - Functions](https://javascript.info/function-basics)
-- [JavaScript.info - Arrow Functions](https://javascript.info/arrow-functions-basics)
-
 ## 마치며
 
 JavaScript 함수는 프로그래밍의 핵심 빌딩 블록입니다:
@@ -640,3 +631,13 @@ JavaScript 함수는 프로그래밍의 핵심 빌딩 블록입니다:
 5. **고급 개념**: 콜백 함수, 재귀 함수, IIFE
 
 함수를 효과적으로 사용하면 코드의 재사용성과 유지보수성이 크게 향상됩니다. 명확한 함수 이름, 단일 책임 원칙, 순수 함수 작성 등의 모범 사례를 따라 깔끔하고 이해하기 쉬운 코드를 작성하세요.
+
+
+## 참고 자료
+
+- [MDN - Functions](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Functions)
+- [MDN - Arrow Functions](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+- [MDN - Default Parameters](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+- [MDN - Rest Parameters](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+- [JavaScript.info - Functions](https://javascript.info/function-basics)
+- [JavaScript.info - Arrow Functions](https://javascript.info/arrow-functions-basics)
