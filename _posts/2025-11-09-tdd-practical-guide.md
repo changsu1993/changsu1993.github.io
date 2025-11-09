@@ -203,7 +203,7 @@ describe('TodoApp', () => {
 
 #### Green: 최소한의 코드로 테스트 통과
 
-```javascript
+```jsx
 // src/components/TodoApp.jsx
 import { useState } from 'react';
 
@@ -243,7 +243,7 @@ export default TodoApp;
 
 현재는 리팩토링할 부분이 적지만, 향후를 위해 Todo를 객체로 관리하도록 개선합니다.
 
-```javascript
+```jsx
 // src/components/TodoApp.jsx
 import { useState } from 'react';
 
@@ -359,7 +359,7 @@ test('Todo를 클릭하면 완료 상태가 토글된다', async () => {
 
 #### Green: 테스트를 통과하는 코드 작성
 
-```javascript
+```jsx
 // src/components/TodoApp.jsx
 function TodoApp() {
   const [todos, setTodos] = useState([]);
@@ -418,7 +418,7 @@ function TodoApp() {
 
 #### Refactor: TodoItem 컴포넌트 분리
 
-```javascript
+```jsx
 // src/components/TodoItem.jsx
 function TodoItem({ todo, onToggle }) {
   return (
@@ -437,7 +437,7 @@ function TodoItem({ todo, onToggle }) {
 export default TodoItem;
 ```
 
-```javascript
+```jsx
 // src/components/TodoApp.jsx
 import TodoItem from './TodoItem';
 
@@ -496,7 +496,7 @@ test('삭제 버튼을 클릭하면 Todo가 제거된다', async () => {
 
 #### Green: 테스트를 통과하는 코드 작성
 
-```javascript
+```jsx
 // src/components/TodoItem.jsx
 function TodoItem({ todo, onToggle, onDelete }) {
   return (
@@ -519,7 +519,7 @@ function TodoItem({ todo, onToggle, onDelete }) {
 export default TodoItem;
 ```
 
-```javascript
+```jsx
 // src/components/TodoApp.jsx
 function TodoApp() {
   const [todos, setTodos] = useState([]);
@@ -621,7 +621,7 @@ test('필터링 기능이 정상 동작한다', async () => {
 
 #### Green: 테스트를 통과하는 코드 작성
 
-```javascript
+```jsx
 // src/components/TodoApp.jsx
 function TodoApp() {
   const [todos, setTodos] = useState([]);
@@ -757,7 +757,7 @@ function useTodos() {
 export default useTodos;
 ```
 
-```javascript
+```jsx
 // src/components/TodoApp.jsx
 import { useState } from 'react';
 import TodoItem from './TodoItem';
@@ -1102,7 +1102,7 @@ describe('TodoApp', () => {
 
 테스트를 먼저 작성하면 **API 인터페이스**를 미리 설계하게 됩니다.
 
-```javascript
+```jsx
 // 테스트를 작성하며 자연스럽게 props 인터페이스 설계
 <TodoItem todo={todo} onToggle={handleToggle} onDelete={handleDelete} />
 ```
@@ -1283,37 +1283,6 @@ test('Todo 추가부터 삭제까지 전체 흐름이 동작한다', async () =>
 
 ---
 
-## 참고 자료
-
-### 공식 문서
-
-- [Jest 공식 문서](https://jestjs.io/)
-- [React Testing Library 공식 문서](https://testing-library.com/react)
-- [Testing Library 쿼리 우선순위](https://testing-library.com/docs/queries/about#priority)
-
-### TDD 관련 서적
-
-- **"테스트 주도 개발" (Kent Beck)** - TDD의 바이블
-- **"클린 코드" (Robert C. Martin)** - TDD와 클린 코드
-- **"리팩토링" (Martin Fowler)** - 안전한 리팩토링 기법
-
-### 관련 아티클
-
-- [프론트엔드 테스팅 완벽 가이드](https://changsu1993.github.io/posts/frontend-testing-guide/)
-- [Jest와 React Testing Library로 시작하는 단위 테스트](https://jestjs.io/docs/tutorial-react)
-
-### 온라인 강의
-
-- [Test-Driven Development (Udemy)](https://www.udemy.com/topic/test-driven-development/)
-- [Testing JavaScript (Kent C. Dodds)](https://testingjavascript.com/)
-
-### 실습 자료
-
-- [TDD Kata 연습 문제](https://github.com/garora/TDD-Katas)
-- [React Testing Examples](https://github.com/testing-library/react-testing-library/tree/main/examples)
-
----
-
 ## 결론
 
 TDD(테스트 주도 개발)는 단순히 테스트를 먼저 작성하는 것이 아니라, **더 나은 설계**와 **안전한 리팩토링**을 가능하게 하는 개발 방법론입니다.
@@ -1344,3 +1313,34 @@ TDD는 초기 학습 곡선이 있지만, **장기적으로 더 빠르고 안전
 **피드백 환영:**
 
 이 글이 도움이 되셨나요? 댓글로 피드백을 남겨주시면 더 좋은 콘텐츠로 보답하겠습니다! 🚀
+
+---
+
+## 참고 자료
+
+### 공식 문서
+
+- [Jest 공식 문서](https://jestjs.io/)
+- [React Testing Library 공식 문서](https://testing-library.com/react)
+- [Testing Library 쿼리 우선순위](https://testing-library.com/docs/queries/about#priority)
+
+### TDD 관련 서적
+
+- **"테스트 주도 개발" (Kent Beck)** - TDD의 바이블
+- **"클린 코드" (Robert C. Martin)** - TDD와 클린 코드
+- **"리팩토링" (Martin Fowler)** - 안전한 리팩토링 기법
+
+### 관련 아티클
+
+- [프론트엔드 테스팅 완벽 가이드](https://changsu1993.github.io/posts/frontend-testing-guide/)
+- [Jest와 React Testing Library로 시작하는 단위 테스트](https://jestjs.io/docs/tutorial-react)
+
+### 온라인 강의
+
+- [Test-Driven Development (Udemy)](https://www.udemy.com/topic/test-driven-development/)
+- [Testing JavaScript (Kent C. Dodds)](https://testingjavascript.com/)
+
+### 실습 자료
+
+- [TDD Kata 연습 문제](https://github.com/garora/TDD-Katas)
+- [React Testing Examples](https://github.com/testing-library/react-testing-library/tree/main/examples)
