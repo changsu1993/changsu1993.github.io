@@ -5,9 +5,6 @@ categories: [Testing, TDD]
 tags: [TDD, Test-Driven Development, Jest, React Testing Library, 단위 테스트, Unit Test, 리팩토링, Refactoring, 클린 코드, Clean Code]
 description: "실전 예제로 배우는 TDD(테스트 주도 개발) 완벽 가이드. Red-Green-Refactor 사이클을 통해 Todo 앱을 단계별로 구현하며 TDD의 핵심 개념과 실무 활용법을 익힙니다."
 author: changsu
-image:
-  path: /assets/img/posts/tdd-practical-guide.png
-  alt: "TDD 실전 가이드"
 ---
 
 ## 개요
