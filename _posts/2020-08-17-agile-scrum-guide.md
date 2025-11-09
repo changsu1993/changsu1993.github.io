@@ -60,19 +60,54 @@ tags: [agile, scrum, software-development, methodology, sprint, backlog, kanban,
 
 짧은 주기의 반복적 개발 방식:
 
-```
-┌─────────────────────────────┐
-│  Sprint 1 (2주)              │
-│  계획 → 개발 → 테스트 → 리뷰  │
-└─────────────────────────────┘
-         ↓
-┌─────────────────────────────┐
-│  Sprint 2 (2주)              │
-│  계획 → 개발 → 테스트 → 리뷰  │
-└─────────────────────────────┘
-         ↓
-       (반복)
-```
+<div style="max-width: 500px; margin: 30px auto;">
+  <!-- Sprint 1 -->
+  <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3); margin-bottom: 15px;">
+    <div style="color: white; font-weight: bold; font-size: 18px; margin-bottom: 12px; text-align: center;">
+      Sprint 1 (2주)
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; color: rgba(255, 255, 255, 0.95); font-size: 14px;">
+      <div style="text-align: center; flex: 1;">📋<br>계획</div>
+      <div style="color: rgba(255, 255, 255, 0.6); font-size: 20px;">→</div>
+      <div style="text-align: center; flex: 1;">💻<br>개발</div>
+      <div style="color: rgba(255, 255, 255, 0.6); font-size: 20px;">→</div>
+      <div style="text-align: center; flex: 1;">🧪<br>테스트</div>
+      <div style="color: rgba(255, 255, 255, 0.6); font-size: 20px;">→</div>
+      <div style="text-align: center; flex: 1;">✅<br>리뷰</div>
+    </div>
+  </div>
+
+  <!-- 화살표 -->
+  <div style="text-align: center; margin: 10px 0;">
+    <div style="font-size: 24px; color: #667eea;">↓</div>
+  </div>
+
+  <!-- Sprint 2 -->
+  <div style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3); margin-bottom: 15px;">
+    <div style="color: white; font-weight: bold; font-size: 18px; margin-bottom: 12px; text-align: center;">
+      Sprint 2 (2주)
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; color: rgba(255, 255, 255, 0.95); font-size: 14px;">
+      <div style="text-align: center; flex: 1;">📋<br>계획</div>
+      <div style="color: rgba(255, 255, 255, 0.6); font-size: 20px;">→</div>
+      <div style="text-align: center; flex: 1;">💻<br>개발</div>
+      <div style="color: rgba(255, 255, 255, 0.6); font-size: 20px;">→</div>
+      <div style="text-align: center; flex: 1;">🧪<br>테스트</div>
+      <div style="color: rgba(255, 255, 255, 0.6); font-size: 20px;">→</div>
+      <div style="text-align: center; flex: 1;">✅<br>리뷰</div>
+    </div>
+  </div>
+
+  <!-- 화살표 -->
+  <div style="text-align: center; margin: 10px 0;">
+    <div style="font-size: 24px; color: #3498db;">↓</div>
+  </div>
+
+  <!-- 반복 표시 -->
+  <div style="text-align: center; padding: 15px; background: #f8f9fa; border-radius: 8px; color: #666; font-weight: bold;">
+    🔄 반복 (계속)
+  </div>
+</div>
 
 **특징**:
 - 짧은 주기로 실제 사용 가능한 소프트웨어 제공
@@ -328,17 +363,56 @@ Sprint 1 (2주)
 
 스프린트 진행 상황을 시각화하는 차트:
 
-```
-남은 작업량
-↑
-│ ╲
-│   ╲ ← 이상적 (계획)
-│     ╲
-│       ╲
-│    ───╲─ ← 실제
-│         ╲
-└──────────→ 시간 (일)
-```
+<div style="max-width: 600px; margin: 30px auto; padding: 30px; background: #f8f9fa; border-radius: 10px;">
+  <!-- Y축 라벨 -->
+  <div style="text-align: center; font-weight: bold; color: #2c3e50; margin-bottom: 5px; font-size: 14px;">
+    남은 작업량 (Story Points)
+  </div>
+
+  <!-- 차트 영역 -->
+  <div style="position: relative; height: 300px; background: white; border-left: 3px solid #2c3e50; border-bottom: 3px solid #2c3e50; margin: 20px 0 20px 30px; padding: 10px;">
+
+    <!-- Y축 눈금 -->
+    <div style="position: absolute; left: -25px; top: 0; font-size: 12px; color: #666;">50</div>
+    <div style="position: absolute; left: -25px; top: 25%; font-size: 12px; color: #666;">40</div>
+    <div style="position: absolute; left: -25px; top: 50%; font-size: 12px; color: #666;">30</div>
+    <div style="position: absolute; left: -25px; top: 75%; font-size: 12px; color: #666;">20</div>
+    <div style="position: absolute; left: -25px; bottom: 0; font-size: 12px; color: #666;">0</div>
+
+    <!-- 이상적 번다운 라인 (빨간색) -->
+    <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
+      <line x1="5%" y1="5%" x2="95%" y2="95%" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,5"/>
+    </svg>
+
+    <!-- 실제 번다운 라인 (파란색) -->
+    <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
+      <polyline points="5%,5% 25%,15% 45%,40% 65%,55% 85%,85% 95%,90%" fill="none" stroke="#3498db" stroke-width="3"/>
+    </svg>
+
+    <!-- 범례 라벨 -->
+    <div style="position: absolute; top: 10%; right: 10%; background: rgba(255,255,255,0.9); padding: 8px 12px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); font-size: 12px;">
+      <div style="margin-bottom: 5px;">
+        <span style="display: inline-block; width: 30px; height: 2px; background: #e74c3c; vertical-align: middle; border-style: dashed;"></span>
+        <span style="color: #e74c3c; font-weight: bold; margin-left: 5px;">이상적 (계획)</span>
+      </div>
+      <div>
+        <span style="display: inline-block; width: 30px; height: 3px; background: #3498db; vertical-align: middle;"></span>
+        <span style="color: #3498db; font-weight: bold; margin-left: 5px;">실제 진행</span>
+      </div>
+    </div>
+
+    <!-- X축 눈금 -->
+    <div style="position: absolute; bottom: -25px; left: 5%; font-size: 12px; color: #666;">Day 1</div>
+    <div style="position: absolute; bottom: -25px; left: 30%; font-size: 12px; color: #666;">Day 4</div>
+    <div style="position: absolute; bottom: -25px; left: 55%; font-size: 12px; color: #666;">Day 7</div>
+    <div style="position: absolute; bottom: -25px; right: 5%; font-size: 12px; color: #666;">Day 10</div>
+  </div>
+
+  <!-- X축 라벨 -->
+  <div style="text-align: center; font-weight: bold; color: #2c3e50; margin-top: 35px; font-size: 14px;">
+    시간 (일)
+  </div>
+</div>
 
 **해석**:
 - **빨간 선 (계획)**: 이상적으로 작업이 완료되는 추세
