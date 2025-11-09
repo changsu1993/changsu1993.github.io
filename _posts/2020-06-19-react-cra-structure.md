@@ -95,13 +95,19 @@ npm install eslint --save-dev
 ```json
 {
   "scripts": {
-    "start": "react-scripts start",      // 개발 서버 실행
-    "build": "react-scripts build",      // 프로덕션 빌드
-    "test": "react-scripts test",        // 테스트 실행
-    "eject": "react-scripts eject"       // 설정 노출 (비가역)
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   }
 }
 ```
+
+**스크립트 설명**:
+- `start`: 개발 서버 실행 (localhost:3000)
+- `build`: 프로덕션 빌드 생성
+- `test`: 테스트 실행 (watch mode)
+- `eject`: Webpack 설정 노출 (비가역적, 주의 필요)
 
 **실행 방법**:
 ```bash
@@ -188,20 +194,21 @@ npm install eslint --save-dev
 
 #### 설치 후 변화
 
+**package.json** (자동 업데이트됨):
 ```json
-// package.json (자동 업데이트)
 {
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "axios": "^1.4.0"  // 새로 추가됨
+    "axios": "^1.4.0"
   }
 }
 ```
 
+**node_modules** (새 패키지가 추가됨):
 ```
 node_modules/
-├── axios/           // 새로 설치된 패키지
+├── axios/
 ├── react/
 └── react-dom/
 ```
@@ -211,18 +218,18 @@ node_modules/
 ```json
 {
   "dependencies": {
-    "react": "18.2.0",      // 정확한 버전만
-    "axios": "^1.4.0",      // 마이너/패치 업데이트 허용
-    "lodash": "~4.17.21"    // 패치 업데이트만 허용
+    "react": "18.2.0",
+    "axios": "^1.4.0",
+    "lodash": "~4.17.21"
   }
 }
 ```
 
-| 기호 | 의미 | 예시 | 허용 범위 |
-|------|------|------|-----------|
-| **없음** | 정확한 버전 | `1.2.3` | `1.2.3`만 |
-| **^** | 마이너 업데이트 | `^1.2.3` | `>=1.2.3 <2.0.0` |
-| **~** | 패치 업데이트 | `~1.2.3` | `>=1.2.3 <1.3.0` |
+| 기호 | 의미 | 예시 | 허용 범위 | 설명 |
+|------|------|------|-----------|------|
+| **없음** | 정확한 버전 | `1.2.3` | `1.2.3`만 | 정확히 지정된 버전만 설치 |
+| **^** | 마이너 업데이트 | `^1.2.3` | `>=1.2.3 <2.0.0` | 마이너/패치 업데이트 허용 |
+| **~** | 패치 업데이트 | `~1.2.3` | `>=1.2.3 <1.3.0` | 패치 업데이트만 허용 |
 
 ### 3. 코드 진입점: index.html + index.js + App.js
 
