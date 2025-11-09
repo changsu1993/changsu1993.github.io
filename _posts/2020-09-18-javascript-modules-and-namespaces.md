@@ -233,7 +233,7 @@ sayHi();                  // "Peter, Hi!"
 
   <script type="module">
     // DOM이 완전히 로드된 후 실행됨
-    console.log(document.querySelector('h1'));  // <h1>Title</h1>
+    console.log(document.querySelector('h1'));  // h1 요소 출력
   </script>
 
   <h2>Subtitle</h2>
