@@ -77,11 +77,43 @@ console.log(b);  // 20
 
 #### 3. 메모리 저장 방식
 
-```
-메모리 주소    값
-0x001         10      ← a가 참조
-0x002         10      ← b가 참조 (별도 복사본)
-```
+<div style="max-width: 450px; margin: 30px auto; padding: 25px; background: #f8f9fa; border-radius: 10px;">
+  <div style="text-align: center; font-weight: bold; color: #2c3e50; margin-bottom: 20px; font-size: 16px;">
+    메모리 저장 구조 (Primitive Type)
+  </div>
+
+  <!-- 변수 a -->
+  <div style="margin-bottom: 15px;">
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <div style="background: #3498db; color: white; padding: 10px 20px; border-radius: 6px; font-weight: bold; min-width: 60px; text-align: center;">
+        a
+      </div>
+      <div style="color: #3498db; font-size: 20px;">→</div>
+      <div style="flex: 1; background: white; border: 2px solid #3498db; border-radius: 6px; padding: 15px;">
+        <div style="font-size: 12px; color: #666; margin-bottom: 5px;">메모리 주소: 0x001</div>
+        <div style="font-weight: bold; color: #2c3e50; font-size: 18px;">값: 10</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 변수 b -->
+  <div>
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <div style="background: #2ecc71; color: white; padding: 10px 20px; border-radius: 6px; font-weight: bold; min-width: 60px; text-align: center;">
+        b
+      </div>
+      <div style="color: #2ecc71; font-size: 20px;">→</div>
+      <div style="flex: 1; background: white; border: 2px solid #2ecc71; border-radius: 6px; padding: 15px;">
+        <div style="font-size: 12px; color: #666; margin-bottom: 5px;">메모리 주소: 0x002</div>
+        <div style="font-weight: bold; color: #2c3e50; font-size: 18px;">값: 10 (별도 복사본)</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 20px; padding: 12px; background: rgba(52, 152, 219, 0.1); border-left: 4px solid #3498db; border-radius: 4px; font-size: 13px; color: #555;">
+    💡 각 변수는 독립적인 메모리 공간에 값을 저장합니다
+  </div>
+</div>
 
 ## Primitive Type의 종류
 
@@ -208,12 +240,44 @@ console.log(obj1.value);  // 20 (같은 객체를 참조)
 console.log(obj2.value);  // 20
 ```
 
-```
-메모리 주소    값
-0x100         { value: 20 }
-                ↑
-           obj1, obj2 모두 참조
-```
+<div style="max-width: 500px; margin: 30px auto; padding: 25px; background: #f8f9fa; border-radius: 10px;">
+  <div style="text-align: center; font-weight: bold; color: #2c3e50; margin-bottom: 20px; font-size: 16px;">
+    메모리 저장 구조 (Reference Type)
+  </div>
+
+  <!-- 메모리 영역 -->
+  <div style="background: white; border: 3px solid #e74c3c; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+    <div style="font-size: 12px; color: #666; margin-bottom: 8px;">메모리 주소: 0x100</div>
+    <div style="background: #fff3cd; border: 2px dashed #f39c12; border-radius: 6px; padding: 15px; text-align: center;">
+      <div style="font-weight: bold; color: #2c3e50; font-size: 16px;">
+        { value: 20 }
+      </div>
+    </div>
+  </div>
+
+  <!-- 참조 화살표 -->
+  <div style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 15px;">
+    <!-- obj1 -->
+    <div style="text-align: center;">
+      <div style="background: #667eea; color: white; padding: 12px 20px; border-radius: 6px; font-weight: bold; margin-bottom: 10px;">
+        obj1
+      </div>
+      <div style="color: #667eea; font-size: 24px;">↑</div>
+    </div>
+
+    <!-- obj2 -->
+    <div style="text-align: center;">
+      <div style="background: #764ba2; color: white; padding: 12px 20px; border-radius: 6px; font-weight: bold; margin-bottom: 10px;">
+        obj2
+      </div>
+      <div style="color: #764ba2; font-size: 24px;">↑</div>
+    </div>
+  </div>
+
+  <div style="margin-top: 20px; padding: 12px; background: rgba(231, 76, 60, 0.1); border-left: 4px solid #e74c3c; border-radius: 4px; font-size: 13px; color: #555;">
+    💡 두 변수는 같은 객체의 메모리 주소를 참조합니다
+  </div>
+</div>
 
 ## 함수 (Function)
 
