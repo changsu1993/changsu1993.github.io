@@ -1,0 +1,26 @@
+@import 'main';
+
+/* 포스트 메타 정보 스타일 개선 */
+.post-meta {
+  /* 날짜와 작성자 사이 간격 조정 */
+  time {
+    margin-right: 0.5rem;
+  }
+
+  /* 구분자(•) 양쪽 간격 */
+  em {
+    margin: 0 0.5rem;
+  }
+
+  /* 작성자 이름 표시 */
+  .author {
+    display: inline;
+  }
+
+  /* 읽는 시간 표시 위치 조정 */
+  .readtime {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+}
