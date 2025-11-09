@@ -397,6 +397,22 @@ p { }
 2. **의미 있는 이름** 사용
 3. **HTML과 CSS 분리**
 
+## 다음 단계
+
+CSS의 기본을 익혔다면 다음 단계로 나아가세요:
+
+1. **[CSS Position 완벽 가이드](/posts/css-position/)** - 요소 배치의 모든 것
+2. **[CSS Float](/posts/css-float/)** - 레이아웃 기초
+3. **[CSS Media Query](/posts/css-media-query/)** - 반응형 웹 디자인
+4. **[JavaScript 입문 가이드](/posts/javascript-introduction/)** - CSS로 만든 웹에 동적 기능 추가
+
+## 관련 포스트
+
+- [HTML 기초 완벽 가이드](/posts/html-basics/) - CSS를 적용할 HTML 배우기
+- [CSS 선택자와 우선순위](/posts/css-selectors-specificity/) - 선택자 심화
+- [CSS 폰트 스타일](/posts/css-font-style/) - 텍스트 꾸미기
+- [CSS 마진과 패딩](/posts/css-margin-padding/) - 여백 조절하기
+
 ## 참고 자료
 
 - [MDN - CSS 기초](https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/CSS_basics)

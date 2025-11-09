@@ -866,6 +866,20 @@ React는 **사용자 인터페이스를 만들기 위한 JavaScript 라이브러
 
 React를 처음 시작하는 분들을 위한 단계별 학습 가이드입니다. 각 단계를 순서대로 학습하면서 점진적으로 실력을 쌓아가세요.
 
+### 추천 학습 경로
+
+1. **[React CRA 시작하기](/posts/react-cra-setup/)** - 개발 환경 구축
+2. **[React JSX 가이드](/posts/react-jsx-guide/)** - JSX 문법 마스터하기
+3. **[React Hooks 성능 최적화](/posts/react-hooks-performance-optimization/)** - useMemo와 useCallback 활용
+4. **[프론트엔드 테스팅 완벽 가이드](/posts/frontend-testing-guide/)** - Jest와 React Testing Library
+5. **[TDD 실전 가이드](/posts/tdd-practical-guide/)** - 테스트 주도 개발
+
+### 관련 포스트
+
+- [JavaScript 입문 가이드](/posts/javascript-introduction/) - React를 위한 JavaScript 기초
+- [JavaScript Class](/posts/javascript-class/) - 컴포넌트 이해의 기반
+- [JavaScript Event Loop](/posts/javascript-event-loop/) - 비동기 처리 이해하기
+
 #### 1단계: 기초 다지기 (1-2주)
 
 **JavaScript ES6+ 필수 문법**

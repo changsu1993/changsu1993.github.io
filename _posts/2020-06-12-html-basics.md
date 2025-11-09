@@ -546,10 +546,19 @@ HTML에서 모든 콘텐츠는 **태그(Tag)**로 감싸져 표현됩니다.
 
 ## 다음 단계
 
-1. **CSS 학습**: 웹페이지 스타일링
-2. **JavaScript 학습**: 동적 기능 구현
-3. **반응형 웹**: 다양한 기기 대응
-4. **웹 접근성**: 모든 사용자를 위한 웹
+HTML의 기초를 익혔다면 이제 다음 단계로 나아갈 차례입니다:
+
+1. **[CSS 입문 가이드](/posts/css-introduction/)** - HTML에 스타일 입히기
+2. **[JavaScript 입문 가이드](/posts/javascript-introduction/)** - 동적인 웹 만들기
+3. **[CSS Position 완벽 가이드](/posts/css-position/)** - 요소 배치 마스터하기
+4. **[React 입문 가이드](/posts/react-introduction/)** - 컴포넌트 기반 개발
+
+## 관련 포스트
+
+- [HTML 구조](/posts/html-structure/) - HTML 문서의 기본 구조
+- [HTML 속성](/posts/html-attributes/) - 태그 속성 완벽 가이드
+- [HTML 테이블](/posts/html-table/) - 표 만들기
+- [HTML Form과 Input](/posts/html-form-input/) - 사용자 입력 받기
 
 ## 참고 자료
 

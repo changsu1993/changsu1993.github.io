@@ -809,15 +809,21 @@ let Name = "Bob"; // 다른 변수
 
 ## 다음 단계
 
-JavaScript 기초를 익혔다면 다음 주제를 학습하세요:
+JavaScript 기초를 익혔다면 다음 단계로 나아가세요:
 
-1. **연산자**: 산술, 비교, 논리 연산
-2. **제어문**: if, switch, 반복문
-3. **함수**: 함수 선언, 표현식, 화살표 함수
-4. **배열**: 배열 메서드, 반복
-5. **객체**: 객체 생성, 메서드, this
-6. **DOM 조작**: 요소 선택, 이벤트 처리
-7. **비동기**: Promise, async/await
+1. **[JavaScript 변수](/posts/javascript-variables/)** - let, const, var의 차이
+2. **[JavaScript 함수 가이드](/posts/javascript-function-guide/)** - 함수 선언과 활용
+3. **[JavaScript Scope](/posts/javascript-scope/)** - 변수의 유효 범위
+4. **[JavaScript Class](/posts/javascript-class/)** - 객체지향 프로그래밍
+5. **[JavaScript Event Loop](/posts/javascript-event-loop/)** - 비동기 처리의 핵심
+6. **[React 입문 가이드](/posts/react-introduction/)** - JavaScript로 UI 만들기
+
+## 관련 포스트
+
+- [HTML 기초 완벽 가이드](/posts/html-basics/) - JavaScript를 적용할 HTML 배우기
+- [CSS 입문 가이드](/posts/css-introduction/) - 웹에 스타일 입히기
+- [JavaScript 배열 가이드](/posts/javascript-array-guide/) - 배열 메서드 마스터하기
+- [JavaScript 객체](/posts/javascript-object/) - 객체 생성과 활용
 
 ## 참고 자료
 
