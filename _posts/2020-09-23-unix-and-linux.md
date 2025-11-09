@@ -49,38 +49,176 @@ if (fd < 0) {
 
 **2. 멀티태스킹과 멀티유저**
 
-```bash
-# 여러 사용자가 동시에 접속
-$ who
-alice    pts/0    2020-09-23 10:30
-bob      pts/1    2020-09-23 11:15
-charlie  pts/2    2020-09-23 12:00
+**사용자 접속 현황:**
 
-# 여러 프로세스가 동시에 실행
-$ ps aux
-USER       PID  %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root         1  0.0  0.1  19356  1464 ?        Ss   10:00   0:01 /sbin/init
-alice      512  2.5  1.5 123456 15000 pts/0    S+   10:30   0:45 python app.py
-```
+<div style="background: #2c3e50; color: #ecf0f1; padding: 20px; border-radius: 10px; font-family: monospace; margin: 15px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+  <div style="color: #3498db; margin-bottom: 10px;">$ who</div>
+  <div style="display: grid; grid-template-columns: 100px 80px 1fr; gap: 10px; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 5px;">
+    <div style="color: #2ecc71; font-weight: bold;">alice</div>
+    <div style="color: #95a5a6;">pts/0</div>
+    <div style="color: #e74c3c;">2020-09-23 10:30</div>
+    <div style="color: #2ecc71; font-weight: bold;">bob</div>
+    <div style="color: #95a5a6;">pts/1</div>
+    <div style="color: #e74c3c;">2020-09-23 11:15</div>
+    <div style="color: #2ecc71; font-weight: bold;">charlie</div>
+    <div style="color: #95a5a6;">pts/2</div>
+    <div style="color: #e74c3c;">2020-09-23 12:00</div>
+  </div>
+</div>
+
+**프로세스 실행 현황:**
+
+<div style="background: #2c3e50; color: #ecf0f1; padding: 20px; border-radius: 10px; font-family: monospace; margin: 15px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+  <div style="color: #3498db; margin-bottom: 10px;">$ ps aux</div>
+  <div style="overflow-x: auto;">
+    <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+      <thead>
+        <tr style="background: rgba(52, 152, 219, 0.2); border-bottom: 2px solid #3498db;">
+          <th style="padding: 8px; text-align: left; color: #f39c12;">USER</th>
+          <th style="padding: 8px; text-align: left; color: #f39c12;">PID</th>
+          <th style="padding: 8px; text-align: left; color: #f39c12;">%CPU</th>
+          <th style="padding: 8px; text-align: left; color: #f39c12;">%MEM</th>
+          <th style="padding: 8px; text-align: left; color: #f39c12;">VSZ</th>
+          <th style="padding: 8px; text-align: left; color: #f39c12;">RSS</th>
+          <th style="padding: 8px; text-align: left; color: #f39c12;">TTY</th>
+          <th style="padding: 8px; text-align: left; color: #f39c12;">STAT</th>
+          <th style="padding: 8px; text-align: left; color: #f39c12;">START</th>
+          <th style="padding: 8px; text-align: left; color: #f39c12;">TIME</th>
+          <th style="padding: 8px; text-align: left; color: #f39c12;">COMMAND</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background: rgba(255,255,255,0.03);">
+          <td style="padding: 8px; color: #e74c3c; font-weight: bold;">root</td>
+          <td style="padding: 8px; color: #95a5a6;">1</td>
+          <td style="padding: 8px; color: #2ecc71;">0.0</td>
+          <td style="padding: 8px; color: #2ecc71;">0.1</td>
+          <td style="padding: 8px; color: #95a5a6;">19356</td>
+          <td style="padding: 8px; color: #95a5a6;">1464</td>
+          <td style="padding: 8px; color: #95a5a6;">?</td>
+          <td style="padding: 8px; color: #3498db;">Ss</td>
+          <td style="padding: 8px; color: #95a5a6;">10:00</td>
+          <td style="padding: 8px; color: #95a5a6;">0:01</td>
+          <td style="padding: 8px; color: #ecf0f1;">/sbin/init</td>
+        </tr>
+        <tr style="background: rgba(255,255,255,0.05);">
+          <td style="padding: 8px; color: #2ecc71; font-weight: bold;">alice</td>
+          <td style="padding: 8px; color: #95a5a6;">512</td>
+          <td style="padding: 8px; color: #e67e22; font-weight: bold;">2.5</td>
+          <td style="padding: 8px; color: #e67e22; font-weight: bold;">1.5</td>
+          <td style="padding: 8px; color: #95a5a6;">123456</td>
+          <td style="padding: 8px; color: #95a5a6;">15000</td>
+          <td style="padding: 8px; color: #95a5a6;">pts/0</td>
+          <td style="padding: 8px; color: #3498db;">S+</td>
+          <td style="padding: 8px; color: #95a5a6;">10:30</td>
+          <td style="padding: 8px; color: #95a5a6;">0:45</td>
+          <td style="padding: 8px; color: #ecf0f1;">python app.py</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
 **3. 계층적 파일 시스템**
 
-```text
-/                          (루트 디렉토리)
-├── bin/                   (기본 명령어)
-├── etc/                   (설정 파일)
-│   ├── passwd            (사용자 정보)
-│   └── hosts             (호스트 정보)
-├── home/                  (사용자 홈 디렉토리)
-│   ├── alice/
-│   └── bob/
-├── usr/                   (사용자 프로그램)
-│   ├── bin/
-│   └── lib/
-└── var/                   (가변 데이터)
-    ├── log/              (로그 파일)
-    └── tmp/              (임시 파일)
-```
+<div style="background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); padding: 25px; border-radius: 15px; margin: 20px 0; box-shadow: 0 8px 20px rgba(0,0,0,0.3);">
+  <div style="font-family: monospace; color: #ecf0f1;">
+    <div style="display: flex; align-items: center; margin-bottom: 15px; padding: 10px; background: rgba(52, 152, 219, 0.2); border-radius: 8px;">
+      <div style="color: #3498db; font-size: 24px; margin-right: 15px;">📁</div>
+      <div style="color: #f39c12; font-weight: bold; font-size: 18px;">/</div>
+      <div style="color: #95a5a6; margin-left: 15px; font-size: 14px;">(루트 디렉토리)</div>
+    </div>
+
+    <div style="margin-left: 20px;">
+      <!-- bin -->
+      <div style="display: flex; align-items: center; margin-bottom: 10px; padding: 8px; background: rgba(255,255,255,0.05); border-radius: 5px;">
+        <div style="color: #95a5a6; margin-right: 10px;">├──</div>
+        <div style="color: #2ecc71; font-weight: bold;">bin/</div>
+        <div style="color: #95a5a6; margin-left: 15px; font-size: 13px;">(기본 명령어)</div>
+      </div>
+
+      <!-- etc -->
+      <div style="margin-bottom: 10px;">
+        <div style="display: flex; align-items: center; padding: 8px; background: rgba(255,255,255,0.05); border-radius: 5px;">
+          <div style="color: #95a5a6; margin-right: 10px;">├──</div>
+          <div style="color: #2ecc71; font-weight: bold;">etc/</div>
+          <div style="color: #95a5a6; margin-left: 15px; font-size: 13px;">(설정 파일)</div>
+        </div>
+        <div style="margin-left: 40px; margin-top: 5px;">
+          <div style="display: flex; align-items: center; padding: 5px; background: rgba(255,255,255,0.03); border-radius: 3px; margin-bottom: 3px;">
+            <div style="color: #95a5a6; margin-right: 10px;">├──</div>
+            <div style="color: #e74c3c;">passwd</div>
+            <div style="color: #95a5a6; margin-left: 10px; font-size: 12px;">(사용자 정보)</div>
+          </div>
+          <div style="display: flex; align-items: center; padding: 5px; background: rgba(255,255,255,0.03); border-radius: 3px;">
+            <div style="color: #95a5a6; margin-right: 10px;">└──</div>
+            <div style="color: #e74c3c;">hosts</div>
+            <div style="color: #95a5a6; margin-left: 10px; font-size: 12px;">(호스트 정보)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- home -->
+      <div style="margin-bottom: 10px;">
+        <div style="display: flex; align-items: center; padding: 8px; background: rgba(255,255,255,0.05); border-radius: 5px;">
+          <div style="color: #95a5a6; margin-right: 10px;">├──</div>
+          <div style="color: #2ecc71; font-weight: bold;">home/</div>
+          <div style="color: #95a5a6; margin-left: 15px; font-size: 13px;">(사용자 홈 디렉토리)</div>
+        </div>
+        <div style="margin-left: 40px; margin-top: 5px;">
+          <div style="display: flex; align-items: center; padding: 5px; background: rgba(255,255,255,0.03); border-radius: 3px; margin-bottom: 3px;">
+            <div style="color: #95a5a6; margin-right: 10px;">├──</div>
+            <div style="color: #9b59b6; font-weight: bold;">alice/</div>
+          </div>
+          <div style="display: flex; align-items: center; padding: 5px; background: rgba(255,255,255,0.03); border-radius: 3px;">
+            <div style="color: #95a5a6; margin-right: 10px;">└──</div>
+            <div style="color: #9b59b6; font-weight: bold;">bob/</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- usr -->
+      <div style="margin-bottom: 10px;">
+        <div style="display: flex; align-items: center; padding: 8px; background: rgba(255,255,255,0.05); border-radius: 5px;">
+          <div style="color: #95a5a6; margin-right: 10px;">├──</div>
+          <div style="color: #2ecc71; font-weight: bold;">usr/</div>
+          <div style="color: #95a5a6; margin-left: 15px; font-size: 13px;">(사용자 프로그램)</div>
+        </div>
+        <div style="margin-left: 40px; margin-top: 5px;">
+          <div style="display: flex; align-items: center; padding: 5px; background: rgba(255,255,255,0.03); border-radius: 3px; margin-bottom: 3px;">
+            <div style="color: #95a5a6; margin-right: 10px;">├──</div>
+            <div style="color: #1abc9c; font-weight: bold;">bin/</div>
+          </div>
+          <div style="display: flex; align-items: center; padding: 5px; background: rgba(255,255,255,0.03); border-radius: 3px;">
+            <div style="color: #95a5a6; margin-right: 10px;">└──</div>
+            <div style="color: #1abc9c; font-weight: bold;">lib/</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- var -->
+      <div style="margin-bottom: 10px;">
+        <div style="display: flex; align-items: center; padding: 8px; background: rgba(255,255,255,0.05); border-radius: 5px;">
+          <div style="color: #95a5a6; margin-right: 10px;">└──</div>
+          <div style="color: #2ecc71; font-weight: bold;">var/</div>
+          <div style="color: #95a5a6; margin-left: 15px; font-size: 13px;">(가변 데이터)</div>
+        </div>
+        <div style="margin-left: 40px; margin-top: 5px;">
+          <div style="display: flex; align-items: center; padding: 5px; background: rgba(255,255,255,0.03); border-radius: 3px; margin-bottom: 3px;">
+            <div style="color: #95a5a6; margin-right: 10px;">├──</div>
+            <div style="color: #f39c12; font-weight: bold;">log/</div>
+            <div style="color: #95a5a6; margin-left: 10px; font-size: 12px;">(로그 파일)</div>
+          </div>
+          <div style="display: flex; align-items: center; padding: 5px; background: rgba(255,255,255,0.03); border-radius: 3px;">
+            <div style="color: #95a5a6; margin-right: 10px;">└──</div>
+            <div style="color: #f39c12; font-weight: bold;">tmp/</div>
+            <div style="color: #95a5a6; margin-left: 10px; font-size: 12px;">(임시 파일)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## Unix 철학
 
@@ -358,23 +496,35 @@ MODULE_DESCRIPTION("Hello World Module");
 
 ### 두 프로젝트의 만남
 
-```text
-GNU 프로젝트 + Linux Kernel = 완전한 운영체제
+**GNU 프로젝트 + Linux Kernel = 완전한 운영체제**
 
-┌─────────────────────────────────────┐
-│         User Applications           │
-│   (브라우저, 텍스트 에디터 등)        │
-├─────────────────────────────────────┤
-│         GNU Tools & Libraries       │
-│   GCC, Bash, glibc, coreutils...    │
-├─────────────────────────────────────┤
-│         Linux Kernel                │
-│   프로세스, 메모리, 파일 시스템 관리  │
-├─────────────────────────────────────┤
-│            Hardware                 │
-│   CPU, RAM, Disk, Network...        │
-└─────────────────────────────────────┘
-```
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; margin: 20px 0; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+  <div style="display: flex; flex-direction: column; gap: 0;">
+    <!-- User Applications -->
+    <div style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; padding: 20px; border-radius: 10px 10px 0 0; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <div style="font-weight: bold; font-size: 16px; margin-bottom: 5px;">User Applications</div>
+      <div style="font-size: 14px; opacity: 0.9;">(브라우저, 텍스트 에디터 등)</div>
+    </div>
+
+    <!-- GNU Tools & Libraries -->
+    <div style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <div style="font-weight: bold; font-size: 16px; margin-bottom: 5px;">GNU Tools & Libraries</div>
+      <div style="font-size: 14px; opacity: 0.9;">GCC, Bash, glibc, coreutils...</div>
+    </div>
+
+    <!-- Linux Kernel -->
+    <div style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); color: white; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <div style="font-weight: bold; font-size: 16px; margin-bottom: 5px;">Linux Kernel</div>
+      <div style="font-size: 14px; opacity: 0.9;">프로세스, 메모리, 파일 시스템 관리</div>
+    </div>
+
+    <!-- Hardware -->
+    <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 20px; border-radius: 0 0 10px 10px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <div style="font-weight: bold; font-size: 16px; margin-bottom: 5px;">Hardware</div>
+      <div style="font-size: 14px; opacity: 0.9;">CPU, RAM, Disk, Network...</div>
+    </div>
+  </div>
+</div>
 
 ### GNU/Linux vs Linux 논쟁
 
@@ -634,21 +784,37 @@ spec:
 
 **3. Android (모바일)**
 
-```text
-Android 아키텍처:
+**Android 아키텍처:**
 
-┌─────────────────────────────┐
-│    Android Apps (Java/Kotlin)│
-├─────────────────────────────┤
-│    Android Framework         │
-├─────────────────────────────┤
-│    Android Runtime (ART)     │
-├─────────────────────────────┤
-│    Native Libraries (C/C++)  │
-├─────────────────────────────┤
-│    Linux Kernel              │  ← Linux!
-└─────────────────────────────┘
-```
+<div style="background: linear-gradient(135deg, #16a085 0%, #138d75 100%); padding: 25px; border-radius: 15px; margin: 20px 0; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+  <div style="display: flex; flex-direction: column; gap: 0;">
+    <!-- Android Apps -->
+    <div style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white; padding: 18px; border-radius: 10px 10px 0 0; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <div style="font-weight: bold; font-size: 15px;">Android Apps (Java/Kotlin)</div>
+    </div>
+
+    <!-- Android Framework -->
+    <div style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; padding: 18px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <div style="font-weight: bold; font-size: 15px;">Android Framework</div>
+    </div>
+
+    <!-- Android Runtime -->
+    <div style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); color: white; padding: 18px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <div style="font-weight: bold; font-size: 15px;">Android Runtime (ART)</div>
+    </div>
+
+    <!-- Native Libraries -->
+    <div style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; padding: 18px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <div style="font-weight: bold; font-size: 15px;">Native Libraries (C/C++)</div>
+    </div>
+
+    <!-- Linux Kernel -->
+    <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 18px; border-radius: 0 0 10px 10px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: relative;">
+      <div style="font-weight: bold; font-size: 15px;">Linux Kernel</div>
+      <div style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px; font-size: 14px;">← Linux! 🐧</div>
+    </div>
+  </div>
+</div>
 
 **4. 임베디드 시스템**
 
