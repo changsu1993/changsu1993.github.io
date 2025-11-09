@@ -371,14 +371,14 @@ DOMContentLoaded 이벤트 발생
 
 Chrome DevTools의 Lighthouse를 사용하여 스크립트 로딩 최적화 효과를 측정할 수 있습니다.
 
-```javascript
-// ❌ 나쁜 예: head에 일반 script
+```html
+<!-- ❌ 나쁜 예: head에 일반 script -->
 <script src="large-library.js"></script>
-// Lighthouse Score: Performance 45
+<!-- Lighthouse Score: Performance 45 -->
 
-// ✅ 좋은 예: defer 사용
+<!-- ✅ 좋은 예: defer 사용 -->
 <script defer src="large-library.js"></script>
-// Lighthouse Score: Performance 92
+<!-- Lighthouse Score: Performance 92 -->
 ```
 
 ### Performance API로 측정
