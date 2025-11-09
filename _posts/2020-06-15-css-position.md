@@ -1,6 +1,6 @@
 ---
 title: CSS Position 완벽 가이드 - 요소 배치의 모든 것
-description: CSS position 속성으로 요소를 자유롭게 배치하는 방법을 학습합니다. static, relative, absolute, fixed, sticky의 차이점과 실전 활용법을 다룹니다.
+description: CSS position 속성으로 요소를 자유롭게 배치하는 방법을 학습합니다. static, relative, absolute, fixed, sticky의 차이점과 실전 활용법을 다룹니다. 모달창, 툴팁, 드롭다운 메뉴, 고정 헤더 등 9가지 실전 예제로 position을 완벽하게 마스터하고 z-index 쌓임 맥락을 이해합니다.
 author: changsu
 date: 2020-06-15 12:30:23 +0900
 categories: [Web, CSS]

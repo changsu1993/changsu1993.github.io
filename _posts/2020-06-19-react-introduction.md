@@ -1,6 +1,6 @@
 ---
 title: React 입문 가이드 - UI 라이브러리의 혁신
-description: React의 기본 개념과 특징을 학습합니다. 웹 애플리케이션, 라이브러리 vs 프레임워크, Component, JSX, Virtual DOM을 다룹니다.
+description: React의 기본 개념과 특징을 학습합니다. 웹 애플리케이션, 라이브러리 vs 프레임워크, Component, JSX, Virtual DOM을 다룹니다. 컴포넌트 기반 아키텍처로 재사용 가능한 UI를 만드는 방법과 가상 돔을 통한 효율적인 렌더링 최적화를 배웁니다. Angular, Vue와의 비교를 통해 React의 장점을 이해합니다.
 author: changsu
 date: 2020-06-19 13:09:12 +0900
 categories: [Programming, React]

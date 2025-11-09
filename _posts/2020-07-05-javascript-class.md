@@ -6,7 +6,7 @@ tags: [javascript, class, oop, es6, constructor, 객체지향]
 author: changsu
 toc: true
 comments: true
-description: JavaScript ES6 Class의 개념부터 활용까지. Constructor, Instance, Method를 실전 예제와 함께 알아봅니다.
+description: JavaScript ES6 Class의 개념부터 활용까지. Constructor, Instance, Method를 실전 예제와 함께 알아봅니다. 객체지향 프로그래밍(OOP)의 핵심 개념을 쉽고 명확하게 설명하며, 클래스를 활용한 실무 코드 작성법을 단계별로 학습합니다. 자동차 판매 시스템 예제로 클래스의 활용을 익힙니다.
 ---
 
 ## 들어가며

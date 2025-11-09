@@ -1,6 +1,6 @@
 ---
 title: JavaScript 입문 가이드 - 웹을 동적으로 만드는 언어
-description: JavaScript의 기본 개념, 역할, 실행 환경을 학습합니다. alert, console.log부터 시작하는 JavaScript 첫걸음입니다.
+description: JavaScript의 기본 개념, 역할, 실행 환경을 학습합니다. alert, console.log부터 시작하는 JavaScript 첫걸음으로, HTML과 CSS로 만든 정적 웹페이지에 동적 기능을 추가하는 방법을 배웁니다. 브라우저 콘솔 활용법과 디버깅 기초를 실습하며 프론트엔드 개발의 핵심을 익힙니다.
 author: changsu
 date: 2020-06-16 09:40:30 +0900
 categories: [Programming, JavaScript]

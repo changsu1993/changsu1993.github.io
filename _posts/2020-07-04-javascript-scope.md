@@ -6,7 +6,7 @@ tags: [javascript, scope, block, global, local, namespace, 변수]
 author: changsu
 toc: true
 comments: true
-description: JavaScript Scope의 개념부터 실전 활용까지. Block Scope, Global Scope, 좋은 Scoping 습관을 실전 예제와 함께 알아봅니다.
+description: JavaScript Scope의 개념부터 실전 활용까지. Block Scope, Global Scope, 좋은 Scoping 습관을 실전 예제와 함께 알아봅니다. let, const, var의 스코프 차이를 이해하고 클로저와 네임스페이스 패턴을 활용한 변수 충돌 방지 기법을 배웁니다. 전역 변수 오염을 막는 실무 코딩 습관을 익힙니다.
 ---
 
 ## 들어가며

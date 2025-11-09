@@ -6,7 +6,7 @@ tags: [javascript, event-loop, message-queue, microtask, macrotask, tick, 비동
 author: changsu
 toc: true
 comments: true
-description: JavaScript Event Loop의 동작 원리부터 Microtask와 Macrotask의 차이, 실전 활용까지. 비동기 처리의 핵심을 실전 예제와 함께 완벽하게 이해합니다.
+description: JavaScript Event Loop의 동작 원리부터 Microtask와 Macrotask의 차이, 실전 활용까지 비동기 처리의 핵심을 완벽하게 이해합니다. Call Stack, Web API, Task Queue의 상호작용을 시각화로 배우고 Promise와 setTimeout의 실행 순서를 예측하는 방법을 익힙니다. 싱글 스레드 환경에서의 비동기 처리 메커니즘을 마스터합니다.
 ---
 
 ## 들어가며

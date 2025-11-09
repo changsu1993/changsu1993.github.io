@@ -10,7 +10,7 @@ comments: true
 # image:
 #   path: /assets/img/posts/react-hooks-optimization.jpg
 #   alt: React Hooks 성능 최적화
-description: React Hooks를 활용한 실전 성능 최적화 기법을 알아봅니다. useMemo와 useCallback의 올바른 사용법과 성능 측정 방법을 실용적인 코드 예시와 함께 설명합니다.
+description: React Hooks를 활용한 실전 성능 최적화 기법을 알아봅니다. useMemo와 useCallback의 올바른 사용법과 성능 측정 방법을 실용적인 코드 예시와 함께 설명합니다. 불필요한 리렌더링을 방지하고 연산 비용을 줄이는 메모이제이션 기법을 배우며, React DevTools Profiler로 성능을 측정하고 개선하는 방법을 마스터합니다.
 ---
 
 ## 들어가며
