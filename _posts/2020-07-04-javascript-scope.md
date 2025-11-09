@@ -268,6 +268,189 @@ greet('John');
 > Scope를 올바르게 이해하고 활용하면 버그가 적고, 유지보수하기 쉬운 코드를 작성할 수 있습니다.
 {: .prompt-info }
 
+## 자주 묻는 질문 (FAQ)
+
+### Q1. let, const, var의 차이점은 무엇인가요?
+
+**A:** 스코프와 재할당 가능 여부가 다릅니다.
+
+| 구분 | var | let | const |
+|------|-----|-----|-------|
+| **스코프** | Function Scope | Block Scope | Block Scope |
+| **재할당** | 가능 | 가능 | 불가능 |
+| **재선언** | 가능 | 불가능 | 불가능 |
+| **호이스팅** | undefined | TDZ | TDZ |
+| **권장도** | ❌ | ✅ | ✅✅ |
+
+```javascript
+// var - Function Scope
+if (true) {
+  var x = 10;
+}
+console.log(x); // 10 (접근 가능!)
+
+// let/const - Block Scope
+if (true) {
+  let y = 20;
+  const z = 30;
+}
+console.log(y); // ReferenceError
+console.log(z); // ReferenceError
+```
+
+### Q2. 전역 변수는 왜 피해야 하나요?
+
+**A:** 다음과 같은 문제가 발생할 수 있습니다:
+1. **변수 충돌**: 다른 코드와 변수명이 겹칠 수 있음
+2. **메모리 누수**: 전역 변수는 계속 메모리에 남음
+3. **디버깅 어려움**: 어디서든 변경 가능해 추적이 어려움
+4. **테스트 어려움**: 독립적인 테스트가 불가능
+
+```javascript
+// ❌ 나쁜 예
+let count = 0; // 전역 변수
+function increment() {
+  count++;
+}
+
+// ✅ 좋은 예
+function createCounter() {
+  let count = 0; // 지역 변수
+  return {
+    increment() { count++; },
+    getCount() { return count; }
+  };
+}
+```
+
+### Q3. 클로저(Closure)란 무엇인가요?
+
+**A:** 함수가 자신이 생성될 때의 스코프를 기억하는 현상입니다.
+
+```javascript
+function makeCounter() {
+  let count = 0; // 외부 함수의 변수
+
+  return function() {
+    count++; // 외부 변수에 접근!
+    return count;
+  };
+}
+
+const counter1 = makeCounter();
+console.log(counter1()); // 1
+console.log(counter1()); // 2
+
+const counter2 = makeCounter();
+console.log(counter2()); // 1 (독립적인 count)
+```
+
+**활용 사례:**
+- 데이터 은닉 (private 변수)
+- 콜백 함수
+- 이벤트 핸들러
+
+### Q4. Block Scope가 왜 중요한가요?
+
+**A:** 코드의 예측 가능성과 안정성을 높입니다.
+
+```javascript
+// ❌ var의 문제점
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 100);
+}
+// 출력: 3, 3, 3 (모두 같은 i 참조)
+
+// ✅ let의 해결
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 100);
+}
+// 출력: 0, 1, 2 (각각 독립적인 i)
+```
+
+### Q5. 함수 안에서 선언한 변수를 밖에서 사용할 수 있나요?
+
+**A:** 아니요, 함수 스코프 때문에 불가능합니다.
+
+```javascript
+function test() {
+  let message = "Hello";
+}
+
+test();
+console.log(message); // ReferenceError
+```
+
+**해결 방법:**
+1. 함수에서 값을 반환
+2. 외부 변수 사용 (권장하지 않음)
+3. 객체나 배열로 반환
+
+```javascript
+// ✅ 권장: 값 반환
+function getMessage() {
+  let message = "Hello";
+  return message;
+}
+
+const result = getMessage();
+console.log(result); // "Hello"
+```
+
+### Q6. TDZ(Temporal Dead Zone)란 무엇인가요?
+
+**A:** `let`과 `const` 변수의 선언 전 접근 불가 구간입니다.
+
+```javascript
+console.log(x); // ReferenceError: TDZ
+let x = 10;
+
+// var는 TDZ가 없음 (undefined 반환)
+console.log(y); // undefined
+var y = 20;
+```
+
+**TDZ의 장점:**
+- 변수 선언 전 사용을 방지
+- 버그를 조기에 발견
+- 코드의 명확성 향상
+
+### Q7. 네임스페이스 패턴이 무엇인가요?
+
+**A:** 전역 변수 충돌을 방지하는 패턴입니다.
+
+```javascript
+// ❌ 전역 변수 오염
+let name = "App";
+let version = "1.0";
+let config = {};
+
+// ✅ 네임스페이스 패턴
+const MyApp = {
+  name: "App",
+  version: "1.0",
+  config: {},
+  init() {
+    console.log(`${this.name} v${this.version}`);
+  }
+};
+
+MyApp.init();
+```
+
+**모던 JavaScript 대안:**
+- ES6 Modules (`import`/`export`)
+- IIFE (즉시 실행 함수)
+
+```javascript
+// ES6 Module
+// config.js
+export const config = { ... };
+
+// app.js
+import { config } from './config.js';
+```
+
 ## 참고 자료
 
 - [MDN - Scope](https://developer.mozilla.org/ko/docs/Glossary/Scope)

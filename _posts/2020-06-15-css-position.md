@@ -1166,6 +1166,154 @@ position: sticky;
 3. 높을수록 위에 표시
 4. 부모의 z-index가 낮으면 자식도 낮아짐
 
+## 자주 묻는 질문 (FAQ)
+
+### Q1. absolute와 fixed의 차이점은 무엇인가요?
+
+**A:** 기준점이 다릅니다.
+- **absolute**: 가장 가까운 `position: relative` 부모를 기준으로 배치
+- **fixed**: 항상 뷰포트(브라우저 창)를 기준으로 배치하며 스크롤해도 고정됨
+
+```css
+/* absolute - 부모 기준 */
+.parent { position: relative; }
+.child { position: absolute; top: 0; }
+
+/* fixed - 뷰포트 기준 */
+.header { position: fixed; top: 0; }
+```
+
+### Q2. sticky가 작동하지 않는 이유는?
+
+**A:** 다음을 확인하세요:
+1. 부모 요소에 `overflow: hidden` 등이 있는지 확인
+2. `top`, `bottom` 등 방향 속성을 지정했는지 확인
+3. 부모의 높이가 충분한지 확인
+4. Safari는 `-webkit-sticky`도 필요할 수 있음
+
+```css
+/* 올바른 sticky 사용 */
+.sticky-nav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0; /* 필수! */
+}
+```
+
+### Q3. z-index가 작동하지 않아요!
+
+**A:** 다음을 확인하세요:
+1. `position`이 `static`이 아닌지 확인 (relative, absolute, fixed, sticky 중 하나여야 함)
+2. 부모의 stacking context 확인
+3. 다른 요소와 같은 stacking context에 있는지 확인
+
+```css
+/* ❌ 작동 안함 */
+.element {
+  z-index: 999; /* position이 없음! */
+}
+
+/* ✅ 작동함 */
+.element {
+  position: relative;
+  z-index: 999;
+}
+```
+
+### Q4. 모달을 화면 중앙에 배치하려면?
+
+**A:** `fixed`와 `transform`을 조합하세요:
+
+```css
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 또는 flexbox 사용 */
+}
+
+/* 부모에서 flexbox로도 가능 */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+```
+
+### Q5. position: relative를 사용하는 이유가 뭔가요?
+
+**A:** 두 가지 주요 용도가 있습니다:
+1. **자식의 absolute 기준점**: 자식 요소가 absolute일 때 기준이 됨
+2. **자신의 위치 미세조정**: `top`, `left` 등으로 원래 위치에서 이동
+
+```css
+/* 용도 1: 자식의 기준점 */
+.card {
+  position: relative; /* 자식 absolute의 기준 */
+}
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+/* 용도 2: 위치 미세조정 */
+.button {
+  position: relative;
+  top: 2px; /* 살짝 아래로 */
+}
+```
+
+### Q6. 모바일에서 fixed가 이상하게 동작해요
+
+**A:** 모바일 브라우저의 주소창 때문입니다. 해결 방법:
+
+```css
+/* 방법 1: 100vh 대신 100% 사용 */
+.fixed-element {
+  position: fixed;
+  height: 100%; /* 100vh 대신 */
+}
+
+/* 방법 2: CSS Custom Properties 사용 */
+:root {
+  --vh: 1vh;
+}
+.fixed-element {
+  height: calc(var(--vh, 1vh) * 100);
+}
+```
+
+```javascript
+// JavaScript로 실제 viewport 높이 계산
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+```
+
+### Q7. sticky 헤더 아래로 콘텐츠가 가려져요
+
+**A:** 상단에 패딩을 추가하세요:
+
+```css
+.sticky-header {
+  position: sticky;
+  top: 0;
+  height: 60px;
+}
+
+.content {
+  padding-top: 60px; /* 헤더 높이만큼 */
+}
+
+/* 또는 scroll-margin-top 사용 */
+section {
+  scroll-margin-top: 60px;
+}
+```
+
 ## 참고 자료
 
 - [MDN - position](https://developer.mozilla.org/ko/docs/Web/CSS/position)
