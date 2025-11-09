@@ -30,7 +30,7 @@ React는 Facebook(현 Meta)에서 개발한 사용자 인터페이스(UI)를 만
 
 **초기 웹 (Client-Server):**
 
-```
+```text
 클라이언트 PC
 ├─ 개별 응용 프로그램 설치
 ├─ 각자의 UI
@@ -44,7 +44,7 @@ React는 Facebook(현 Meta)에서 개발한 사용자 인터페이스(UI)를 만
 
 **현대 웹 (Web Application):**
 
-```
+```text
 웹 브라우저
 ├─ HTML/CSS/JavaScript
 ├─ 표준 기술 사용
@@ -59,7 +59,7 @@ React는 Facebook(현 Meta)에서 개발한 사용자 인터페이스(UI)를 만
 
 ### 웹 애플리케이션의 진화
 
-```
+```text
 1990s: 정적 HTML 페이지
    ↓
 2000s: 동적 웹 (PHP, ASP)
@@ -73,7 +73,7 @@ React는 Facebook(현 Meta)에서 개발한 사용자 인터페이스(UI)를 만
 
 ### SPA (Single Page Application)
 
-```
+```text
 전통적인 웹:
 페이지1 → 서버 요청 → 전체 페이지 새로고침 → 페이지2
 
@@ -198,7 +198,7 @@ export class AppComponent {
 
 ### 비유로 이해하기
 
-```
+```text
 라이브러리 = 공구함
 - 톱, 망치, 드라이버 등
 - 필요할 때 꺼내 쓰기
@@ -352,7 +352,7 @@ function App() {
 
 ### 생태계 비교
 
-```
+```text
 Angular: All-in-One
 ├─ 라우팅: Angular Router
 ├─ 상태관리: RxJS
@@ -397,7 +397,7 @@ function Button({ text, onClick }) {
 
 **컴포넌트 기반 아키텍처:**
 
-```
+```text
 App
 ├─ Header
 │  ├─ Logo
@@ -534,7 +534,7 @@ document.getElementById('list').innerHTML = '<li>Item</li>';
 
 **Virtual DOM 동작 원리:**
 
-```
+```text
 1. 상태 변경 발생
    ↓
 2. 새로운 Virtual DOM 생성
@@ -571,7 +571,7 @@ function Counter() {
 
 **Virtual DOM 장점:**
 
-```
+```text
 효율성:
 - 변경사항 일괄 처리
 - 최소한의 DOM 조작
@@ -613,7 +613,7 @@ npm start
 
 ### 기본 구조
 
-```
+```text
 my-app/
 ├── public/
 │   └── index.html
@@ -688,7 +688,7 @@ function Greeting({ name }) {
 
 ### 필수 라이브러리
 
-```
+```text
 라우팅:
 ├─ React Router: 페이지 네비게이션
 └─ Tanstack Router: 타입 안전 라우팅
@@ -767,7 +767,7 @@ function App() {
 
 ### 장점
 
-```
+```text
 1. 학습 곡선
    - JavaScript만 알면 시작 가능
    - 점진적 학습
@@ -797,7 +797,7 @@ function App() {
 
 ### 단점
 
-```
+```text
 1. 빠른 변화
    - 자주 바뀌는 best practice
    - 학습 부담
@@ -848,7 +848,7 @@ React는 **사용자 인터페이스를 만들기 위한 JavaScript 라이브러
 
 ### React를 선택해야 하는 이유
 
-```
+```text
 ✅ React가 적합한 경우:
 - 대규모 SPA 개발
 - 재사용 가능한 컴포넌트가 많은 프로젝트
@@ -947,7 +947,7 @@ useCallback  // 함수 메모이제이션
 #### 4단계: 상태관리 및 최적화 (2-3주)
 
 **전역 상태관리**
-```
+```text
 Context API  → 간단한 전역 상태
 Zustand     → 가벼운 프로젝트
 Redux       → 대규모 프로젝트
@@ -968,7 +968,7 @@ Redux       → 대규모 프로젝트
 #### 5단계: 프레임워크 및 심화 (4주 이상)
 
 **Next.js (SSR/SSG)**
-```
+```text
 - 서버 사이드 렌더링
 - 정적 사이트 생성
 - API 라우트
@@ -989,7 +989,7 @@ Redux       → 대규모 프로젝트
 
 ### 학습 팁
 
-```
+```text
 ✅ 추천 학습 방법:
 1. 공식 문서를 먼저 읽기
 2. 작은 프로젝트로 실습
