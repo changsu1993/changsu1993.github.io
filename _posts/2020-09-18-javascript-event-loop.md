@@ -52,36 +52,67 @@ console.log('End');
 
 ### JavaScript 런타임 구성 요소
 
-```
-┌─────────────────────────────────────────────┐
-│              JavaScript Runtime              │
-├─────────────────────────────────────────────┤
-│                                              │
-│  ┌──────────────┐        ┌───────────────┐ │
-│  │  Call Stack  │        │     Heap      │ │
-│  └──────────────┘        └───────────────┘ │
-│                                              │
-├─────────────────────────────────────────────┤
-│                                              │
-│  ┌──────────────────────────────────────┐  │
-│  │           Web APIs                    │  │
-│  │  • setTimeout                         │  │
-│  │  • DOM Events                         │  │
-│  │  • fetch                              │  │
-│  └──────────────────────────────────────┘  │
-│                                              │
-├─────────────────────────────────────────────┤
-│                                              │
-│  ┌──────────────┐        ┌───────────────┐ │
-│  │ Microtask    │        │  Macrotask    │ │
-│  │ Queue        │        │  Queue        │ │
-│  │ (Promise)    │        │  (setTimeout) │ │
-│  └──────────────┘        └───────────────┘ │
-│                                              │
-└─────────────────────────────────────────────┘
-          ↑                    ↑
-          └────── Event Loop ──┘
-```
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; margin: 20px 0; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+  <div style="background: rgba(255,255,255,0.95); padding: 20px; border-radius: 10px;">
+    <div style="text-align: center; font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 3px solid #667eea;">
+      JavaScript Runtime
+    </div>
+
+    <!-- Call Stack & Heap -->
+    <div style="display: flex; gap: 15px; justify-content: center; margin-bottom: 20px;">
+      <div style="flex: 1; max-width: 200px;">
+        <div style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; padding: 15px; border-radius: 8px; text-align: center; font-weight: bold; box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);">
+          Call Stack
+        </div>
+      </div>
+      <div style="flex: 1; max-width: 200px;">
+        <div style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 15px; border-radius: 8px; text-align: center; font-weight: bold; box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);">
+          Heap
+        </div>
+      </div>
+    </div>
+
+    <!-- Web APIs -->
+    <div style="margin-bottom: 20px;">
+      <div style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); color: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 10px rgba(243, 156, 18, 0.3);">
+        <div style="font-weight: bold; margin-bottom: 10px; text-align: center; font-size: 16px;">
+          Web APIs
+        </div>
+        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+          <div style="background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 5px; font-size: 14px;">setTimeout</div>
+          <div style="background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 5px; font-size: 14px;">DOM Events</div>
+          <div style="background: rgba(255,255,255,0.2); padding: 5px 12px; border-radius: 5px; font-size: 14px;">fetch</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Microtask & Macrotask Queues -->
+    <div style="display: flex; gap: 15px; justify-content: center; margin-bottom: 20px;">
+      <div style="flex: 1; max-width: 200px;">
+        <div style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 4px 10px rgba(155, 89, 182, 0.3);">
+          <div style="font-weight: bold; margin-bottom: 8px;">Microtask Queue</div>
+          <div style="font-size: 13px; opacity: 0.9;">Promise</div>
+        </div>
+      </div>
+      <div style="flex: 1; max-width: 200px;">
+        <div style="background: linear-gradient(135deg, #16a085 0%, #138d75 100%); color: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 4px 10px rgba(22, 160, 133, 0.3);">
+          <div style="font-weight: bold; margin-bottom: 8px;">Macrotask Queue</div>
+          <div style="font-size: 13px; opacity: 0.9;">setTimeout</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event Loop -->
+    <div style="text-align: center; margin-top: 20px;">
+      <div style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 30px; border-radius: 25px; font-weight: bold; font-size: 16px; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);">
+        ⚡ Event Loop ⚡
+      </div>
+      <div style="margin-top: 10px; color: #7f8c8d; font-size: 14px;">
+        ↑ 지속적으로 모니터링 및 작업 스케줄링 ↑
+      </div>
+    </div>
+  </div>
+</div>
 
 ### Event Loop 처리 순서
 
