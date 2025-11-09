@@ -537,7 +537,7 @@ JavaScript는 타입이 유연하여 문자열과 숫자를 자동으로 변환�
 console.log("5" + 3);  // "53" (문자열)
 
 // Python에서는
-# "5" + 3  → TypeError 발생
+// # "5" + 3  → TypeError 발생
 
 // Java에서는
 // "5" + 3  → "53" (문자열)
