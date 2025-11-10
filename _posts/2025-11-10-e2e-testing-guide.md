@@ -1151,6 +1151,7 @@ docker-compose up --abort-on-container-exit
 **A:** 여러 최적화 방법이 있습니다.
 
 1. **병렬 실행**
+
 ```bash
 # Playwright
 npx playwright test --workers=4
@@ -1160,6 +1161,7 @@ npx cypress run --parallel
 ```
 
 2. **헤드리스 모드**
+
 ```typescript
 // playwright.config.ts
 use: {
@@ -1168,6 +1170,7 @@ use: {
 ```
 
 3. **불필요한 대기 제거**
+
 ```typescript
 // ❌ 나쁜 예
 await page.waitForTimeout(3000);
@@ -1177,6 +1180,7 @@ await page.waitForSelector('[data-testid="content"]');
 ```
 
 4. **API 모킹 활용**
+
 ```typescript
 // 실제 API 대신 모킹
 await page.route('**/api/**', (route) => {
@@ -1189,6 +1193,7 @@ await page.route('**/api/**', (route) => {
 **A:** 다음을 확인하세요.
 
 1. **명시적 대기 대신 자동 대기**
+
 ```typescript
 // ❌ 불안정
 await page.waitForTimeout(1000);
@@ -1198,12 +1203,14 @@ await page.waitForSelector('button');
 ```
 
 2. **네트워크 안정성**
+
 ```typescript
 // API 응답 대기
 await page.waitForResponse('**/api/users');
 ```
 
 3. **애니메이션 비활성화**
+
 ```typescript
 // playwright.config.ts
 use: {
@@ -1214,6 +1221,7 @@ use: {
 ```
 
 4. **재시도 설정**
+
 ```typescript
 // playwright.config.ts
 retries: process.env.CI ? 2 : 0,
@@ -1333,6 +1341,7 @@ cy.viewport(375, 812)
 **A:** 환경 차이를 최소화하세요.
 
 1. **타임존 통일**
+
 ```typescript
 // playwright.config.ts
 use: {
@@ -1342,6 +1351,7 @@ use: {
 ```
 
 2. **Docker 사용**
+
 ```bash
 # 로컬에서도 CI와 동일한 환경
 docker run -it --rm \
@@ -1352,6 +1362,7 @@ docker run -it --rm \
 ```
 
 3. **환경변수 관리**
+
 ```typescript
 // .env.test
 BASE_URL=http://localhost:3000
@@ -1359,6 +1370,7 @@ API_URL=http://localhost:4000
 ```
 
 4. **브라우저 버전 고정**
+
 ```json
 {
   "dependencies": {
@@ -1366,32 +1378,6 @@ API_URL=http://localhost:4000
   }
 }
 ```
-
----
-
-## 참고 자료
-
-### 공식 문서
-
-- [Playwright 공식 문서](https://playwright.dev/)
-- [Cypress 공식 문서](https://docs.cypress.io/)
-- [Testing Library](https://testing-library.com/)
-
-### 도구 비교
-
-- [Playwright vs Cypress 비교](https://playwright.dev/docs/why-playwright)
-- [E2E 테스팅 도구 벤치마크](https://github.com/cypress-io/cypress-example-recipes)
-
-### 관련 아티클
-
-- [프론트엔드 테스팅 완벽 가이드](/posts/frontend-testing-guide/)
-- [TDD 실전 가이드](/posts/tdd-practical-guide/)
-
-### 학습 자료
-
-- [Playwright 튜토리얼](https://playwright.dev/docs/intro)
-- [Cypress Real World App](https://github.com/cypress-io/cypress-realworld-app)
-- [Test Automation University](https://testautomationu.applitools.com/)
 
 ---
 
@@ -1422,3 +1408,29 @@ E2E 테스트를 마스터했다면 다음을 학습해보세요:
 **피드백 환영:**
 
 이 글이 도움이 되셨나요? 댓글로 피드백을 남겨주시면 더 좋은 콘텐츠로 보답하겠습니다! 🚀
+
+---
+
+## 참고 자료
+
+### 공식 문서
+
+- [Playwright 공식 문서](https://playwright.dev/)
+- [Cypress 공식 문서](https://docs.cypress.io/)
+- [Testing Library](https://testing-library.com/)
+
+### 도구 비교
+
+- [Playwright vs Cypress 비교](https://playwright.dev/docs/why-playwright)
+- [E2E 테스팅 도구 벤치마크](https://github.com/cypress-io/cypress-example-recipes)
+
+### 관련 아티클
+
+- [프론트엔드 테스팅 완벽 가이드](/posts/frontend-testing-guide/)
+- [TDD 실전 가이드](/posts/tdd-practical-guide/)
+
+### 학습 자료
+
+- [Playwright 튜토리얼](https://playwright.dev/docs/intro)
+- [Cypress Real World App](https://github.com/cypress-io/cypress-realworld-app)
+- [Test Automation University](https://testautomationu.applitools.com/)
