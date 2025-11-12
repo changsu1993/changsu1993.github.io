@@ -55,7 +55,7 @@ description: Percy, Chromatic, Playwright, BackstopJS를 활용한 시각적 회
 
 시각적 회귀 테스트는 웹 페이지의 **스크린샷을 캡처하고 기준 이미지(Baseline)와 비교**하여 시각적 차이를 감지하는 자동화 테스트입니다.
 
-```javascript
+```jsx
 // 일반 테스트 - 기능적 동작만 검증
 test('버튼이 렌더링된다', () => {
   render(<Button>Click me</Button>);
@@ -103,18 +103,21 @@ test('버튼의 시각적 외형이 변하지 않았다', async () => {
 
 일반적인 단위 테스트나 통합 테스트는 **기능적 동작**은 검증하지만 **시각적 외형**은 검증하지 못합니다.
 
-```javascript
-// 시나리오: CSS 리팩토링 중 실수로 버튼 색상 변경
-// Before
+**시나리오: CSS 리팩토링 중 실수로 버튼 색상 변경**
+
+```css
+/* Before */
 .button {
   background-color: #007bff; /* 파란색 */
 }
 
-// After (실수로 변경됨)
+/* After (실수로 변경됨) */
 .button {
   background-color: #dc3545; /* 빨간색 */
 }
+```
 
+```jsx
 // 일반 테스트
 test('버튼 클릭 시 카운트 증가', () => {
   render(<Counter />);
