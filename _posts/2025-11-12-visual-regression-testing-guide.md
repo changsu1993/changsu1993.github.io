@@ -499,7 +499,7 @@ echo "CHROMATIC_PROJECT_TOKEN=your_token" >> .env
 
 ### Storybook Stories 작성
 
-```javascript
+```jsx
 // src/components/Button.stories.jsx
 import Button from './Button';
 
@@ -1348,7 +1348,7 @@ test.describe('다크모드 테스트', () => {
 });
 ```
 
-```javascript
+```jsx
 // Storybook + Chromatic
 export const LightMode = {
   parameters: {
