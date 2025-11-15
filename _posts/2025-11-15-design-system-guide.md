@@ -1,6 +1,6 @@
 ---
 title: "디자인 시스템 구축 완벽 가이드 - Storybook + Tailwind로 확장 가능한 컴포넌트 라이브러리 만들기"
-date: 2025-11-15 14:00:00 +0900
+date: 2025-11-15 15:45:00 +0900
 categories: [Frontend, Design System]
 tags: [design-system, storybook, tailwind, component-library, react, design-tokens, 디자인시스템, 컴포넌트라이브러리]
 author: changsu
