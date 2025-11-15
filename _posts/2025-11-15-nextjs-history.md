@@ -1,6 +1,6 @@
 ---
 title: "Next.js의 탄생과 진화 - React 프레임워크의 역사"
-date: 2025-11-15 18:00:00 +0900
+date: 2025-11-15 16:01:00 +0900
 categories: [Next.js, Web Development]
 tags: [nextjs, react, web-framework, ssr, vercel, history, frontend-history, 넥스트, 프레임워크, 웹개발역사]
 author: changsu
