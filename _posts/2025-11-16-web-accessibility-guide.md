@@ -1750,7 +1750,7 @@ jobs:
 - [WAI-ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/)
 - [MDN Web Accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
 - [React 접근성 문서](https://react.dev/learn/accessibility)
-- [한국형 웹 콘텐츠 접근성 지침 (KWCAG)](http://www.wa.or.kr/m1/sub1.asp)
+- [한국형 웹 콘텐츠 접근성 지침 (KWCAG)](https://www.wa.or.kr)
 
 ### 테스트 도구
 - [axe DevTools](https://www.deque.com/axe/devtools/)
