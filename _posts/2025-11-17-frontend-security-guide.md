@@ -955,6 +955,7 @@ export function middleware(request: NextRequest) {
 }
 ```
 
+{% raw %}
 ```tsx
 // app/layout.tsx
 import { headers } from 'next/headers';
@@ -979,6 +980,7 @@ export default async function RootLayout({ children }) {
   );
 }
 ```
+{% endraw %}
 
 ### CSP 위반 리포팅
 
