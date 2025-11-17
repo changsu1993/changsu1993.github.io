@@ -2,7 +2,7 @@
 title: "프론트엔드 보안 완벽 가이드 - XSS, CSRF 방어하기"
 description: 프론트엔드 보안의 모든 것을 다룹니다. XSS, CSRF 공격 원리부터 실전 방어 전략까지. React의 보안 메커니즘, DOMPurify 활용, CSP 설정, 안전한 토큰 관리를 실제 공격 시나리오와 방어 코드로 완벽하게 설명합니다. OWASP 기반 실무 체크리스트 포함.
 author: changsu
-date: 2025-11-16 14:00:00 +0900
+date: 2025-11-17 10:00:00 +0900
 categories: [Frontend, Security]
 tags: [security, xss, csrf, frontend-security, web-security, react-security, sanitization, csp, 보안, 프론트엔드보안]
 toc: true
@@ -961,16 +961,18 @@ import { headers } from 'next/headers';
 
 export default async function RootLayout({ children }) {
   const nonce = (await headers()).get('X-Nonce') || '';
+  const initialData = { env: 'production' };
 
   return (
     <html>
       <head>
         {/* nonce를 사용한 안전한 인라인 스크립트 */}
-        <script nonce={nonce} dangerouslySetInnerHTML={{
-          __html: `
-            window.__INITIAL_DATA__ = ${JSON.stringify({ env: 'production' })};
-          `
-        }} />
+        <script
+          nonce={nonce}
+          dangerouslySetInnerHTML={{
+            __html: `window.__INITIAL_DATA__ = ${JSON.stringify(initialData)};`
+          }}
+        />
       </head>
       <body>{children}</body>
     </html>
