@@ -2,7 +2,7 @@
 title: "GitHub Actions로 CI/CD 파이프라인 구축하기 - 실전 완벽 가이드"
 description: 프론트엔드 프로젝트를 위한 완벽한 CI/CD 파이프라인 구축 방법을 다룹니다. GitHub Actions 기초부터 테스트 자동화, 빌드 최적화, Docker 배포, 환경별 전략까지. React와 Next.js 프로젝트의 실전 워크플로우로 CI/CD를 완벽하게 마스터하세요.
 author: changsu
-date: 2025-11-19 10:00:00 +0900
+date: 2025-11-19 10:05:00 +0900
 categories: [DevOps, CI/CD]
 tags: [github-actions, ci-cd, devops, docker, automation, deployment, testing, 지속적통합, 배포자동화]
 toc: true
