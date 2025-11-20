@@ -2161,8 +2161,3 @@ React 19로의 마이그레이션이 순조롭게 진행되길 바랍니다!
 ### 마이그레이션 도구
 - [React 19 Codemod](https://codemod.com/registry/react-19-migration-recipe)
 - [TypeScript Types Codemod](https://github.com/eps1lon/types-react-codemod)
-
-### 관련 글
-- [React 18에서 19로 마이그레이션하기](/posts/react-18-to-19-migration)
-- [Server Components 완벽 가이드](/posts/react-server-components-guide)
-- [React Actions 패턴 상세 가이드](/posts/react-actions-pattern)
