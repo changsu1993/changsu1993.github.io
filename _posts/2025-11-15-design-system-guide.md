@@ -247,7 +247,7 @@ export default {
 };
 ```
 
-```css
+```postcss
 /* src/index.css */
 @tailwind base;
 @tailwind components;
