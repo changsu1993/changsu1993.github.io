@@ -1107,7 +1107,7 @@ export const WithForm: Story = {
 
 ### MDX로 문서 작성
 
-```mdx
+```text
 {/* src/components/Button/Button.mdx */}
 import { Canvas, Meta, Story, Controls } from '@storybook/blocks';
 import * as ButtonStories from './Button.stories';
