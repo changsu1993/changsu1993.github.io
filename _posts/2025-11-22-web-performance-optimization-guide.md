@@ -6,21 +6,6 @@ tags: [web-performance, core-web-vitals, lcp, inp, cls, vite, webpack, next-imag
 description: "Core Web Vitals(LCP, INP, CLS) 측정과 개선, Vite/Webpack 번들 최적화, next/image와 lazy loading, 실제 성능 개선 사례까지. 프론트엔드 성능 최적화의 모든 것"
 ---
 
-## 목차
-1. [웹 성능이 중요한 이유](#웹-성능이-중요한-이유)
-2. [Core Web Vitals 완벽 이해](#core-web-vitals-완벽-이해)
-3. [번들 사이즈 최적화](#번들-사이즈-최적화)
-4. [이미지 최적화](#이미지-최적화)
-5. [JavaScript 최적화](#javascript-최적화)
-6. [CSS 최적화](#css-최적화)
-7. [네트워크 최적화](#네트워크-최적화)
-8. [렌더링 최적화](#렌더링-최적화)
-9. [실제 성능 개선 사례](#실제-성능-개선-사례)
-10. [성능 모니터링 및 지속적 개선](#성능-모니터링-및-지속적-개선)
-11. [FAQ](#faq)
-
----
-
 ## 웹 성능이 중요한 이유
 
 웹 성능은 단순히 기술적인 지표가 아닙니다. 사용자 경험, 비즈니스 성과, 그리고 검색 엔진 순위에 직접적인 영향을 미치는 핵심 요소입니다.
