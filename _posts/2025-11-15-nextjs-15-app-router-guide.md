@@ -212,6 +212,7 @@ export default function Counter() {
 
 **1. 번들 크기 감소**
 
+{% raw %}
 ```tsx
 // Server Component에서 대용량 라이브러리 사용
 import { marked } from 'marked'; // 큰 마크다운 라이브러리
@@ -227,6 +228,7 @@ export default async function BlogPost({ slug }: { slug: string }) {
   return <article dangerouslySetInnerHTML={{ __html: highlighted }} />;
 }
 ```
+{% endraw %}
 
 **2. 서버 리소스 직접 접근**
 
@@ -377,6 +379,7 @@ export default function Page() {
 
 **패턴 3: Context Provider는 별도 Client Component로**
 
+{% raw %}
 ```tsx
 // app/providers/ThemeProvider.tsx
 'use client';
@@ -418,6 +421,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   );
 }
 ```
+{% endraw %}
 
 ## Server Actions 실전 활용
 
@@ -1550,6 +1554,7 @@ export default async function BlogPost({ params }: PageProps) {
 
 ### JSON-LD 구조화 데이터
 
+{% raw %}
 ```tsx
 // app/blog/[slug]/page.tsx
 export default async function BlogPost({
@@ -1589,6 +1594,7 @@ export default async function BlogPost({
   );
 }
 ```
+{% endraw %}
 
 ### 루트 레이아웃 메타데이터
 
@@ -1862,7 +1868,7 @@ const nextConfig: NextConfig = {
 export default withBundleAnalyzer(nextConfig);
 ```
 
-```json
+```jsonc
 // package.json
 {
   "scripts": {
@@ -2026,7 +2032,7 @@ export const config = {
 
 ### TypeScript 설정
 
-```json
+```jsonc
 // tsconfig.json
 {
   "compilerOptions": {
@@ -2331,6 +2337,7 @@ export const metadata = {
 
 **포스트 상세 페이지:**
 
+{% raw %}
 ```tsx
 // app/(blog)/blog/[slug]/page.tsx
 import { notFound } from 'next/navigation';
@@ -2478,6 +2485,7 @@ export default async function BlogPost({ params }: PageProps) {
   );
 }
 ```
+{% endraw %}
 
 **Server Actions로 포스트 생성:**
 
