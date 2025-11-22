@@ -126,30 +126,12 @@ function AppProvider({ children }) {
 
 대규모 앱의 상태를 효과적으로 관리하려면 **계층적 접근**이 필요합니다.
 
-```
-        ┌─────────────────┐
-        │   Server State  │  ← React Query, SWR
-        │  (API 데이터)    │
-        └─────────────────┘
-                ▲
-                │
-        ┌─────────────────┐
-        │  Global State   │  ← Zustand, Redux Toolkit
-        │  (앱 전체 공유)  │
-        └─────────────────┘
-                ▲
-                │
-        ┌─────────────────┐
-        │ Context State   │  ← Context API
-        │ (도메인별 공유)  │
-        └─────────────────┘
-                ▲
-                │
-        ┌─────────────────┐
-        │  Local State    │  ← useState, useReducer
-        │ (컴포넌트 내부)  │
-        └─────────────────┘
-```
+| Level | 상태 유형 | 도구 | 역할 |
+|:-----:|----------|------|------|
+| 4 | Server State | React Query, SWR | API 데이터, 서버 동기화 |
+| 3 | Global State | Zustand, Redux Toolkit | 앱 전체 공유 클라이언트 상태 |
+| 2 | Context State | Context API | 도메인/기능별 공유 |
+| 1 | Local State | useState, useReducer | 컴포넌트 내부 |
 
 ### Level 1: Local State (컴포넌트 레벨)
 
