@@ -82,7 +82,7 @@ React 앱은 기본적으로 CSR 방식이었습니다:
 
 SSR을 직접 구현하려면:
 
-```javascript
+```jsx
 // 2015년 SSR 설정 (약 200줄 이상의 보일러플레이트)
 import express from 'express';
 import React from 'react';
