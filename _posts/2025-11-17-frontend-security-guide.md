@@ -1409,7 +1409,7 @@ npm install --package-lock-only
 npm audit signatures
 ```
 
-```json
+```jsonc
 // package.json
 {
   "scripts": {
