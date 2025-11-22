@@ -2294,7 +2294,7 @@ if (
 
 ### 특수 상황별 추천
 
-```jsx
+```text
 // 1. 서버 상태가 대부분인 경우
 → React Query + Zustand (클라이언트 상태)
 
@@ -2874,7 +2874,7 @@ ReactDOM.render(
 
 ### 실전 추천
 
-```jsx
+```text
 // 소규모 프로젝트
 Context API → 충분하면 그대로, 부족하면 Zustand
 
