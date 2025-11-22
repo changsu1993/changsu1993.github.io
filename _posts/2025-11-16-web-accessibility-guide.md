@@ -1249,7 +1249,7 @@ function List({ items }) {
 
 ### 접근 가능한 React 컴포넌트 라이브러리
 
-```typescript
+```tsx
 // Headless UI 사용 예시 (Tailwind CSS 팀)
 import { Dialog, Transition } from '@headlessui/react';
 
