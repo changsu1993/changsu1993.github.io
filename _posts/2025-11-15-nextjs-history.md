@@ -302,7 +302,7 @@ export default Home;
 
 ### Next.js 7.0 (2018년 9월) - DX 개선
 
-```javascript
+```jsx
 // 에러 페이지 커스터마이징
 // pages/_error.js
 function Error({ statusCode }) {
@@ -592,7 +592,7 @@ export async function action({ request }) {
 
 **특징**: "Zero JavaScript by Default"
 
-```astro
+```jsx
 ---
 // Astro - 기본적으로 JavaScript 전송 안 함
 const posts = await Astro.glob('./posts/*.md');
@@ -611,7 +611,7 @@ const posts = await Astro.glob('./posts/*.md');
 
 **특징**: Svelte 기반, 컴파일 타임 최적화
 
-```svelte
+```html
 <script>
   export async function load({ params }) {
     const post = await fetch(`/api/posts/${params.id}`);
