@@ -1288,7 +1288,7 @@ function MyRadixDialog() {
 
 ### 커스텀 훅으로 접근성 개선
 
-```typescript
+```tsx
 import { useEffect, useRef } from 'react';
 
 // 페이지 제목 관리
@@ -1411,7 +1411,7 @@ import { toHaveNoViolations } from 'jest-axe';
 expect.extend(toHaveNoViolations);
 ```
 
-```typescript
+```tsx
 // Button.test.tsx
 import { render } from '@testing-library/react';
 import { axe } from 'jest-axe';
@@ -1436,7 +1436,7 @@ describe('Button 접근성', () => {
 });
 ```
 
-```typescript
+```tsx
 // Form.test.tsx
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -1491,7 +1491,7 @@ describe('LoginForm 접근성', () => {
 
 ### 3. 수동 테스트 체크리스트
 
-```typescript
+```tsx
 // 테스트 체크리스트 컴포넌트
 function A11yTestChecklist() {
   return (
