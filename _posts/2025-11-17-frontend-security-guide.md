@@ -66,7 +66,8 @@ XSS는 공격자가 웹 페이지에 악성 스크립트를 삽입하여 다른 
 
 가장 위험한 유형입니다. 악성 스크립트가 서버에 저장되어 모든 사용자에게 영향을 줍니다.
 
-```javascript
+{% raw %}
+```jsx
 // ❌ 취약한 코드 예시
 // 사용자가 작성한 댓글을 그대로 렌더링
 function CommentList({ comments }) {
@@ -83,6 +84,7 @@ function CommentList({ comments }) {
   );
 }
 ```
+{% endraw %}
 
 **공격 시나리오:**
 
@@ -113,6 +115,7 @@ const maliciousComment2 = `
 
 URL 파라미터나 폼 입력이 즉시 반사되어 표시되는 경우 발생합니다.
 
+{% raw %}
 ```jsx
 // ❌ 취약한 코드
 function SearchResults() {
@@ -128,6 +131,7 @@ function SearchResults() {
   );
 }
 ```
+{% endraw %}
 
 **공격 시나리오:**
 
@@ -247,6 +251,7 @@ export function sanitizeMarkdown(dirty: string): string {
 }
 ```
 
+{% raw %}
 ```tsx
 // components/SafeHtmlRenderer.tsx
 import { sanitizeHtml } from '@/lib/sanitize';
@@ -268,6 +273,7 @@ export function SafeHtmlRenderer({ html, className }: SafeHtmlRendererProps) {
   );
 }
 ```
+{% endraw %}
 
 **사용 예시:**
 
@@ -328,7 +334,8 @@ Object.entries(dangerous).forEach(([key, value]) => {
 
 ### URL 파라미터 안전하게 다루기
 
-```typescript
+{% raw %}
+```tsx
 // ❌ 위험한 코드
 function SearchPage() {
   const params = new URLSearchParams(window.location.search);
@@ -359,6 +366,7 @@ function SaferSearchPage() {
   return <div>{sanitizedQuery}</div>;
 }
 ```
+{% endraw %}
 
 ### href와 src 속성 검증
 
