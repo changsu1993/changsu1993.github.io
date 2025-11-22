@@ -38,7 +38,7 @@ description: Storybook 8과 Tailwind CSS 3를 활용한 확장 가능한 디자�
 
 디자인 시스템은 **재사용 가능한 컴포넌트와 명확한 표준을 통해 대규모로 디자인을 관리하는 체계**입니다.
 
-```
+```text
 디자인 시스템 = 디자인 토큰 + 컴포넌트 라이브러리 + 사용 가이드 + 패턴 라이브러리
 ```
 
@@ -1119,69 +1119,21 @@ import * as ButtonStories from './Button.stories';
 재사용 가능한 버튼 컴포넌트입니다.
 
 ## 사용법
-
-```tsx
-import { Button } from '@/components/Button';
-
-function MyComponent() {
-  return (
-    <Button variant="primary" size="md" onClick={() => alert('Clicked!')}>
-      Click me
-    </Button>
-  );
-}
-```
+// Button 컴포넌트 import 및 사용 예제 코드
 
 ## 변형 (Variants)
-
-버튼은 5가지 시각적 변형을 지원합니다:
-
 <Canvas of={ButtonStories.Primary} />
 <Canvas of={ButtonStories.Secondary} />
-<Canvas of={ButtonStories.Outline} />
-<Canvas of={ButtonStories.Ghost} />
-<Canvas of={ButtonStories.Destructive} />
 
 ## 크기 (Sizes)
-
-3가지 크기와 아이콘 전용 크기를 제공합니다:
-
 <Canvas of={ButtonStories.Sizes} />
 
-## 아이콘
-
-버튼에 아이콘을 포함할 수 있습니다:
-
-<Canvas of={ButtonStories.WithIcon} />
-
 ## 접근성
-
 - 키보드 탐색 지원 (Tab, Enter, Space)
 - 포커스 인디케이터 제공
-- `disabled` 상태에서 클릭 방지
-- ARIA 속성 자동 설정
 
 ## Props
-
 <Controls of={ButtonStories.Primary} />
-
-## 사용 예시
-
-### 기본 사용
-
-```tsx
-<Button>Click me</Button>
-```
-
-### 아이콘 포함
-
-```tsx
-import { Mail } from 'lucide-react';
-
-<Button>
-  <Mail className="h-4 w-4" />
-  Send Email
-</Button>
 ```
 
 ### Link로 사용
@@ -1196,7 +1148,6 @@ import { Mail } from 'lucide-react';
 
 ```tsx
 <Button className="rounded-full">Rounded Button</Button>
-```
 ```
 
 ### 인터랙티브 Docs
@@ -1427,7 +1378,7 @@ export const AccessibilityTest: Story = {
 
 ### Semantic Versioning
 
-```json
+```jsonc
 // package.json
 {
   "name": "@your-org/design-system",
@@ -1490,8 +1441,8 @@ export default defineConfig({
 npx changeset init
 ```
 
-```markdown
-<!-- .changeset/config.json -->
+```jsonc
+// .changeset/config.json
 {
   "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
   "changelog": "@changesets/cli/changelog",
