@@ -3,18 +3,22 @@ layout: page
 ---
 
 <!-- 태그 검색 입력창 -->
-<div class="mb-4">
+<div class="tag-search-wrapper mb-3">
   <input
     type="text"
     id="tag-search"
-    class="form-control"
     placeholder="태그 검색..."
-    style="max-width: 300px; padding: 10px 15px; border-radius: 8px;"
+    autocomplete="off"
   >
 </div>
 
+<!-- 검색 결과 카운트 -->
+<p id="tag-count" class="text-muted mb-4">
+  <span id="visible-count">{{ site.tags.size }}</span> 개의 태그가 있습니다.
+</p>
+
 <!-- 상단 태그 버튼들 -->
-<div id="tags" class="d-flex flex-wrap mb-5" style="gap: 10px;">
+<div id="tags" class="tag-list mb-5">
   {% assign tags = '' | split: '' %}
   {% for t in site.tags %}
     {% assign tags = tags | push: t[0] %}
@@ -24,31 +28,31 @@ layout: page
 
   {% for t in sorted_tags %}
     <a href="#{{ t | slugify }}-list"
-       class="tag-btn"
+       class="tag-item"
        data-tag="{{ t | downcase }}">
       {{ t }}
     </a>
   {% endfor %}
 </div>
 
-<hr class="mb-5">
+<hr class="my-4">
 
 <!-- 태그별 포스트 목록 -->
 <div id="tag-sections">
 {% for t in sorted_tags %}
   {% assign posts = site.tags[t] %}
-  <div id="{{ t | slugify }}-list" class="tag-section mb-5" data-tag="{{ t | downcase }}">
-    <h4 class="mb-3">
-      <a href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}" style="color: inherit; text-decoration: none;">
+  <div id="{{ t | slugify }}-list" class="tag-section" data-tag="{{ t | downcase }}">
+    <h4 class="tag-section-title">
+      <a href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
         {{ t }} ({{ posts.size }})
       </a>
     </h4>
-    <ul class="list-unstyled ps-3">
+    <ul class="post-list">
       {% for post in posts %}
-        <li class="mb-2">
-          <span class="me-2" style="color: #6c757d;">▸</span>
-          <a href="{{ post.url | relative_url }}" style="text-decoration: none;">{{ post.title }}</a>
-          <span class="text-muted ms-2">- {{ post.date | date: "%Y/%m/%d" }}</span>
+        <li>
+          <span class="arrow">▸</span>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span class="date">- {{ post.date | date: "%Y/%m/%d" }}</span>
         </li>
       {% endfor %}
     </ul>
@@ -57,86 +61,179 @@ layout: page
 </div>
 
 <style>
-  .tag-btn {
+  /* 검색창 */
+  .tag-search-wrapper {
+    max-width: 250px;
+  }
+
+  #tag-search {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  #tag-search:focus {
+    border-color: #007bff;
+  }
+
+  /* 태그 목록 */
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tag-item {
     display: inline-block;
-    padding: 8px 16px;
-    border: 1px solid #0d6efd;
-    border-radius: 6px;
-    color: #0d6efd;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
+    padding: 6px 14px;
+    font-size: 14px;
+    color: #007bff;
     background: transparent;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.15s ease;
   }
 
-  .tag-btn:hover {
-    background-color: #0d6efd;
-    color: white;
+  .tag-item:hover {
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
   }
 
-  .tag-btn.hidden {
+  .tag-item.hidden {
     display: none;
+  }
+
+  /* 태그 섹션 */
+  .tag-section {
+    margin-bottom: 2rem;
   }
 
   .tag-section.hidden {
     display: none;
   }
 
-  #tag-search {
-    border: 1px solid #dee2e6;
+  .tag-section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
   }
 
-  #tag-search:focus {
-    border-color: #0d6efd;
-    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
-    outline: none;
+  .tag-section-title a {
+    color: inherit;
+    text-decoration: none;
   }
 
-  [data-mode="dark"] .tag-btn {
+  .tag-section-title a:hover {
+    color: #007bff;
+  }
+
+  /* 포스트 목록 */
+  .post-list {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0;
+  }
+
+  .post-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+
+  .post-list .arrow {
+    color: #999;
+    margin-right: 0.5rem;
+  }
+
+  .post-list a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .post-list a:hover {
+    color: #007bff;
+  }
+
+  .post-list .date {
+    color: #999;
+    font-size: 0.9em;
+    margin-left: 0.3rem;
+  }
+
+  /* 다크모드 */
+  [data-mode="dark"] #tag-search {
+    background: #1e1e1e;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  [data-mode="dark"] #tag-search:focus {
     border-color: #6ea8fe;
-    color: #6ea8fe;
   }
 
-  [data-mode="dark"] .tag-btn:hover {
-    background-color: #6ea8fe;
+  [data-mode="dark"] .tag-item {
+    color: #6ea8fe;
+    border-color: #6ea8fe;
+  }
+
+  [data-mode="dark"] .tag-item:hover {
+    background: #6ea8fe;
     color: #000;
   }
 
-  [data-mode="dark"] #tag-search {
-    background-color: #2c2c2c;
-    border-color: #444;
-    color: #fff;
+  [data-mode="dark"] .post-list a {
+    color: #e0e0e0;
+  }
+
+  [data-mode="dark"] .post-list a:hover {
+    color: #6ea8fe;
   }
 </style>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
   const searchInput = document.getElementById('tag-search');
-  const tagButtons = document.querySelectorAll('.tag-btn');
+  const tagItems = document.querySelectorAll('.tag-item');
   const tagSections = document.querySelectorAll('.tag-section');
+  const visibleCount = document.getElementById('visible-count');
+  const totalTags = tagItems.length;
 
-  searchInput.addEventListener('input', function() {
-    const searchTerm = this.value.toLowerCase().trim();
+  function filterTags() {
+    const query = searchInput.value.toLowerCase().trim();
+    let count = 0;
 
-    // 태그 버튼 필터링
-    tagButtons.forEach(function(btn) {
-      const tagName = btn.getAttribute('data-tag');
-      if (searchTerm === '' || tagName.includes(searchTerm)) {
-        btn.classList.remove('hidden');
+    tagItems.forEach(function(item) {
+      const tagName = item.getAttribute('data-tag');
+      const match = query === '' || tagName.indexOf(query) !== -1;
+
+      if (match) {
+        item.classList.remove('hidden');
+        count++;
       } else {
-        btn.classList.add('hidden');
+        item.classList.add('hidden');
       }
     });
 
-    // 태그 섹션 필터링
     tagSections.forEach(function(section) {
       const tagName = section.getAttribute('data-tag');
-      if (searchTerm === '' || tagName.includes(searchTerm)) {
+      const match = query === '' || tagName.indexOf(query) !== -1;
+
+      if (match) {
         section.classList.remove('hidden');
       } else {
         section.classList.add('hidden');
       }
     });
-  });
-});
+
+    visibleCount.textContent = count;
+  }
+
+  searchInput.addEventListener('input', filterTags);
+  searchInput.addEventListener('keyup', filterTags);
+})();
 </script>
