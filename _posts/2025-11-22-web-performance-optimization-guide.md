@@ -1082,12 +1082,15 @@ Next.js 없이도 적용할 수 있는 이미지 최적화 기법입니다.
 
 ```html
 <!-- HTML native lazy loading -->
+<!-- loading: lazy | eager -->
+<!-- decoding: async | sync | auto -->
+<!-- fetchpriority: high | low | auto -->
 <img
   src="image.jpg"
   alt="Description"
-  loading="lazy"           <!-- lazy, eager -->
-  decoding="async"         <!-- async, sync, auto -->
-  fetchpriority="low"      <!-- high, low, auto -->
+  loading="lazy"
+  decoding="async"
+  fetchpriority="low"
   width="800"
   height="600"
 >
@@ -2322,7 +2325,7 @@ module.exports = {
 
 // 해결 1: 이미지 aspect-ratio
 <div className="relative aspect-[4/3]">
-  <Image fill sizes="100vw" ... />
+  <Image fill sizes="100vw" alt="product" />
 </div>
 
 // 해결 2: 광고 스켈레톤
@@ -2658,7 +2661,7 @@ jobs:
           exclude: "{**/*.map,**/node_modules/**}"
 ```
 
-```json
+```jsonc
 // lighthouse-budget.json
 [
   {
