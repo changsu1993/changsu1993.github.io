@@ -6,18 +6,6 @@ tags: [typescript, typescript5, generic, utility-types, type-patterns, type-safe
 description: "TypeScript 5.x의 새로운 기능부터 제네릭 고급 활용, 커스텀 유틸리티 타입, Branded Types, Exhaustive Check까지. 실무에서 타입 안전성을 높이는 모든 패턴을 예제와 함께 완벽 정리"
 ---
 
-## 목차
-1. [TypeScript 5.x 소개](#typescript-5x-소개)
-2. [TypeScript 5.x 새로운 기능들](#typescript-5x-새로운-기능들)
-3. [실무에서 자주 쓰는 유틸리티 타입](#실무에서-자주-쓰는-유틸리티-타입)
-4. [제네릭 고급 활용법](#제네릭-고급-활용법)
-5. [타입 안정성을 높이는 패턴들](#타입-안정성을-높이는-패턴들)
-6. [실전 프로젝트 패턴](#실전-프로젝트-패턴)
-7. [성능과 컴파일 최적화](#성능과-컴파일-최적화)
-8. [FAQ](#faq)
-
----
-
 ## TypeScript 5.x 소개
 
 TypeScript는 JavaScript에 정적 타입을 추가한 언어로, 대규모 애플리케이션 개발에서 필수적인 도구가 되었습니다. TypeScript 5.x 버전은 2023년 3월 5.0 출시를 시작으로 꾸준히 발전해왔으며, 각 버전마다 개발자 경험을 크게 향상시키는 기능들이 추가되었습니다.

@@ -6,20 +6,6 @@ tags: [react, react19, actions, use-hook, server-components, useoptimistic, usea
 description: "2024년 12월 정식 릴리스된 React 19의 모든 것. Actions 패턴, use() 훅, useOptimistic, Server Components 개선사항, 실무 마이그레이션 가이드까지 완벽 정리"
 ---
 
-## 목차
-1. [React 19 정식 릴리스 소개](#react-19-정식-릴리스-소개)
-2. [새로운 Hooks](#새로운-hooks)
-3. [Actions 패턴](#actions-패턴)
-4. [React Server Components 개선사항](#react-server-components-개선사항)
-5. [Document Metadata 지원](#document-metadata-지원)
-6. [ref를 props로 전달](#ref를-props로-전달)
-7. [기타 개선사항](#기타-개선사항)
-8. [Breaking Changes & 마이그레이션 가이드](#breaking-changes--마이그레이션-가이드)
-9. [실전 마이그레이션 예제](#실전-마이그레이션-예제)
-10. [FAQ](#faq)
-
----
-
 ## React 19 정식 릴리스 소개
 
 2024년 12월 5일, React 팀은 **React 19** 정식 버전을 릴리스했습니다. React 18이 출시된 지 2년 만의 메이저 업데이트입니다. React 19는 2024년 4월 Release Candidate(RC) 버전 발표 이후 약 8개월간의 테스트와 피드백을 거쳐 안정화된 버전입니다.
