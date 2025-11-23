@@ -324,7 +324,7 @@ img {
 /* <img src="..." width="800" height="450" alt="..."> */
 ```
 
-```typescript
+```tsx
 // 2. 동적 콘텐츠를 위한 자리 표시자
 // Bad: 광고나 임베드가 갑자기 나타남
 const AdBanner = () => {
@@ -591,7 +591,7 @@ export default defineConfig({
 
 #### Dynamic Import 활용
 
-```typescript
+```tsx
 // 라우트 기반 코드 스플리팅
 // router.tsx
 import { lazy, Suspense } from 'react';
@@ -634,7 +634,7 @@ export default function App() {
 }
 ```
 
-```typescript
+```tsx
 // 컴포넌트 레벨 코드 스플리팅
 // 무거운 컴포넌트 지연 로딩
 import { lazy, Suspense, useState } from 'react';
@@ -1095,7 +1095,7 @@ Next.js 없이도 적용할 수 있는 이미지 최적화 기법입니다.
 
 #### Intersection Observer 기반 Lazy Loading
 
-```typescript
+```tsx
 // React 컴포넌트로 구현
 import { useRef, useState, useEffect } from 'react';
 
@@ -1282,7 +1282,7 @@ JavaScript는 파싱, 컴파일, 실행 과정에서 메인 스레드를 차지�
 
 ### 코드 스플리팅과 지연 로딩
 
-```typescript
+```tsx
 // Route 기반 코드 스플리팅
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
@@ -1402,7 +1402,7 @@ export default function Layout({ children }) {
 
 ### Web Workers 활용
 
-```typescript
+```tsx
 // heavy-computation.worker.ts
 self.onmessage = (e: MessageEvent<{ data: number[] }>) => {
   const { data } = e.data;
@@ -2022,7 +2022,7 @@ app.use(compression({
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-```typescript
+```tsx
 // Next.js 렌더링 전략 예시
 
 // SSG - 빌드 시 생성
@@ -2055,7 +2055,7 @@ export default async function DashboardPage() {
 
 ### React 렌더링 최적화
 
-```typescript
+```tsx
 // 1. React.memo로 불필요한 리렌더링 방지
 interface UserCardProps {
   user: {
@@ -2275,7 +2275,7 @@ module.exports = {
 
 #### 2단계: 이미지 최적화
 
-```typescript
+```tsx
 // 문제: 최적화되지 않은 이미지
 // - 상품 이미지: 원본 JPEG 2-5MB
 // - 배너: PNG 3MB
@@ -2313,7 +2313,7 @@ module.exports = {
 
 #### 3단계: CLS 개선
 
-```typescript
+```tsx
 // 문제: 이미지와 광고 배너로 인한 레이아웃 이동
 // CLS 발생 원인 분석:
 // 1. 이미지 크기 미지정
@@ -2359,7 +2359,7 @@ const inter = Inter({
 
 #### 4단계: INP 개선
 
-```typescript
+```tsx
 // 문제: 필터 변경 시 느린 응답 (380ms)
 // 원인: 동기적 필터링 + 전체 리스트 리렌더링
 
@@ -2769,7 +2769,7 @@ const optimizationPriority = {
 
 **A**: 본질적으로 같은 기능을 수행하지만, 사용 맥락이 다릅니다.
 
-```typescript
+```tsx
 // React.lazy - React 컴포넌트 전용
 const LazyComponent = React.lazy(() => import('./Component'));
 
@@ -2836,7 +2836,7 @@ const optimalChunkSize = {
 
 **A**: 적절한 상황에서 사용해야 합니다.
 
-```typescript
+```tsx
 // Good: Server Component가 효과적인 경우
 // - 데이터베이스 직접 조회
 // - 큰 종속성을 서버에서만 사용
