@@ -1936,7 +1936,7 @@ async function example() {
 
 ### React Props 타입 패턴
 
-```typescript
+```tsx
 import { ComponentProps, PropsWithChildren, ReactNode, HTMLAttributes } from 'react';
 
 // 기본 HTML 요소 Props 확장
@@ -2014,7 +2014,7 @@ function Example() {
 
 #### Redux Toolkit 타입
 
-```typescript
+```tsx
 import { createSlice, PayloadAction, configureStore } from '@reduxjs/toolkit';
 
 // 상태 타입
@@ -2087,7 +2087,7 @@ function UserComponent() {
 
 #### Zustand 타입
 
-```typescript
+```tsx
 import { create } from 'zustand';
 import { devtools, persist } from 'zustand/middleware';
 
@@ -2194,7 +2194,7 @@ function CartComponent() {
 
 ### 폼 라이브러리 타입 (React Hook Form + Zod)
 
-```typescript
+```tsx
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -2494,7 +2494,7 @@ type RecursiveType<T, Depth extends number[] = []> =
 
 ### tsconfig 최적화 옵션
 
-```json
+```jsonc
 {
   "compilerOptions": {
     // 타입 안전성 최대화
