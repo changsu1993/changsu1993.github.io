@@ -782,7 +782,7 @@ CMD ["nginx", "-g", "daemon off;"]
 
 **Nginx 설정 (nginx.conf):**
 
-```nginx
+```text
 server {
     listen 80;
     server_name _;
