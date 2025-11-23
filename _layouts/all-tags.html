@@ -129,11 +129,13 @@ layout: page
 
   .tag-section-title a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: none !important;
+    border-bottom: none !important;
   }
 
   .tag-section-title a:hover {
     color: #007bff;
+    border-bottom: 1px solid #007bff !important;
   }
 
   /* 포스트 목록 */
@@ -193,6 +195,10 @@ layout: page
 
   [data-mode="dark"] .tag-section {
     border-bottom-color: #444;
+  }
+
+  [data-mode="dark"] .tag-section-title a:hover {
+    border-bottom-color: #6ea8fe !important;
   }
 
   [data-mode="dark"] .post-list a {
