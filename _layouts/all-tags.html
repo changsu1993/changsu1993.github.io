@@ -113,6 +113,8 @@ layout: page
   /* 태그 섹션 */
   .tag-section {
     margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e9ecef;
   }
 
   .tag-section.hidden {
@@ -152,12 +154,14 @@ layout: page
   }
 
   .post-list a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: #333;
+    border-bottom: none !important;
   }
 
   .post-list a:hover {
     color: #007bff;
+    border-bottom: 1px solid #007bff !important;
   }
 
   .post-list .date {
@@ -187,12 +191,17 @@ layout: page
     color: #000;
   }
 
+  [data-mode="dark"] .tag-section {
+    border-bottom-color: #444;
+  }
+
   [data-mode="dark"] .post-list a {
     color: #e0e0e0;
   }
 
   [data-mode="dark"] .post-list a:hover {
     color: #6ea8fe;
+    border-bottom-color: #6ea8fe !important;
   }
 </style>
 
