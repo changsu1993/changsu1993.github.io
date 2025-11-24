@@ -157,8 +157,12 @@ layout: page
 
   .post-list a {
     text-decoration: none !important;
-    color: #333;
     border-bottom: none !important;
+  }
+
+  /* 라이트모드 */
+  html:not([data-mode="dark"]) .post-list a {
+    color: #333 !important;
   }
 
   .post-list a:hover {
