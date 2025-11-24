@@ -143,7 +143,6 @@ layout: page
     list-style: none;
     padding-left: 1rem;
     margin: 0;
-    color: #333;
   }
 
   .post-list li {
@@ -159,12 +158,10 @@ layout: page
   .post-list a {
     text-decoration: none !important;
     border-bottom: none !important;
-    color: inherit !important;
   }
 
   .post-list a:hover {
-    color: #007bff !important;
-    border-bottom: 1px solid #007bff !important;
+    border-bottom: 1px solid currentColor !important;
   }
 
   .post-list .date {
@@ -202,14 +199,6 @@ layout: page
     border-bottom-color: #6ea8fe !important;
   }
 
-  html[data-mode="dark"] #tag-sections .post-list {
-    color: #ccc;
-  }
-
-  html[data-mode="dark"] #tag-sections .post-list a:hover {
-    color: #6ea8fe !important;
-    border-bottom-color: #6ea8fe !important;
-  }
 </style>
 
 <script>
