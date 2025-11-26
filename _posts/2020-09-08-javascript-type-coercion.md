@@ -4,7 +4,7 @@ description: JavaScript의 암묵적 형 변환(Type Coercion)을 마스터하�
 author: cotes
 date: 2020-09-08 22:20:16 +0900
 categories: [JavaScript, Core Concepts]
-tags: [javascript, type-coercion, type-conversion]
+tags: [javascript, type-conversion]
 ---
 
 ## Type Coercion이란?

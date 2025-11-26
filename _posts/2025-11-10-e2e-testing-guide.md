@@ -2,7 +2,7 @@
 title: "E2E 테스트 실전 가이드 - Playwright와 Cypress로 사용자 시나리오 테스트하기"
 date: 2025-11-10 14:00:00 +0900
 categories: [Testing, E2E]
-tags: [e2e-testing, playwright, cypress, testing]
+tags: [testing, e2e]
 author: changsu
 toc: true
 comments: true

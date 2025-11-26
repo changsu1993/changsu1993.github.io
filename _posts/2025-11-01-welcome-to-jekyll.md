@@ -29,7 +29,7 @@ YYYY-MM-DD-title.md
 title: 포스트 제목
 date: YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: [카테고리1, 카테고리2]
-tags: [태그1, 태그2]
+tags: [javascript, react]
 ---
 ```
 
