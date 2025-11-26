@@ -4,7 +4,7 @@ description: HTML input, textarea, button 요소의 다양한 타입과 속성�
 author: changsu
 date: 2020-06-15 12:13:39 +0900
 categories: [Web, HTML]
-tags: [html, form, input, textarea, button, css, form-validation, accessibility]
+tags: [html, css, form, accessibility]
 ---
 
 ## 개요

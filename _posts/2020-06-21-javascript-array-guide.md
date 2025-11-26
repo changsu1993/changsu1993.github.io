@@ -4,7 +4,7 @@ description: JavaScript 배열의 기본 개념부터 배열 메서드, 고차 �
 author: changsu
 date: 2020-06-21 18:18:01 +0900
 categories: [Programming, JavaScript]
-tags: [javascript, array, map, filter, reduce, foreach, array-methods, 배열]
+tags: [javascript, array, array-methods]
 ---
 
 ## 배열이란?

@@ -4,7 +4,7 @@ description: React의 핵심 문법인 JSX의 개념과 사용법을 상세히 �
 author: changsu
 date: 2020-06-20 21:42:32 +0900
 categories: [Programming, React]
-tags: [react, jsx, fragment, styling, css-modules, inline-style, babel, classnames]
+tags: [react, jsx, styling, css-modules]
 ---
 
 ## JSX란?

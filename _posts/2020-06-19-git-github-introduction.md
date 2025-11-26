@@ -4,7 +4,7 @@ description: Git의 기본 개념부터 Git Flow, 주요 명령어까지 버전 
 author: changsu
 date: 2020-06-19 10:45:31 +0900
 categories: [DevOps, Git]
-tags: [git, github, version-control, collaboration, git-flow, branch, merge]
+tags: [git, github, version-control]
 ---
 
 ## 개요

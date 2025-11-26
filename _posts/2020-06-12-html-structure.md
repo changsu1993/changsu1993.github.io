@@ -4,7 +4,7 @@ description: HTML 문서의 기본 구조와 DOCTYPE, head, body 태그의 역�
 author: changsu
 date: 2020-06-12 01:30:33 +0900
 categories: [Web, HTML]
-tags: [html, doctype, head, body, meta, html-structure]
+tags: [html, structure]
 ---
 
 ## HTML 기본 구조

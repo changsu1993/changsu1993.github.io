@@ -4,7 +4,7 @@ description: JavaScript 객체의 개념부터 프로퍼티 접근, 메서드, �
 author: changsu
 date: 2020-07-05 12:34:16 +0900
 categories: [Programming, JavaScript]
-tags: [javascript, object, property, method, reference-type, destructuring, object-literal, 객체]
+tags: [javascript, object, destructuring]
 ---
 
 ## JavaScript 객체란?

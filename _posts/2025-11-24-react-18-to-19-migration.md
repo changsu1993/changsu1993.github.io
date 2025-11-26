@@ -3,7 +3,7 @@ title: "React 18에서 19로 마이그레이션하기 - 실전 가이드"
 description: "React 18에서 19로 안전하게 마이그레이션하는 방법을 단계별로 알아봅니다. Breaking changes, API 변경사항, 그리고 실무에서 마주치는 이슈 해결책까지 상세히 다룹니다."
 date: 2025-11-24 10:00:00 +0900
 categories: [Frontend, React]
-tags: [react, react-19, migration, upgrade, breaking-changes, frontend]
+tags: [react, react-19, migration, breaking-changes]
 ---
 
 ## 서론: React 19의 주요 변화점과 마이그레이션 필요성

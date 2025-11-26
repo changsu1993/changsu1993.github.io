@@ -4,7 +4,7 @@ description: 프로그래밍 언어 실행 방식의 양대 산맥인 컴파일�
 author: changsu
 date: 2020-09-22 23:26:35 +0900
 categories: [Programming, Computer Science]
-tags: [compiler, interpreter, programming-languages, jit, bytecode, compilation, execution, v8, java, python, 컴파일러, 인터프리터, 프로그래밍언어]
+tags: [compiler, interpreter, programming]
 ---
 
 프로그래밍 언어를 실행하는 두 가지 주요 방식인 **컴파일러(Compiler)**와 **인터프리터(Interpreter)**의 동작 원리와 특징을 이해하면, 각 언어의 성능 특성과 적합한 사용 사례를 파악할 수 있습니다.

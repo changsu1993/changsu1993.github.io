@@ -4,7 +4,7 @@ description: CRA로 생성된 React 프로젝트의 초기 파일 구조와 각 
 author: changsu
 date: 2020-06-19 16:31:32 +0900
 categories: [Programming, React]
-tags: [react, cra, package-json, node-modules, project-structure, webpack, babel, 프로젝트구조]
+tags: [react, cra, webpack, babel]
 ---
 
 ## CRA 프로젝트 초기 구조

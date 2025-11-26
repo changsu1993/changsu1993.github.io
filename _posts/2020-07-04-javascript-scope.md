@@ -2,7 +2,7 @@
 title: JavaScript Scope 완벽 가이드 - 변수의 유효 범위 이해하기
 date: 2020-07-04 20:28:00 +0900
 categories: [개발, JavaScript]
-tags: [javascript, scope, block, global, local, namespace, 변수]
+tags: [javascript, scope, closure]
 author: changsu
 toc: true
 comments: true

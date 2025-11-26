@@ -4,7 +4,7 @@ description: CSS 선택자의 모든 종류와 결합 방법, 그리고 명시�
 author: changsu
 date: 2020-06-13 17:10:58 +0900
 categories: [Web, CSS]
-tags: [css, selector, specificity, cascade, priority, css-selector]
+tags: [css, selector, specificity]
 ---
 
 ## 1. CSS 선택자(Selector) 기본

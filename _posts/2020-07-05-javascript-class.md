@@ -2,7 +2,7 @@
 title: JavaScript Class 완벽 가이드 - 객체지향 프로그래밍의 핵심
 date: 2020-07-05 01:07:00 +0900
 categories: [개발, JavaScript]
-tags: [javascript, class, oop, es6, constructor, 객체지향]
+tags: [javascript, class, oop, es6]
 author: changsu
 toc: true
 comments: true

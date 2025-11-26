@@ -2,7 +2,7 @@
 title: JavaScript Callback 완벽 가이드 - 비동기 프로그래밍의 시작
 date: 2021-02-28 18:13:00 +0900
 categories: [개발, JavaScript]
-tags: [javascript, callback, 비동기, async, 동기, synchronous, asynchronous, callback-hell, 콜백지옥]
+tags: [javascript, callback, async]
 author: changsu
 toc: true
 comments: true

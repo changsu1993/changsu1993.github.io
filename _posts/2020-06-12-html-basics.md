@@ -4,7 +4,7 @@ description: HTML의 개념부터 브라우저의 동작 원리, 태그의 구�
 author: changsu
 date: 2020-06-12 00:13:21 +0900
 categories: [Web, HTML]
-tags: [html, browser, tag, element, attribute, web-basics]
+tags: [html, web-basics]
 ---
 
 ## 1. HTML이란?

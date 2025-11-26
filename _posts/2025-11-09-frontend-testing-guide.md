@@ -4,7 +4,7 @@ description: 프론트엔드 개발에서 테스트 코드의 필요성부터 Je
 author: changsu
 date: 2025-11-09 15:00:00 +0900
 categories: [개발, Testing]
-tags: [jest, react-testing-library, unit-test, integration-test, e2e-test, frontend-testing, tdd, 테스트코드, 프론트엔드테스트]
+tags: [testing, jest, react-testing-library, tdd]
 toc: true
 comments: true
 ---

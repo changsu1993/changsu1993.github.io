@@ -4,7 +4,7 @@ description: CSS border 속성으로 요소의 테두리를 꾸미는 방법을 
 author: changsu
 date: 2020-06-13 15:51:36 +0900
 categories: [Web, CSS]
-tags: [css, border, border-style, border-radius, box-model, design]
+tags: [css, box-model]
 ---
 
 ## 1. Border 기본 개념

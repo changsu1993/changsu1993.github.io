@@ -4,7 +4,7 @@ description: 거꾸로 읽어도 똑같은 문자열 팰린드롬을 확인하�
 author: changsu
 date: 2020-10-13 01:46:46 +0900
 categories: [Programming, Algorithms]
-tags: [palindrome, algorithm, string, two-pointer, recursion, coding-test, javascript, complexity, 팰린드롬, 알고리즘, 문자열, 코딩테스트]
+tags: [algorithm, javascript, string, coding-test]
 ---
 
 "토마토", "기러기"처럼 **거꾸로 읽어도 똑같은 문자열**을 **팰린드롬(Palindrome)**이라고 합니다. 팰린드롬 확인은 코딩 테스트에서 자주 출제되는 기본적이면서도 중요한 알고리즘 문제입니다.

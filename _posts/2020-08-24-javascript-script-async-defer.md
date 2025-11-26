@@ -2,7 +2,7 @@
 title: JavaScript Script 로딩 최적화 완벽 가이드 - async vs defer
 date: 2020-08-24 22:25:00 +0900
 categories: [개발, JavaScript]
-tags: [javascript, async, defer, script, 성능최적화, 로딩, html, dom]
+tags: [javascript, async, performance, html]
 author: changsu
 toc: true
 comments: true

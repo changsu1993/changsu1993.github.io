@@ -4,7 +4,7 @@ description: 프론트엔드 보안의 모든 것을 다룹니다. XSS, CSRF 공
 author: changsu
 date: 2025-11-17 10:00:00 +0900
 categories: [Frontend, Security]
-tags: [security, xss, csrf, frontend-security, web-security, react-security, sanitization, csp, 보안, 프론트엔드보안]
+tags: [security, xss, csrf, csp]
 toc: true
 comments: true
 ---

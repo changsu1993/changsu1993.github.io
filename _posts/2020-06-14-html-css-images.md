@@ -4,7 +4,7 @@ description: HTML img 태그와 CSS background-image의 차이점, 사용 시나
 author: changsu
 date: 2020-06-14 19:16:19 +0900
 categories: [Web, HTML]
-tags: [html, css, image, img-tag, background-image, responsive-image, optimization]
+tags: [html, css, image, responsive]
 ---
 
 ## 1. 이미지 삽입 방법

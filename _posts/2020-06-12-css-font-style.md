@@ -4,7 +4,7 @@ description: CSS로 텍스트를 꾸미는 방법을 학습합니다. font-famil
 author: changsu
 date: 2020-06-12 13:47:51 +0900
 categories: [Web, CSS]
-tags: [css, font, font-family, font-size, font-weight, color, typography]
+tags: [css, typography]
 ---
 
 ## 1. font-family

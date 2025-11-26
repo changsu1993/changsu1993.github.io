@@ -2,7 +2,7 @@
 title: "React 상태 관리 완벽 가이드 - useState부터 Context API까지"
 date: 2025-11-13 14:00:00 +0900
 categories: [React, State Management]
-tags: [react, state-management, usestate, usereducer, context-api, props-drilling, react-hooks, 상태관리]
+tags: [react, state-management, hooks, context-api]
 author: changsu
 toc: true
 comments: true

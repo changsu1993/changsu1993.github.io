@@ -2,7 +2,7 @@
 title: "LLM AI 완벽 비교 가이드 - ChatGPT, Claude, Gemini, Llama 비교 분석"
 date: 2025-11-10 20:00:00 +0900
 categories: [AI, LLM]
-tags: [llm, ai, chatgpt, claude, gemini, llama, openai, anthropic, google, api, 인공지능]
+tags: [ai, llm, chatgpt, claude, gemini]
 author: changsu
 toc: true
 comments: true

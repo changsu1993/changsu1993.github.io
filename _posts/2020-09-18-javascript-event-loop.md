@@ -2,7 +2,7 @@
 title: JavaScript Event Loop 완벽 가이드 - 비동기 처리의 핵심 메커니즘
 date: 2020-09-18 16:43:00 +0900
 categories: [개발, JavaScript]
-tags: [javascript, event-loop, message-queue, microtask, macrotask, tick, 비동기, 이벤트루프]
+tags: [javascript, event-loop, async, promise]
 author: changsu
 toc: true
 comments: true

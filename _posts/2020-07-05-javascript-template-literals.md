@@ -4,7 +4,7 @@ description: ES6 템플릿 리터럴의 강력한 기능과 실무 활용법을 
 author: cotes
 date: 2020-07-05 18:47:12 +0900
 categories: [JavaScript, ES6]
-tags: [javascript, es6, template-literals, string, tagged-templates]
+tags: [javascript, es6, string, template-literal]
 ---
 
 ## Template Literals란?

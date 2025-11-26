@@ -4,7 +4,7 @@ description: JavaScript의 모든 반복문을 마스터하세요. for, while, f
 author: cotes
 date: 2020-06-21 18:40:45 +0900
 categories: [JavaScript, Basics]
-tags: [javascript, for-loop, while-loop, for-of, for-in, foreach, iteration, loop]
+tags: [javascript, loop, iteration]
 ---
 
 ## 반복문이란?

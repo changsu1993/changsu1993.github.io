@@ -4,7 +4,7 @@ description: JavaScript에서 문자열을 연결하는 다양한 방법과 문�
 author: changsu
 date: 2020-06-21 13:48:57 +0900
 categories: [Programming, JavaScript]
-tags: [javascript, string, concatenation, template-literal, type-coercion, string-methods, 문자열]
+tags: [javascript, string, template-literal]
 ---
 
 ## 문자열 연결

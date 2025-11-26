@@ -2,7 +2,7 @@
 title: "React 19 완벽 가이드 - Actions, use() 훅, Server Components 개선사항 총정리"
 date: 2025-11-20 14:00:00 +0900
 categories: [Frontend, React]
-tags: [react, react19, actions, use-hook, server-components, useoptimistic, useactionstate, frontend, 리액트, 리액트19]
+tags: [react, react-19, actions, server-components]
 description: "2024년 12월 정식 릴리스된 React 19의 모든 것. Actions 패턴, use() 훅, useOptimistic, Server Components 개선사항, 실무 마이그레이션 가이드까지 완벽 정리"
 ---
 

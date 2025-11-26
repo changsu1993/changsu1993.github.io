@@ -2,7 +2,7 @@
 title: JavaScript 타입 비교 완벽 가이드 - == vs === vs typeof
 date: 2020-09-14 00:01:00 +0900
 categories: [개발, JavaScript]
-tags: [javascript, 타입비교, ==, ===, typeof, instanceof, 동등연산자, 형변환]
+tags: [javascript, equality, typeof, type-conversion]
 author: changsu
 toc: true
 comments: true

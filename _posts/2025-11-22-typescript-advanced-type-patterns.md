@@ -2,7 +2,7 @@
 title: "TypeScript 5.x 고급 타입 패턴 완벽 가이드 - 실무에서 바로 쓰는 타입 안전성 전략"
 date: 2025-11-22 10:00:00 +0900
 categories: [Frontend, TypeScript]
-tags: [typescript, typescript5, generic, utility-types, type-patterns, type-safety, 타입스크립트, 제네릭, 유틸리티타입]
+tags: [typescript, generics, utility-types, type-safety]
 description: "TypeScript 5.x의 새로운 기능부터 제네릭 고급 활용, 커스텀 유틸리티 타입, Branded Types, Exhaustive Check까지. 실무에서 타입 안전성을 높이는 모든 패턴을 예제와 함께 완벽 정리"
 ---
 

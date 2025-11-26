@@ -4,7 +4,7 @@ description: CSS margin auto를 사용한 가로 중앙 정렬 방법과 다양�
 author: changsu
 date: 2020-06-14 19:42:00 +0900
 categories: [Web, CSS]
-tags: [css, margin, auto, centering, layout, alignment]
+tags: [css, layout, centering]
 ---
 
 ## 1. margin: auto란?

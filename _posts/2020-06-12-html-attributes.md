@@ -4,7 +4,7 @@ description: HTML 속성(Attributes)의 개념과 id, class 속성의 차이점 
 author: changsu
 date: 2020-06-12 12:16:57 +0900
 categories: [Web, HTML]
-tags: [html, attributes, id, class, html-attributes]
+tags: [html, attributes]
 ---
 
 ## HTML Attributes란?

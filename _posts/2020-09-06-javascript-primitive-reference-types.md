@@ -4,7 +4,7 @@ description: 원시 타입과 참조 타입의 근본적인 차이부터 Wrapper
 author: changsu
 date: 2020-09-06 02:25:34 +0900
 categories: [Programming, JavaScript]
-tags: [javascript, primitive-type, reference-type, wrapper-object, auto-boxing, constructor-function, first-class-function, 원시타입, 참조타입]
+tags: [javascript, data-types, primitive, reference]
 ---
 
 JavaScript의 타입 시스템을 제대로 이해하기 위해서는 Primitive Type과 Reference Type의 차이를 명확히 알아야 합니다.

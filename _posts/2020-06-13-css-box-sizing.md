@@ -4,7 +4,7 @@ description: CSS box-sizing 속성의 개념과 content-box, border-box의 차�
 author: changsu
 date: 2020-06-13 17:56:14 +0900
 categories: [Web, CSS]
-tags: [css, box-sizing, border-box, content-box, box-model, layout]
+tags: [css, box-model, layout]
 ---
 
 ## 1. box-sizing이란?

@@ -4,7 +4,7 @@ description: JavaScript의 Date 객체를 사용한 날짜와 시간 처리 방�
 author: changsu
 date: 2020-06-22 00:18:34 +0900
 categories: [Programming, JavaScript]
-tags: [javascript, date, time, timestamp, datetime, date-formatting, timezone, date-fns]
+tags: [javascript, date, time]
 ---
 
 ## JavaScript Date 객체

@@ -2,7 +2,7 @@
 title: JavaScript JSON 완벽 가이드 - API 통신과 데이터 직렬화의 핵심
 date: 2020-09-02 01:38:00 +0900
 categories: [개발, JavaScript]
-tags: [javascript, json, api, stringify, parse, 직렬화, 데이터통신, fetch]
+tags: [javascript, json, api, fetch]
 author: changsu
 toc: true
 comments: true

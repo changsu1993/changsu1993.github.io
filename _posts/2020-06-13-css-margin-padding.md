@@ -4,7 +4,7 @@ description: CSS Box Model의 핵심인 margin과 padding의 차이점을 이해
 author: changsu
 date: 2020-06-13 15:26:11 +0900
 categories: [Web, CSS]
-tags: [css, margin, padding, box-model, spacing, layout]
+tags: [css, box-model, layout]
 ---
 
 ## 1. CSS Box Model

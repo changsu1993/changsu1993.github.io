@@ -4,7 +4,7 @@ description: React Hooks, Styled-Components, Kakao API를 활용한 두 번째 �
 author: changsu
 date: 2020-08-16 19:21:17 +0900
 categories: [Projects, Web Development]
-tags: [react, django, project, soomgo, clone-coding, hooks, styled-components, kakao-api, axios, 프로젝트, 회고]
+tags: [react, project, hooks, retrospective]
 ---
 
 WeCode 부트캠프 2차 프로젝트에서 1차 프로젝트의 경험을 바탕으로 더 발전된 기술 스택을 활용하여 진행한 프로젝트 회고입니다.

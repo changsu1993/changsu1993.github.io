@@ -4,7 +4,7 @@ description: CSS text-align으로 텍스트 정렬하는 방법과 text-indent�
 author: changsu
 date: 2020-06-13 01:06:36 +0900
 categories: [Web, CSS]
-tags: [css, text-align, text-indent, text-style, typography]
+tags: [css, typography]
 ---
 
 ## 1. text-align (텍스트 정렬)

@@ -2,7 +2,7 @@
 title: 첫 번째 기술 포스트
 date: 2025-11-01 14:30:00 +0900
 categories: [개발, 프로그래밍]
-tags: [javascript, web, 개발팁]
+tags: [javascript, web-basics]
 author: changsu
 toc: true
 comments: true

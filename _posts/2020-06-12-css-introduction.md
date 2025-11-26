@@ -4,7 +4,7 @@ description: CSS의 개념과 HTML에 CSS를 적용하는 3가지 방법, 선택
 author: changsu
 date: 2020-06-12 12:54:29 +0900
 categories: [Web, CSS]
-tags: [css, stylesheet, selector, inline-style, external-css]
+tags: [css, selector]
 ---
 
 ## 1. CSS란?

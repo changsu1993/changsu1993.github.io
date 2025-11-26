@@ -4,7 +4,7 @@ description: JavaScript의 핵심 개념인 Expression과 Statement의 차이를
 author: changsu
 date: 2020-09-16 18:36:32 +0900
 categories: [Programming, JavaScript]
-tags: [javascript, expression, statement, iife, function-declaration, function-expression, named-function, 표현식, 문장]
+tags: [javascript, expression, statement, function]
 ---
 
 JavaScript 코드는 크게 두 가지 문법적 카테고리로 나뉩니다: **Expression(표현식)**과 **Statement(문장)**. 이 둘의 차이를 이해하는 것은 JavaScript를 깊이 있게 이해하는 핵심입니다.

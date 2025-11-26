@@ -4,7 +4,7 @@ description: CSS display 속성의 block, inline, inline-block, none 값의 차�
 author: changsu
 date: 2020-06-14 19:32:13 +0900
 categories: [Web, CSS]
-tags: [css, display, block, inline, inline-block, layout, float]
+tags: [css, layout, display]
 ---
 
 ## 1. Display 속성이란?

@@ -4,7 +4,7 @@ description: CSS Media Query로 반응형 웹사이트를 구현하는 방법을
 author: changsu
 date: 2020-06-15 14:55:50 +0900
 categories: [Web, CSS]
-tags: [css, media-query, responsive, mobile-first, breakpoint, rwd]
+tags: [css, responsive, media-query]
 ---
 
 ## 개요

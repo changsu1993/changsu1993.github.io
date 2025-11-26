@@ -4,7 +4,7 @@ description: JavaScript 함수 매개변수의 모든 것. 기본값, Rest Param
 author: cotes
 date: 2020-06-21 18:00:52 +0900
 categories: [JavaScript, Functions]
-tags: [javascript, parameters, arguments, rest-parameters, default-parameters, destructuring, spread-operator]
+tags: [javascript, function, es6, destructuring]
 ---
 
 ## 매개변수와 인자의 차이

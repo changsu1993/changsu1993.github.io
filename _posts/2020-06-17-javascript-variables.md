@@ -4,7 +4,7 @@ description: JavaScript 변수 선언 방법(var, let, const)의 차이점과 �
 author: changsu
 date: 2020-06-17 00:38:03 +0900
 categories: [JavaScript, Basics]
-tags: [javascript, variables, var, let, const, scope, hoisting, tdz, naming-convention]
+tags: [javascript, variables, scope, hoisting]
 ---
 
 ## 1. 변수란?

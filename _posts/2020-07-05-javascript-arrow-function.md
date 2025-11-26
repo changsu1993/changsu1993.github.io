@@ -4,7 +4,7 @@ description: ES6 화살표 함수의 문법, this 바인딩, 사용 사례와 �
 author: cotes
 date: 2020-07-05 15:28:44 +0900
 categories: [JavaScript, ES6]
-tags: [javascript, es6, arrow-function, this-binding, lexical-scope]
+tags: [javascript, es6, arrow-function, this]
 ---
 
 ## ES6 Arrow Function이란?

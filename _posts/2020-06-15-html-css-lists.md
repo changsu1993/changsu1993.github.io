@@ -4,7 +4,7 @@ description: HTML 리스트 태그(ul, ol, li)의 사용법과 CSS 스타일링,
 author: changsu
 date: 2020-06-15 10:37:18 +0900
 categories: [Web, HTML]
-tags: [html, css, list, ul, ol, li, list-style, pseudo-class, selector]
+tags: [html, css, list]
 ---
 
 ## 1. HTML 리스트 기본

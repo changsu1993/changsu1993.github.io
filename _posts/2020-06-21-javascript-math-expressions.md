@@ -4,7 +4,7 @@ description: JavaScript의 산술 연산자, 증감 연산자, 할당 연산자�
 author: changsu
 date: 2020-06-21 02:01:22 +0900
 categories: [Programming, JavaScript]
-tags: [javascript, math, operator, increment, decrement, arithmetic, expression, 연산자]
+tags: [javascript, operator, math]
 ---
 
 ## JavaScript 수학 계산

@@ -4,7 +4,7 @@ description: CSS의 상속(Inheritance) 개념과 그룹 선택자(Grouping) 활
 author: changsu
 date: 2020-06-13 16:00:15 +0900
 categories: [Web, CSS]
-tags: [css, inheritance, grouping, selector, cascade, specificity]
+tags: [css, selector, specificity]
 ---
 
 ## 1. CSS 상속(Inheritance)

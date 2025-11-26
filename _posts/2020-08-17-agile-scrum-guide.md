@@ -4,7 +4,7 @@ description: 워터폴에서 애자일로의 전환, Scrum 프레임워크의 �
 author: changsu
 date: 2020-08-17 16:08:15 +0900
 categories: [Software Engineering, Methodology]
-tags: [agile, scrum, software-development, methodology, sprint, backlog, kanban, xp, 애자일, 스크럼, 개발방법론]
+tags: [agile, scrum, methodology]
 ---
 
 현대 소프트웨어 개발에서 빼놓을 수 없는 Agile과 Scrum 방법론에 대해 알아봅니다.

@@ -3,7 +3,7 @@ title: "React Server Components 완벽 가이드 - 개념부터 실전까지"
 description: "React Server Components의 개념, 동작 원리, 작성법을 상세히 알아봅니다. Client Components와의 조합 방법, Next.js에서의 활용, 성능 최적화 전략까지 실전 예제와 함께 다룹니다."
 date: 2025-11-25 10:00:00 +0900
 categories: [Frontend, React]
-tags: [react, server-components, rsc, nextjs, ssr, performance, frontend]
+tags: [react, server-components, nextjs, ssr]
 ---
 
 React Server Components(RSC)는 React 팀이 제안한 새로운 패러다임으로, 서버와 클라이언트의 장점을 결합하여 웹 애플리케이션의 성능과 사용자 경험을 크게 향상시킵니다. 이 글에서는 RSC의 개념부터 실전 활용까지 모든 것을 다룹니다.

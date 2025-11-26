@@ -2,7 +2,7 @@
 title: JavaScript Call Stack 완벽 가이드 - 실행 컨텍스트와 비동기 처리의 핵심
 date: 2020-09-03 22:20:00 +0900
 categories: [개발, JavaScript]
-tags: [javascript, call-stack, stack-frame, heap, web-api, queue, 비동기, 호출스택]
+tags: [javascript, call-stack, async, event-loop]
 author: changsu
 toc: true
 comments: true

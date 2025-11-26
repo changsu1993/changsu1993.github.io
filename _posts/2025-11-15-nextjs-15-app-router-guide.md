@@ -2,7 +2,7 @@
 title: "Next.js 15 완벽 가이드 - App Router 마스터하기"
 date: 2025-11-15 17:30:00 +0900
 categories: [Next.js, React]
-tags: [nextjs, nextjs15, app-router, react-server-components, server-actions, streaming, suspense, next, 넥스트, 리액트]
+tags: [nextjs, app-router, server-components, server-actions]
 author: changsu
 toc: true
 comments: true

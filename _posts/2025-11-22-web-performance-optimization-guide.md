@@ -2,7 +2,7 @@
 title: "웹 성능 최적화 완벽 가이드 - Core Web Vitals부터 번들 최적화까지"
 date: 2025-11-22 14:00:00 +0900
 categories: [Frontend, Performance]
-tags: [web-performance, core-web-vitals, lcp, inp, cls, vite, webpack, next-image, lazy-loading, 웹성능, 성능최적화]
+tags: [performance, core-web-vitals, webpack, vite]
 description: "Core Web Vitals(LCP, INP, CLS) 측정과 개선, Vite/Webpack 번들 최적화, next/image와 lazy loading, 실제 성능 개선 사례까지. 프론트엔드 성능 최적화의 모든 것"
 ---
 

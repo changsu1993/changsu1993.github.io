@@ -4,7 +4,7 @@ description: HTML table 태그의 기본 구조부터 thead, tbody, th, td 태�
 author: changsu
 date: 2020-06-15 10:54:23 +0900
 categories: [Web, HTML]
-tags: [html, table, tr, td, th, colspan, rowspan, thead, tbody]
+tags: [html, table]
 ---
 
 ## 1. HTML Table 기본

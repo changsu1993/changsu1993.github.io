@@ -2,7 +2,7 @@
 title: "대규모 React 앱의 상태 관리 아키텍처 - 설계 패턴과 성능 최적화"
 date: 2025-11-14 20:00:00 +0900
 categories: [React, Architecture]
-tags: [react, state-management, architecture, performance, testing, 상태관리, 아키텍처, 설계패턴]
+tags: [react, state-management, architecture, performance]
 author: changsu
 toc: true
 comments: true

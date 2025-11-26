@@ -4,7 +4,7 @@ description: JavaScript의 Number 타입과 Math 객체를 마스터하세요. �
 author: cotes
 date: 2020-07-04 18:11:22 +0900
 categories: [JavaScript, Basics]
-tags: [javascript, number, math, random, floating-point, number-formatting]
+tags: [javascript, number, math]
 ---
 
 ## Number 타입 기본

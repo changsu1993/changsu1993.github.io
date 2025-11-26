@@ -4,7 +4,7 @@ description: React와 Django를 활용한 첫 팀 프로젝트 경험과 배운 
 author: changsu
 date: 2020-07-19 23:05:25 +0900
 categories: [Projects, Web Development]
-tags: [react, django, project, e-commerce, clone-coding, team-project, sass, api, 프로젝트, 회고]
+tags: [react, project, retrospective]
 ---
 
 WeCode 부트캠프에서 진행한 첫 팀 프로젝트의 경험과 배운 점들을 기록합니다.

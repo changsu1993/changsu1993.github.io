@@ -4,7 +4,7 @@ description: JavaScript 객체의 기초부터 실무 활용까지 완벽 정리
 author: cotes
 date: 2020-07-04 18:56:58 +0900
 categories: [JavaScript, Basics]
-tags: [javascript, object, destructuring, optional-chaining, object-methods]
+tags: [javascript, object, destructuring]
 ---
 
 ## 객체(Object)란?

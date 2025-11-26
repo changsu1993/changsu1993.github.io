@@ -2,7 +2,7 @@
 title: "Zustand vs Redux Toolkit - 2025년 상태 관리 라이브러리 완벽 비교"
 date: 2025-11-13 16:00:00 +0900
 categories: [React, State Management]
-tags: [react, state-management, zustand, redux-toolkit, recoil, jotai, 상태관리, 전역상태]
+tags: [react, state-management, zustand, redux-toolkit]
 author: changsu
 toc: true
 comments: true

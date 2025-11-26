@@ -4,7 +4,7 @@ description: React의 기본 개념과 특징을 학습합니다. 웹 애플리�
 author: changsu
 date: 2020-06-19 13:09:12 +0900
 categories: [Programming, React]
-tags: [react, javascript, jsx, component, virtual-dom, frontend, spa]
+tags: [react, javascript, jsx, component]
 ---
 
 ## 개요

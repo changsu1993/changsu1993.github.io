@@ -2,7 +2,7 @@
 title: "React Query 완벽 가이드 - 서버 상태 관리의 정석 (TanStack Query)"
 date: 2025-11-14 14:00:00 +0900
 categories: [React, State Management]
-tags: [react, react-query, tanstack-query, server-state, data-fetching, cache, 서버상태, 상태관리]
+tags: [react, react-query, data-fetching, cache]
 author: changsu
 toc: true
 comments: true

@@ -2,7 +2,7 @@
 title: "시각적 회귀 테스트 완벽 가이드 - Percy, Chromatic, Playwright로 UI 버그 잡기"
 date: 2025-11-12 14:00:00 +0900
 categories: [Testing, Visual]
-tags: [visual-regression-testing, percy, chromatic, playwright, backstopjs, ui-testing, screenshot-testing, 시각적테스트, 회귀테스트]
+tags: [testing, visual-regression, playwright, storybook]
 author: changsu
 toc: true
 comments: true

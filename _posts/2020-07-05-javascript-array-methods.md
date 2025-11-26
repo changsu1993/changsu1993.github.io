@@ -2,7 +2,7 @@
 title: JavaScript Array Methods 완벽 가이드 - 실무 필수 배열 메서드 정복하기
 date: 2020-07-05 21:49:00 +0900
 categories: [개발, JavaScript]
-tags: [javascript, array, map, filter, reduce, foreach, find, methods, 배열]
+tags: [javascript, array, array-methods]
 author: changsu
 toc: true
 comments: true

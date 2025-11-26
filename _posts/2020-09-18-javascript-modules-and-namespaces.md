@@ -4,7 +4,7 @@ description: ES6 모듈 시스템의 동작 원리부터 export/import, 모듈�
 author: changsu
 date: 2020-09-18 15:58:55 +0900
 categories: [Programming, JavaScript]
-tags: [javascript, es6, modules, export, import, namespace, iife, webpack, bundler, 모듈, 네임스페이스]
+tags: [javascript, es6, modules, webpack]
 ---
 
 현대 JavaScript 개발에서 빼놓을 수 없는 **ES6 Modules**와 전역 변수 오염을 방지하는 **Namespace 패턴**을 알아봅니다.

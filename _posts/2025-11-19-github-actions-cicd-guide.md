@@ -4,7 +4,7 @@ description: 프론트엔드 프로젝트를 위한 완벽한 CI/CD 파이프라
 author: changsu
 date: 2025-11-19 10:05:00 +0900
 categories: [DevOps, CI/CD]
-tags: [github-actions, ci-cd, devops, docker, automation, deployment, testing, 지속적통합, 배포자동화]
+tags: [github-actions, ci-cd, devops, docker]
 toc: true
 comments: true
 ---

@@ -4,7 +4,7 @@ description: Unix의 탄생부터 Linux의 등장까지, 현대 컴퓨팅의 기
 author: changsu
 date: 2020-09-23 16:52:35 +0900
 categories: [Programming, Operating Systems]
-tags: [unix, linux, posix, gnu, kernel, operating-system, distribution, open-source, bsd, system-v, ubuntu, centos, 유닉스, 리눅스, 운영체제]
+tags: [linux, unix, operating-system]
 ---
 
 현대 컴퓨팅의 기반이 된 **Unix**와 **Linux**의 역사를 이해하면, 왜 대부분의 서버, 스마트폰, 슈퍼컴퓨터가 이 운영체제들을 사용하는지 알 수 있습니다.

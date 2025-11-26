@@ -4,7 +4,7 @@ description: JavaScript 함수의 기본 개념부터 다양한 선언 방식, �
 author: changsu
 date: 2020-06-21 00:42:13 +0900
 categories: [Programming, JavaScript]
-tags: [javascript, function, parameter, argument, return, scope, arrow-function, callback]
+tags: [javascript, function, scope, callback]
 ---
 
 ## 함수란?

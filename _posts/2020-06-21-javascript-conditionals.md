@@ -4,7 +4,7 @@ description: JavaScript의 조건문(if, else if, else)과 비교 연산자, 논
 author: changsu
 date: 2020-06-21 14:19:36 +0900
 categories: [Programming, JavaScript]
-tags: [javascript, if, else, switch, conditional, comparison, logical-operator, 조건문]
+tags: [javascript, conditional, operator]
 ---
 
 ## 조건문이란?

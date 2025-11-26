@@ -4,7 +4,7 @@ description: JavaScript의 타이머 API를 마스터하세요. setTimeout, setI
 author: cotes
 date: 2020-09-21 17:57:41 +0900
 categories: [JavaScript, Asynchronous]
-tags: [javascript, settimeout, setinterval, requestanimationframe, debounce, throttle, timer, animation]
+tags: [javascript, timer, animation, performance]
 ---
 
 ## 타이머 API 개요

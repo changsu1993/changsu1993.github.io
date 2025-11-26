@@ -4,7 +4,7 @@ description: CSS position 속성으로 요소를 자유롭게 배치하는 방�
 author: changsu
 date: 2020-06-15 12:30:23 +0900
 categories: [Web, CSS]
-tags: [css, position, layout, absolute, relative, fixed, sticky, z-index]
+tags: [css, layout, position]
 ---
 
 ## 개요

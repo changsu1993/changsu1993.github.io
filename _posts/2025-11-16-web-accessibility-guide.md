@@ -4,7 +4,7 @@ description: 웹 접근성의 중요성부터 WCAG 2.1 가이드라인 준수, A
 author: changsu
 date: 2025-11-16 10:00:00 +0900
 categories: [Frontend, Accessibility]
-tags: [accessibility, a11y, wcag, aria, screen-reader, semantic-html, 접근성, 웹접근성, ARIA]
+tags: [accessibility, wcag, aria, semantic-html]
 toc: true
 comments: true
 ---

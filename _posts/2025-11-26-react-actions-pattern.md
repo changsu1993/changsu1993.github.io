@@ -3,7 +3,7 @@ title: "React Actions 패턴 상세 가이드 - useActionState, useFormStatus, u
 description: "React 19의 Actions 패턴을 완벽히 이해합니다. useActionState, useFormStatus, useOptimistic 훅의 사용법과 Server Actions, 낙관적 업데이트, 폼 처리 패턴을 실전 예제와 함께 다룹니다."
 date: 2025-11-26 10:00:00 +0900
 categories: [Frontend, React]
-tags: [react, react-19, actions, useActionState, useFormStatus, useOptimistic, server-actions, forms]
+tags: [react, react-19, actions, server-actions]
 ---
 
 React 19는 폼과 데이터 변이를 처리하는 새로운 패턴인 **Actions**를 도입했습니다. 이 가이드에서는 Actions의 핵심 개념부터 실전 활용 패턴까지 심층적으로 다룹니다.

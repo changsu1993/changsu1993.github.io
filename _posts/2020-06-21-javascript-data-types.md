@@ -4,7 +4,7 @@ description: JavaScript의 원시 타입(String, Number, Boolean, Undefined, Nul
 author: changsu
 date: 2020-06-21 19:07:52 +0900
 categories: [Programming, JavaScript]
-tags: [javascript, data-types, typeof, primitive, object, type-conversion, truthy-falsy]
+tags: [javascript, data-types, type-conversion]
 ---
 
 ## JavaScript 데이터 타입

@@ -4,7 +4,7 @@ description: Create React App(CRA)을 사용한 React 프로젝트 설정 방법
 author: changsu
 date: 2020-06-19 13:50:04 +0900
 categories: [Programming, React]
-tags: [react, cra, create-react-app, nodejs, npm, npx, 개발환경, 프론트엔드, 빌드도구]
+tags: [react, cra, nodejs, npm]
 ---
 
 ## Create React App이란?

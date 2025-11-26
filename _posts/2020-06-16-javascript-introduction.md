@@ -4,7 +4,7 @@ description: JavaScript의 기본 개념, 역할, 실행 환경을 학습합니�
 author: changsu
 date: 2020-06-16 09:40:30 +0900
 categories: [Programming, JavaScript]
-tags: [javascript, js, web, frontend, programming, console, alert]
+tags: [javascript, frontend, web-basics]
 ---
 
 ## 개요
