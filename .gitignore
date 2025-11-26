@@ -5,6 +5,7 @@
 !.nojekyll
 !.travis.yml
 !.husky
+!.claude
 
 # Bundler 캐시
 .bundle
