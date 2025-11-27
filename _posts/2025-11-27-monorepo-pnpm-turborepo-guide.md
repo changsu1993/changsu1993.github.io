@@ -1362,7 +1362,7 @@ pnpm add @my-monorepo/ui --filter @my-monorepo/web --workspace
 
 **해결:**
 
-```json
+```jsonc
 // turbo.json
 {
   "globalDependencies": [
