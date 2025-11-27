@@ -121,9 +121,9 @@ const StyledButton = styled.button<ButtonProps>`
   }
 `;
 
-export const Button: React.FC<ButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>> = (props) => {
+export function Button(props: ButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>) {
   return <StyledButton {...props} />;
-};
+}
 ```
 
 #### Tailwind CSS
@@ -156,19 +156,19 @@ interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {}
 
-export const Button: React.FC<ButtonProps> = ({
+export function Button({
   variant,
   size,
   className,
   ...props
-}) => {
+}: ButtonProps) {
   return (
     <button
       className={buttonVariants({ variant, size, className })}
       {...props}
     />
   );
-};
+}
 ```
 
 #### CSS Modules
@@ -182,12 +182,12 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size?: 'small' | 'medium' | 'large';
 }
 
-export const Button: React.FC<ButtonProps> = ({
+export function Button({
   variant = 'primary',
   size = 'medium',
   className,
   ...props
-}) => {
+}: ButtonProps) {
   return (
     <button
       className={classNames(
@@ -199,7 +199,7 @@ export const Button: React.FC<ButtonProps> = ({
       {...props}
     />
   );
-};
+}
 ```
 
 ```css
@@ -266,12 +266,12 @@ interface CardProps {
   footer?: React.ReactNode;
 }
 
-export const Card: React.FC<CardProps> = ({
+export function Card({
   title,
   description,
   imageUrl,
   footer
-}) => {
+}: CardProps) {
   return (
     <div css={css`
       background: white;
@@ -334,12 +334,12 @@ interface CardProps {
   footer?: React.ReactNode;
 }
 
-export const Card: React.FC<CardProps> = ({
+export function Card({
   title,
   description,
   imageUrl,
   footer
-}) => {
+}: CardProps) {
   return (
     <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden">
       {imageUrl && (
@@ -379,12 +379,12 @@ interface CardProps {
   footer?: React.ReactNode;
 }
 
-export const Card: React.FC<CardProps> = ({
+export function Card({
   title,
   description,
   imageUrl,
   footer
-}) => {
+}: CardProps) {
   return (
     <div className={styles.card}>
       {imageUrl && (
@@ -779,7 +779,7 @@ import { css } from '../styled-system/css';
 - CSS `@layer`로 스타일 우선순위 관리
 - CSS Variables로 테마 구현
 
-```css
+```scss
 /* 이제 Sass 없이도 네이티브 CSS로 가능 */
 .button {
   background: var(--color-primary);
