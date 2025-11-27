@@ -1241,7 +1241,7 @@ import { Button } from '@my-monorepo/ui'; // TS2307: Cannot find module
 
 **해결:**
 
-```json
+```jsonc
 // apps/web/tsconfig.json
 {
   "extends": "@my-monorepo/tsconfig/nextjs.json",
@@ -1257,7 +1257,7 @@ import { Button } from '@my-monorepo/ui'; // TS2307: Cannot find module
 
 또는 packages/ui에서 타입 파일 제대로 빌드:
 
-```json
+```jsonc
 // packages/ui/package.json
 {
   "types": "./dist/index.d.ts",
@@ -1277,7 +1277,7 @@ import { Button } from '@my-monorepo/ui'; // TS2307: Cannot find module
 
 **해결책 1: Watch 모드 활용**
 
-```json
+```jsonc
 // turbo.json
 {
   "pipeline": {
@@ -1290,7 +1290,7 @@ import { Button } from '@my-monorepo/ui'; // TS2307: Cannot find module
 }
 ```
 
-```json
+```jsonc
 // packages/ui/package.json
 {
   "scripts": {
