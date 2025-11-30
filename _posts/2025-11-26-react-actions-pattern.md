@@ -1420,6 +1420,7 @@ async function deletePost(postId: string) {
 
 전역 토스트를 사용한 피드백:
 
+{% raw %}
 ```tsx
 // app/components/ToastProvider.tsx
 'use client';
@@ -1508,6 +1509,7 @@ export function CommentForm({ postId }: { postId: string }) {
   );
 }
 ```
+{% endraw %}
 
 ### 유효성 검사 피드백
 

@@ -421,6 +421,7 @@ function badReducer(state, action) {
 
 복잡한 상태 로직의 완벽한 예시입니다:
 
+{% raw %}
 ```jsx
 // 액션 타입 상수 정의 (오타 방지)
 const ACTIONS = {
@@ -555,6 +556,7 @@ function TodoApp() {
   );
 }
 ```
+{% endraw %}
 
 **왜 useReducer를 사용했을까?**
 - 상태가 `todos`와 `filter` 두 개로 연관되어 있음
@@ -672,6 +674,7 @@ Context API는 **컴포넌트 트리 전체에 데이터를 전달할 수 있는
 
 Context API는 3단계로 사용합니다:
 
+{% raw %}
 ```jsx
 import { createContext, useContext, useState } from 'react';
 
@@ -703,6 +706,7 @@ function SomeDeepComponent() {
   );
 }
 ```
+{% endraw %}
 
 ### Props Drilling 해결
 
@@ -1751,6 +1755,7 @@ const filtered = useMemo(() => {
 
 ### 5. Context 값으로 객체 직접 전달
 
+{% raw %}
 ```jsx
 // ❌ 매 렌더링마다 새 객체 → 모든 구독자 리렌더링
 function BadProvider({ children }) {
@@ -1776,6 +1781,7 @@ function GoodProvider({ children }) {
   );
 }
 ```
+{% endraw %}
 
 ## FAQ
 

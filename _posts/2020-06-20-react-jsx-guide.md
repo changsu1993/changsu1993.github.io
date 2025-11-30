@@ -310,6 +310,7 @@ function App() {
 
 #### 직접 인라인 스타일
 
+{% raw %}
 ```jsx
 function App() {
   return (
@@ -326,6 +327,7 @@ function App() {
   );
 }
 ```
+{% endraw %}
 
 #### CSS 속성명 변환 규칙
 
@@ -583,6 +585,7 @@ function App() {
 
 ### 1. 스타일 분리
 
+{% raw %}
 ```jsx
 // ✅ 좋은 예: 스타일 객체를 컴포넌트 밖으로 분리
 const styles = {
@@ -613,6 +616,7 @@ function App() {
   );
 }
 ```
+{% endraw %}
 
 ### 2. 조건부 클래스명
 
@@ -634,6 +638,7 @@ function Alert({ type, message }) {
 
 ### 3. 테마 일관성 유지
 
+{% raw %}
 ```jsx
 // theme.js
 export const theme = {
@@ -664,6 +669,7 @@ function Button() {
   );
 }
 ```
+{% endraw %}
 
 ## 마치며
 

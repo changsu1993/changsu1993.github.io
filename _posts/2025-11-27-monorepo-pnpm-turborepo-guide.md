@@ -931,6 +931,7 @@ npx turbo run build --dry=json
 
 **변경된 패키지만 빌드/테스트**
 
+{% raw %}
 ```yaml
 # .github/workflows/ci.yml
 name: CI
@@ -993,6 +994,7 @@ jobs:
         run: |
           pnpm turbo lint --filter=...[origin/main]
 ```
+{% endraw %}
 
 **Turbo 필터 설명:**
 

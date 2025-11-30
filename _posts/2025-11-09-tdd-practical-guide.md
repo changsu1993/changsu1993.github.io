@@ -359,6 +359,7 @@ test('Todo를 클릭하면 완료 상태가 토글된다', async () => {
 
 #### Green: 테스트를 통과하는 코드 작성
 
+{% raw %}
 ```jsx
 // src/components/TodoApp.jsx
 function TodoApp() {
@@ -413,11 +414,13 @@ function TodoApp() {
   );
 }
 ```
+{% endraw %}
 
 **실행 결과:** ✅ PASS
 
 #### Refactor: TodoItem 컴포넌트 분리
 
+{% raw %}
 ```jsx
 // src/components/TodoItem.jsx
 function TodoItem({ todo, onToggle }) {
@@ -436,6 +439,7 @@ function TodoItem({ todo, onToggle }) {
 
 export default TodoItem;
 ```
+{% endraw %}
 
 ```jsx
 // src/components/TodoApp.jsx
@@ -496,6 +500,7 @@ test('삭제 버튼을 클릭하면 Todo가 제거된다', async () => {
 
 #### Green: 테스트를 통과하는 코드 작성
 
+{% raw %}
 ```jsx
 // src/components/TodoItem.jsx
 function TodoItem({ todo, onToggle, onDelete }) {
@@ -518,6 +523,7 @@ function TodoItem({ todo, onToggle, onDelete }) {
 
 export default TodoItem;
 ```
+{% endraw %}
 
 ```jsx
 // src/components/TodoApp.jsx
@@ -621,6 +627,7 @@ test('필터링 기능이 정상 동작한다', async () => {
 
 #### Green: 테스트를 통과하는 코드 작성
 
+{% raw %}
 ```jsx
 // src/components/TodoApp.jsx
 function TodoApp() {
@@ -695,6 +702,7 @@ function TodoApp() {
   );
 }
 ```
+{% endraw %}
 
 **실행 결과:** ✅ PASS
 
@@ -757,6 +765,7 @@ function useTodos() {
 export default useTodos;
 ```
 
+{% raw %}
 ```jsx
 // src/components/TodoApp.jsx
 import { useState } from 'react';
@@ -804,6 +813,7 @@ function TodoApp() {
 
 export default TodoApp;
 ```
+{% endraw %}
 
 **실행 결과:** ✅ PASS (리팩토링 후에도 모든 테스트 통과)
 

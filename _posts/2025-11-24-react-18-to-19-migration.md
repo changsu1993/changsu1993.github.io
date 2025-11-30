@@ -611,6 +611,7 @@ function ContactForm() {
 
 ### 5. useOptimistic으로 낙관적 업데이트
 
+{% raw %}
 ```tsx
 import { useOptimistic, useTransition } from 'react';
 
@@ -665,6 +666,7 @@ function TodoList({ initialTodos }: { initialTodos: Todo[] }) {
   );
 }
 ```
+{% endraw %}
 
 ---
 

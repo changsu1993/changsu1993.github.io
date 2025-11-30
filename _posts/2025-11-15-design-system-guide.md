@@ -92,6 +92,7 @@ const tokens = {
 
 **없을 때의 문제점:**
 
+{% raw %}
 ```jsx
 // ❌ 팀마다 다른 스타일
 // 팀 A
@@ -106,6 +107,7 @@ const tokens = {
 
 // 결과: 일관성 없는 UI, 유지보수 어려움
 ```
+{% endraw %}
 
 **있을 때의 이점:**
 
@@ -564,6 +566,7 @@ export const shadows = {
 
 ### 토큰 사용 예시
 
+{% raw %}
 ```tsx
 // ✅ 토큰 사용
 import { colors } from '@/tokens/colors';
@@ -585,6 +588,7 @@ const Button = styled.button`
   Click me
 </button>
 ```
+{% endraw %}
 
 ---
 

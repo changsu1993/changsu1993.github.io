@@ -182,6 +182,7 @@ function ClientChild({ dataPromise }) {
 
 #### 기본 사용법
 
+{% raw %}
 ```tsx
 import { useOptimistic } from 'react';
 
@@ -224,6 +225,7 @@ function TodoList({ todos }) {
   );
 }
 ```
+{% endraw %}
 
 #### 실전 예제: 좋아요 버튼
 

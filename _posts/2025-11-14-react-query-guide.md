@@ -1564,6 +1564,7 @@ return (
 
 ### 실전 SNS 피드 예제
 
+{% raw %}
 ```jsx
 function SocialFeed() {
   const { ref, inView } = useInView();
@@ -1621,6 +1622,7 @@ function SocialFeed() {
   );
 }
 ```
+{% endraw %}
 
 ## 낙관적 업데이트 (Optimistic Updates)
 

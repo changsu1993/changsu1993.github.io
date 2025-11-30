@@ -595,6 +595,7 @@ export const useTodoStore = create((set) => ({
 
 ### 컴포넌트에서 사용
 
+{% raw %}
 ```jsx
 // components/TodoList.jsx
 import { useTodoStore } from '../store/todoStore';
@@ -684,6 +685,7 @@ function FilterButtons() {
   );
 }
 ```
+{% endraw %}
 
 ### 고급 패턴
 
@@ -945,6 +947,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 ### 컴포넌트에서 사용
 
+{% raw %}
 ```jsx
 // components/TodoList.jsx
 import { useSelector, useDispatch } from 'react-redux';
@@ -1025,6 +1028,7 @@ function FilterButtons() {
   );
 }
 ```
+{% endraw %}
 
 ### createAsyncThunk로 비동기 처리
 

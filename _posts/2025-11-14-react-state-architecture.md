@@ -806,6 +806,7 @@ function CartPage() {
 
 **사용 시기**: 인증 + 전역 상태 + 서버 데이터 모두 필요
 
+{% raw %}
 ```jsx
 // 1. Context: 인증 상태
 const AuthContext = createContext(null);
@@ -873,6 +874,7 @@ function DashboardPage() {
   );
 }
 ```
+{% endraw %}
 
 ### 패턴 4: URL State + React Query
 
@@ -3035,6 +3037,7 @@ export const useCartStore = create(
 
 **A**: Context API 추천:
 
+{% raw %}
 ```jsx
 const AuthContext = createContext(null);
 
@@ -3058,6 +3061,7 @@ export function AuthProvider({ children }) {
   );
 }
 ```
+{% endraw %}
 
 **이유**:
 - 앱 전체에서 필요

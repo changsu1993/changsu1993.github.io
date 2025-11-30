@@ -222,6 +222,7 @@ describe('Button', () => {
 
 **여러 모듈이 함께 동작하는지 테스트**
 
+{% raw %}
 ```jsx
 // components/TodoList.jsx
 import { useState } from 'react';
@@ -306,6 +307,7 @@ describe('TodoList Integration', () => {
   });
 });
 ```
+{% endraw %}
 
 ### 3. E2E Test (End-to-End 테스트)
 

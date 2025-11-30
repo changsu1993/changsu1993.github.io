@@ -589,6 +589,7 @@ jobs:
 
 ### 캐싱 전략
 
+{% raw %}
 ```yaml
 jobs:
   build:
@@ -630,6 +631,7 @@ jobs:
           path: dist/
           key: build-${{ github.sha }}
 ```
+{% endraw %}
 
 ### 병렬 처리
 
@@ -1306,6 +1308,7 @@ jobs:
 
 ### 자동 롤백
 
+{% raw %}
 ```yaml
 jobs:
   deploy-with-rollback:
@@ -1353,6 +1356,7 @@ jobs:
             -H 'Content-Type: application/json' \
             -d '{"text": "⚠️ 배포 실패로 자동 롤백됨"}'
 ```
+{% endraw %}
 
 ### 성능 모니터링
 
@@ -1905,6 +1909,7 @@ npm ci
 
 **A:** 캐시 키를 확인하세요. `hashFiles('**/package-lock.json')`을 사용하면 의존성 변경 시만 캐시를 무효화합니다.
 
+{% raw %}
 ```yaml
 - uses: actions/cache@v4
   with:
@@ -1913,6 +1918,7 @@ npm ci
     restore-keys: |
       ${{ runner.os }}-node-
 ```
+{% endraw %}
 
 ### Q4: 특정 브랜치에만 워크플로우를 실행하려면?
 

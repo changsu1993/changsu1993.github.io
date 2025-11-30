@@ -1979,6 +1979,7 @@ const projects = process.env.CI
 ```
 
 **4. 캐싱 활용**
+{% raw %}
 ```yaml
 # GitHub Actions
 - uses: actions/cache@v3
@@ -1986,6 +1987,7 @@ const projects = process.env.CI
     path: ~/.cache/ms-playwright
     key: playwright-${{ hashFiles('package-lock.json') }}
 ```
+{% endraw %}
 
 ---
 
