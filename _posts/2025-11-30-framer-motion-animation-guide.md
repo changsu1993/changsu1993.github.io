@@ -48,6 +48,7 @@ npm install framer-motion
 
 Framer Motion은 모든 HTML 요소에 대응하는 `motion` 컴포넌트를 제공합니다.
 
+{% raw %}
 ```tsx
 import { motion } from 'framer-motion';
 
@@ -65,6 +66,7 @@ function BasicAnimation() {
 
 export default BasicAnimation;
 ```
+{% endraw %}
 
 **핵심 Props**
 - `initial`: 시작 상태
@@ -73,6 +75,7 @@ export default BasicAnimation;
 
 ### 다양한 transition 옵션
 
+{% raw %}
 ```tsx
 import { motion } from 'framer-motion';
 
@@ -134,11 +137,13 @@ function TransitionExamples() {
 
 export default TransitionExamples;
 ```
+{% endraw %}
 
 ### Exit 애니메이션
 
 컴포넌트가 제거될 때 애니메이션을 적용하려면 `AnimatePresence`가 필요합니다.
 
+{% raw %}
 ```tsx
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -171,6 +176,7 @@ function ExitAnimation() {
 
 export default ExitAnimation;
 ```
+{% endraw %}
 
 **중요**: `AnimatePresence`는 직접적인 자식의 마운트/언마운트를 감지합니다. 조건부 렌더링에서 반드시 사용해야 exit 애니메이션이 작동합니다.
 
@@ -316,6 +322,7 @@ Framer Motion은 다양한 제스처 이벤트를 간단하게 처리할 수 있
 
 ### Hover와 Tap
 
+{% raw %}
 ```tsx
 import { motion } from 'framer-motion';
 
@@ -372,9 +379,11 @@ function GestureBasic() {
 
 export default GestureBasic;
 ```
+{% endraw %}
 
 ### Drag
 
+{% raw %}
 ```tsx
 import { motion } from 'framer-motion';
 
@@ -444,9 +453,11 @@ function DragExamples() {
 
 export default DragExamples;
 ```
+{% endraw %}
 
 ### 스와이프 감지
 
+{% raw %}
 ```tsx
 import { useState } from 'react';
 import { motion, PanInfo } from 'framer-motion';
@@ -494,6 +505,7 @@ function SwipeDetection() {
 
 export default SwipeDetection;
 ```
+{% endraw %}
 
 ## 레이아웃 애니메이션
 
@@ -501,6 +513,7 @@ Framer Motion의 가장 강력한 기능 중 하나는 자동 레이아웃 애�
 
 ### layout prop
 
+{% raw %}
 ```tsx
 import { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -525,6 +538,7 @@ function LayoutAnimation() {
 
 export default LayoutAnimation;
 ```
+{% endraw %}
 
 **작동 원리**: `layout` prop을 추가하면 Framer Motion이 자동으로 FLIP 애니메이션을 적용합니다.
 - **F**irst: 초기 위치 기록
@@ -598,6 +612,7 @@ export default ReorderList;
 
 ### LayoutGroup으로 복잡한 레이아웃 관리
 
+{% raw %}
 ```tsx
 import { useState } from 'react';
 import { motion, LayoutGroup } from 'framer-motion';
@@ -628,11 +643,13 @@ function LayoutGroupExample() {
 
 export default LayoutGroupExample;
 ```
+{% endraw %}
 
 ## 스크롤 애니메이션
 
 ### useScroll Hook
 
+{% raw %}
 ```tsx
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
@@ -658,9 +675,11 @@ function ScrollProgress() {
 
 export default ScrollProgress;
 ```
+{% endraw %}
 
 ### 요소별 스크롤 진행률
 
+{% raw %}
 ```tsx
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
@@ -688,6 +707,7 @@ function ScrollElement() {
 
 export default ScrollElement;
 ```
+{% endraw %}
 
 **offset 옵션**:
 - `['start end', 'end start']`: 요소의 시작이 뷰포트 끝에 들어올 때부터, 요소의 끝이 뷰포트 시작을 벗어날 때까지
@@ -695,6 +715,7 @@ export default ScrollElement;
 
 ### useInView Hook
 
+{% raw %}
 ```tsx
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
@@ -719,6 +740,7 @@ function InViewAnimation() {
 
 export default InViewAnimation;
 ```
+{% endraw %}
 
 **useInView 옵션**:
 - `once: true`: 한 번만 트리거 (성능 최적화)
@@ -727,6 +749,7 @@ export default InViewAnimation;
 
 ### 패럴랙스 효과
 
+{% raw %}
 ```tsx
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
@@ -753,11 +776,13 @@ function ParallaxEffect() {
 
 export default ParallaxEffect;
 ```
+{% endraw %}
 
 ## 실전 예제
 
 ### 모달
 
+{% raw %}
 ```tsx
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -811,9 +836,11 @@ function Modal() {
 
 export default Modal;
 ```
+{% endraw %}
 
 ### 토스트 알림
 
+{% raw %}
 ```tsx
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -866,9 +893,11 @@ function ToastNotification() {
 
 export default ToastNotification;
 ```
+{% endraw %}
 
 ### 카드 플립
 
+{% raw %}
 ```tsx
 import { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -910,6 +939,7 @@ function FlipCard() {
 
 export default FlipCard;
 ```
+{% endraw %}
 
 **CSS 설정 필요**:
 ```css
@@ -920,6 +950,7 @@ export default FlipCard;
 
 ### 페이지 전환
 
+{% raw %}
 ```tsx
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -992,9 +1023,11 @@ function PageTransition() {
 
 export default PageTransition;
 ```
+{% endraw %}
 
 ### 아코디언
 
+{% raw %}
 ```tsx
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -1048,9 +1081,11 @@ function Accordion() {
 
 export default Accordion;
 ```
+{% endraw %}
 
 ### 무한 슬라이더
 
+{% raw %}
 ```tsx
 import { motion } from 'framer-motion';
 
@@ -1088,6 +1123,7 @@ function InfiniteSlider() {
 
 export default InfiniteSlider;
 ```
+{% endraw %}
 
 ## 성능 최적화
 
@@ -1102,6 +1138,7 @@ export default InfiniteSlider;
 - `top`, `left`, `right`, `bottom`
 - `margin`, `padding`
 
+{% raw %}
 ```tsx
 // 좋은 예
 <motion.div animate={{ x: 100, opacity: 0.5 }} />
@@ -1109,15 +1146,18 @@ export default InfiniteSlider;
 // 나쁜 예
 <motion.div animate={{ left: 100, width: 200 }} />
 ```
+{% endraw %}
 
 ### will-change 사용
 
+{% raw %}
 ```tsx
 <motion.div
   style={{ willChange: 'transform' }}
   animate={{ x: 100 }}
 />
 ```
+{% endraw %}
 
 **주의**: `will-change`를 과도하게 사용하면 메모리 낭비가 발생합니다. 필요한 요소에만 적용하세요.
 
@@ -1144,6 +1184,7 @@ export default InfiniteSlider;
 
 ### 조건부 애니메이션
 
+{% raw %}
 ```tsx
 import { useReducedMotion } from 'framer-motion';
 
@@ -1162,9 +1203,11 @@ function ResponsiveAnimation() {
 
 export default ResponsiveAnimation;
 ```
+{% endraw %}
 
 ### 리스트 최적화
 
+{% raw %}
 ```tsx
 import { motion } from 'framer-motion';
 
@@ -1189,6 +1232,7 @@ function OptimizedList() {
 
 export default OptimizedList;
 ```
+{% endraw %}
 
 ## CSS Transition vs Framer Motion
 
@@ -1234,6 +1278,7 @@ function CSSExample() {
 ```
 
 **Framer Motion**:
+{% raw %}
 ```tsx
 function MotionExample() {
   return (
@@ -1247,6 +1292,7 @@ function MotionExample() {
   );
 }
 ```
+{% endraw %}
 
 **복잡한 시퀀스 비교**:
 
@@ -1264,6 +1310,7 @@ CSS (복잡함):
 ```
 
 Framer Motion (간결함):
+{% raw %}
 ```tsx
 <motion.div
   animate={{
@@ -1274,6 +1321,7 @@ Framer Motion (간결함):
   transition={{ duration: 2 }}
 />
 ```
+{% endraw %}
 
 ## 마치며
 
