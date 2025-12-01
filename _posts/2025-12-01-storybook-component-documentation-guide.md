@@ -1419,7 +1419,7 @@ MDX는 Markdown과 JSX를 결합하여 더 풍부한 문서를 작성할 수 있
 
 ### 기본 MDX 문서 구조
 
-```mdx
+````mdx
 {/* src/components/Button/Button.mdx */}
 import { Canvas, Meta, Story, Controls, Primary, Stories } from '@storybook/blocks';
 import * as ButtonStories from './Button.stories';
@@ -1602,7 +1602,7 @@ import { Mail, Download, Plus } from 'lucide-react';
 ## 모든 Story
 
 <Stories />
-```
+````
 
 ### MDX 주요 블록
 
