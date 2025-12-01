@@ -2172,14 +2172,14 @@ export const Introduction = () => (
       <div className="border rounded-lg p-6">
         <h2 className="text-xl font-semibold mb-2">설치</h2>
         <pre className="bg-gray-100 p-4 rounded-md text-sm">
-          npm install @your-org/design-system
+          {`npm install @your-org/design-system`}
         </pre>
       </div>
 
       <div className="border rounded-lg p-6">
         <h2 className="text-xl font-semibold mb-2">사용법</h2>
         <pre className="bg-gray-100 p-4 rounded-md text-sm">
-{`import { Button } from '@your-org/ds';
+          {`import { Button } from '@your-org/ds';
 
 <Button variant="primary">
   Click me
@@ -2404,13 +2404,11 @@ export const Mobile: Story = {
 
 **A:** Storybook은 디자인 시스템의 **문서화 및 개발 도구**입니다.
 
-```text
-디자인 시스템 = 컴포넌트 + 디자인 토큰 + 가이드라인
-                    ↓
-              Storybook으로 문서화
-                    ↓
-         팀 전체가 쉽게 접근 가능
-```
+| 구성 요소 | 설명 |
+|-----------|------|
+| **디자인 시스템** | 컴포넌트 + 디자인 토큰 + 가이드라인 |
+| ⬇️ | Storybook으로 문서화 |
+| ⬇️ | 팀 전체가 쉽게 접근 가능 |
 
 **디자인 시스템 없이 Storybook 사용:**
 - 가능하지만 효과가 제한적
