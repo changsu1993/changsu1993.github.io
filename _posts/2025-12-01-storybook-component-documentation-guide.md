@@ -354,6 +354,7 @@ export const Button = ({
 };
 ```
 
+{% raw %}
 ```tsx
 // src/components/Button/Button.stories.tsx
 import type { Meta, StoryObj } from '@storybook/react';
@@ -501,6 +502,7 @@ export const FullWidth: Story = {
   ],
 };
 ```
+{% endraw %}
 
 ### Story 작성 패턴
 
@@ -2048,6 +2050,7 @@ export default config;
 
 ### 1. 디자인 토큰 시각화
 
+{% raw %}
 ```tsx
 // src/stories/Tokens.stories.tsx
 import type { Meta, StoryObj } from '@storybook/react';
@@ -2109,6 +2112,7 @@ export const ColorPalette: Story = {
   },
 };
 ```
+{% endraw %}
 
 ### 2. 타이포그래피 시스템
 
