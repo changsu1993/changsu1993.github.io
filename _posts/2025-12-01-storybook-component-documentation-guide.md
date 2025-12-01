@@ -2180,10 +2180,10 @@ export const Introduction = () => (
         <h2 className="text-xl font-semibold mb-2">사용법</h2>
         <pre className="bg-gray-100 p-4 rounded-md text-sm">
           {`import { Button } from '@your-org/ds';
-
-<Button variant="primary">
-  Click me
-</Button>`}
+            <Button variant="primary">
+              Click me
+            </Button>
+          `}
         </pre>
       </div>
     </div>
