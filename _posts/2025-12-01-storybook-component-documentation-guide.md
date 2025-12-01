@@ -2014,7 +2014,7 @@ const config: TestRunnerConfig = {
 export default config;
 ```
 
-```json
+```jsonc
 // package.json
 {
   "scripts": {
@@ -2154,6 +2154,7 @@ src/
 
 ### 4. 통합 소개 페이지
 
+{% raw %}
 ```tsx
 // src/stories/Introduction.stories.tsx
 export const Introduction = () => (
@@ -2216,6 +2217,7 @@ export const Introduction = () => (
   </div>
 );
 ```
+{% endraw %}
 
 ---
 
