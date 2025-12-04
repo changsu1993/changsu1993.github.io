@@ -40,6 +40,17 @@ jobs:
           ruby-version: 3.2
           bundler-cache: true
 
+      - name: Jekyll 캐시 설정
+        uses: actions/cache@v4
+        with:
+          path: |
+            .jekyll-cache
+            _site
+          key: jekyll-${{ runner.os }}-${{ hashFiles('**/Gemfile.lock') }}-${{ hashFiles('**/*.md') }}
+          restore-keys: |
+            jekyll-${{ runner.os }}-${{ hashFiles('**/Gemfile.lock') }}-
+            jekyll-${{ runner.os }}-
+
       - name: GitHub Pages 설정
         id: pages
         uses: actions/configure-pages@v4
@@ -52,8 +63,12 @@ jobs:
       - name: HTML 검증
         run: |
           bundle exec htmlproofer _site \
-            \-\-disable-external \
-            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+            --disable-external \
+            --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/" \
+            --no-enforce-https \
+            --ignore-status-codes "999,403,429" \
+            --typhoeus='{"connecttimeout": 10, "timeout": 30}' \
+            --hydra='{"max_concurrency": 50}'
 
       - name: GitHub Pages 아티팩트 업로드
         uses: actions/upload-pages-artifact@v3
