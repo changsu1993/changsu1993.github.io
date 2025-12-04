@@ -706,7 +706,7 @@ export default {
 
 ### CSS 변수와 함께 사용
 
-```css
+```scss
 /* globals.css */
 @tailwind base;
 @tailwind components;
@@ -824,7 +824,7 @@ export default {
 
 반복되는 클래스 조합을 CSS로 추출할 수 있습니다:
 
-```css
+```scss
 /* globals.css */
 @layer components {
   .btn {
@@ -1520,7 +1520,7 @@ const sizeClasses = {
 
 **4. @apply 남용:**
 
-```css
+```scss
 /* 피해야 함 - Tailwind 장점 상실 */
 .card {
   @apply flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-md;
