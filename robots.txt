@@ -1,3 +1,0 @@
-# 웹 크롤러 규칙
-User-agent: *
-Sitemap: https://changsu1993.github.io/sitemap.xml

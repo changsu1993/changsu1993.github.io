@@ -1127,7 +1127,7 @@ function TabNavigation() {
 
   return (
     <div>
-      <nav style={{ opacity: isPending ? 0.7 : 1 }}>
+      <nav style={% raw %}{{ opacity: isPending ? 0.7 : 1 }}{% endraw %}>
         <button onClick={() => handleTabChange('home')}>홈</button>
         <button onClick={() => handleTabChange('profile')}>프로필</button>
         <button onClick={() => handleTabChange('settings')}>설정</button>

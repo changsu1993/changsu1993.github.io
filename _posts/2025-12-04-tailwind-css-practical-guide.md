@@ -86,7 +86,7 @@ Tailwind CSS는 "제약된 자유(Constrained Freedom)"를 추구합니다.
 
 ```tsx
 // 모든 값을 자유롭게 사용하는 대신
-<div style={{ marginTop: '17px', padding: '13px' }}>
+<div style={% raw %}{{ marginTop: '17px', padding: '13px' }}{% endraw %}>
 
 // 미리 정의된 스케일을 사용
 <div className="mt-4 p-3">  {/* mt-4 = 1rem, p-3 = 0.75rem */}

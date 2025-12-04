@@ -1,0 +1,5 @@
+---
+permalink: /assets/feed-unused.xml
+sitemap: false
+---
+<!-- This file overrides the theme's assets/feed.xml to prevent conflict with jekyll-feed plugin -->
