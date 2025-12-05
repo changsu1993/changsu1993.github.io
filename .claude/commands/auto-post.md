@@ -8,7 +8,7 @@ Automatically create a new blog post on a topic that doesn't overlap with existi
 Check existing posts in `_posts/` folder to find non-duplicate topics.
 
 ```bash
-ls -t _posts/*.md | head -30
+ls -t _posts/*.md
 ```
 
 Analyze the titles and identify topics NOT yet covered.
