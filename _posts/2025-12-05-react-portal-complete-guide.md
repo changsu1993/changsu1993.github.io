@@ -86,6 +86,7 @@ function App() {
 
 부모 요소에 `z-index`와 `position`이 설정되어 있으면 새로운 스택 컨텍스트가 생성됩니다. 이 경우 자식 요소의 `z-index`를 아무리 높여도 부모의 스택 컨텍스트를 벗어날 수 없습니다.
 
+{% raw %}
 ```tsx
 function Card() {
   const [showTooltip, setShowTooltip] = useState(false);
@@ -106,6 +107,7 @@ function Card() {
   );
 }
 ```
+{% endraw %}
 
 **Portal 해결책:**
 
@@ -124,6 +126,7 @@ function Tooltip({ children, targetRef }) {
 
 부모 요소에 `overflow: hidden`이 설정되어 있으면 자식 요소가 부모 영역 밖으로 나갈 수 없습니다.
 
+{% raw %}
 ```tsx
 function Sidebar() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -143,11 +146,13 @@ function Sidebar() {
   );
 }
 ```
+{% endraw %}
 
 ### 3. transform 컨텍스트 문제
 
 부모 요소에 `transform`이 적용되어 있으면 `position: fixed`가 제대로 동작하지 않습니다.
 
+{% raw %}
 ```tsx
 function AnimatedContainer() {
   return (
@@ -163,6 +168,7 @@ function AnimatedContainer() {
   );
 }
 ```
+{% endraw %}
 
 ### Portal이 필요한 UI 컴포넌트
 
@@ -336,6 +342,7 @@ function Modal({ isOpen, onClose, children, title }: ModalProps) {
 
 키보드 내비게이션, 포커스 트랩, 스크린 리더 지원을 추가합니다. 웹 접근성에 대한 더 자세한 내용은 [웹 접근성 완벽 가이드](/posts/web-accessibility-guide/)를 참고하세요.
 
+{% raw %}
 ```tsx
 import { createPortal } from 'react-dom';
 import {
@@ -473,6 +480,7 @@ function AccessibleModal({
   );
 }
 ```
+{% endraw %}
 
 ### 모달 스타일
 
@@ -585,6 +593,7 @@ function App() {
 
 툴팁은 트리거 요소의 위치를 기준으로 배치해야 합니다.
 
+{% raw %}
 ```tsx
 import { createPortal } from 'react-dom';
 import {
@@ -733,6 +742,7 @@ function Tooltip({
   );
 }
 ```
+{% endraw %}
 
 ### 툴팁 스타일
 
@@ -831,6 +841,7 @@ function App() {
 
 ## 드롭다운 메뉴 구현
 
+{% raw %}
 ```tsx
 import { createPortal } from 'react-dom';
 import {
@@ -1034,6 +1045,7 @@ function Dropdown({ trigger, items, onSelect }: DropdownProps) {
   );
 }
 ```
+{% endraw %}
 
 ### 드롭다운 스타일
 
@@ -1090,6 +1102,7 @@ function Dropdown({ trigger, items, onSelect }: DropdownProps) {
 
 ### 드롭다운 사용 예시
 
+{% raw %}
 ```tsx
 function App() {
   const [selected, setSelected] = useState('');
@@ -1110,6 +1123,7 @@ function App() {
   );
 }
 ```
+{% endraw %}
 
 ---
 
@@ -1199,6 +1213,7 @@ Portal로 렌더링된 컴포넌트도 React Context를 정상적으로 사용�
 
 ### Context 상속 예제
 
+{% raw %}
 ```tsx
 import { createContext, useContext, useState, ReactNode } from 'react';
 import { createPortal } from 'react-dom';
@@ -1247,11 +1262,13 @@ function App() {
   );
 }
 ```
+{% endraw %}
 
 ### 모달 매니저 구현
 
 Context를 활용한 전역 모달 관리 시스템을 구현할 수 있습니다.
 
+{% raw %}
 ```tsx
 import {
   createContext,
@@ -1339,6 +1356,7 @@ function Dashboard() {
   return <button onClick={handleOpenConfirm}>항목 삭제</button>;
 }
 ```
+{% endraw %}
 
 ---
 
@@ -1346,6 +1364,7 @@ function Dashboard() {
 
 ### CSS 트랜지션
 
+{% raw %}
 ```tsx
 import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
@@ -1393,6 +1412,7 @@ function AnimatedModal({ isOpen, onClose, children }) {
   );
 }
 ```
+{% endraw %}
 
 ```css
 .modal-overlay {
@@ -1425,6 +1445,7 @@ function AnimatedModal({ isOpen, onClose, children }) {
 
 Framer Motion을 사용하면 더 풍부한 애니메이션을 쉽게 구현할 수 있습니다. 더 자세한 Framer Motion 사용법은 [Framer Motion 애니메이션 가이드](/posts/framer-motion-animation-guide/)를 참고하세요.
 
+{% raw %}
 ```tsx
 import { createPortal } from 'react-dom';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -1464,9 +1485,11 @@ function AnimatedModal({ isOpen, onClose, children }: AnimatedModalProps) {
   );
 }
 ```
+{% endraw %}
 
 ### 토스트 애니메이션
 
+{% raw %}
 ```tsx
 import { createPortal } from 'react-dom';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -1499,6 +1522,7 @@ function ToastContainer({ toasts }: { toasts: Toast[] }) {
   );
 }
 ```
+{% endraw %}
 
 ```css
 .toast-container {
