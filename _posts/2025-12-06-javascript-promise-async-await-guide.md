@@ -922,13 +922,14 @@ console.log(config);
 
 ### Promise 상태
 
-```
-pending (대기)
-    ↓ resolve()        ↓ reject()
-fulfilled (이행)    rejected (거부)
-    └──────────┬──────────┘
-            settled (완료)
-```
+| 상태 | 설명 | 전환 조건 |
+|:----:|------|----------|
+| **pending** | 초기 상태, 대기 중 | - |
+| ↓ | | `resolve()` 또는 `reject()` 호출 |
+| **fulfilled** | 작업 성공 | `resolve()` 호출 시 |
+| **rejected** | 작업 실패 | `reject()` 호출 시 |
+| ↓ | | |
+| **settled** | 완료 (fulfilled 또는 rejected) | 상태 확정, 변경 불가 |
 
 ### async/await 핵심
 
