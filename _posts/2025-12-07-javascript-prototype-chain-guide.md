@@ -4,6 +4,7 @@ description: "JavaScript 프로토타입 체인의 동작 원리부터 상속 �
 date: 2025-12-07 10:00:00 +0900
 categories: [Frontend, JavaScript]
 tags: [javascript, prototype, 프로토타입, prototype-chain, inheritance, __proto__, object-create, 상속, constructor, es6-class, 객체지향, prototype-pollution, syntactic-sugar]
+mermaid: true
 ---
 
 ## 들어가며
