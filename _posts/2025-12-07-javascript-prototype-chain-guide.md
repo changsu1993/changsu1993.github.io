@@ -156,34 +156,38 @@ console.log(arrowFunc.prototype); // undefined
 
 ### 관계 시각화
 
+```mermaid
+flowchart TB
+    subgraph Person["Person (생성자 함수)"]
+        P_proto["prototype"]
+    end
+
+    subgraph PersonProto["Person.prototype"]
+        PP_constructor["constructor: Person"]
+        PP_greet["greet: function()"]
+        PP_proto["[[Prototype]]"]
+    end
+
+    subgraph person1["person1 (인스턴스)"]
+        p1_name["name: '홍길동'"]
+        p1_proto["[[Prototype]]"]
+    end
+
+    subgraph ObjectProto["Object.prototype"]
+        OP_toString["toString()"]
+        OP_hasOwn["hasOwnProperty()"]
+        OP_proto["[[Prototype]]: null"]
+    end
+
+    P_proto --> PersonProto
+    p1_proto --> PersonProto
+    PP_proto --> ObjectProto
+    PP_constructor -.-> Person
 ```
-                    ┌─────────────────────────────────────┐
-                    │           Person (함수)              │
-                    │  ┌─────────────────────────────────┐│
-                    │  │ prototype ──────────────────────┼┼──┐
-                    │  └─────────────────────────────────┘│  │
-                    └─────────────────────────────────────┘  │
-                                                             │
-                                                             ▼
-┌─────────────────────────────────────┐    ┌─────────────────────────────────────┐
-│         person1 (인스턴스)           │    │         Person.prototype             │
-│  ┌─────────────────────────────────┐│    │  ┌─────────────────────────────────┐│
-│  │ name: '홍길동'                   ││    │  │ constructor: Person             ││
-│  │ [[Prototype]] ──────────────────┼┼───▶│  │ greet: function() {...}         ││
-│  └─────────────────────────────────┘│    │  │ [[Prototype]] ──────────────────┼┼───┐
-└─────────────────────────────────────┘    │  └─────────────────────────────────┘│   │
-                                           └─────────────────────────────────────┘   │
-                                                                                     │
-                                                                                     ▼
-                                           ┌─────────────────────────────────────────┐
-                                           │            Object.prototype             │
-                                           │  ┌─────────────────────────────────┐   │
-                                           │  │ toString: function() {...}      │   │
-                                           │  │ hasOwnProperty: function() {...}│   │
-                                           │  │ [[Prototype]]: null             │   │
-                                           │  └─────────────────────────────────┘   │
-                                           └─────────────────────────────────────────┘
-```
+
+위 다이어그램에서 화살표의 의미:
+- **실선 화살표**: `[[Prototype]]` 링크 (프로토타입 체인)
+- **점선 화살표**: `constructor` 참조
 
 ## 프로토타입 체인의 동작 원리
 
