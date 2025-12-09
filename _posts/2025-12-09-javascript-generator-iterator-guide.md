@@ -1272,7 +1272,7 @@ console.log(gen.return('끝')); // '정리 작업 실행', { value: '끝', done:
 
 - [MDN - Iteration protocols](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Iteration_protocols)
 - [MDN - Generator](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Generator)
-- [MDN - function*](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/function*)
+- [MDN - function](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/function)
 - [MDN - for await...of](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for-await...of)
 - [ECMAScript Specification - Iteration](https://tc39.es/ecma262/#sec-iteration)
 - [JavaScript.info - 제너레이터](https://ko.javascript.info/generators)
