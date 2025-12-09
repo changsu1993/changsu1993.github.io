@@ -1,7 +1,7 @@
 ---
 title: "CSS Flexbox와 Grid 레이아웃 완벽 가이드 - 현대 웹 레이아웃 마스터하기"
 description: "Flexbox와 CSS Grid의 핵심 개념부터 실전 레이아웃 패턴까지 완벽 정리. justify-content, align-items, grid-template-areas 등 주요 속성과 Holy Grail, 반응형 카드 그리드, 대시보드 레이아웃을 실무 예제로 학습하세요."
-date: 2025-12-09 14:00:00 +0900
+date: 2025-12-09 13:00:00 +0900
 categories: [Frontend, CSS]
 tags: [css, flexbox, grid, layout, responsive, holy-grail, card-layout, dashboard, justify-content, align-items, grid-template, fr-unit, auto-fit, auto-fill, gap, css-layout]
 mermaid: true
