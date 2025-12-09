@@ -1176,7 +1176,7 @@ Bootstrap 같은 그리드 시스템 구현:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox & Grid 실전 예제</title>
+  <title>Flexbox와 Grid 실전 예제</title>
   <style>
     * {
       margin: 0;
