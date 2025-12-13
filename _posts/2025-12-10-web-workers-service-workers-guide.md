@@ -116,15 +116,13 @@ self.onmessage = (event) => {
 
 #### postMessage와 onmessage의 데이터 흐름
 
-```
-Main Thread                    Worker Thread
-    |                              |
-    |  postMessage({ data })  -->  |
-    |                              | onmessage 실행
-    |                              | 연산 처리
-    |  <-- postMessage({ result }) |
-    | onmessage 실행               |
-```
+| 순서 | Main Thread | 방향 | Worker Thread |
+|:----:|-------------|:----:|---------------|
+| 1 | `postMessage({ data })` | → | 메시지 수신 |
+| 2 | (대기) | | `onmessage` 실행 |
+| 3 | (대기) | | 연산 처리 |
+| 4 | 메시지 수신 | ← | `postMessage({ result })` |
+| 5 | `onmessage` 실행 | | (완료) |
 
 ### 1.3 Dedicated Workers vs Shared Workers
 
